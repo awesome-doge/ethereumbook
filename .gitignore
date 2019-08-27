@@ -6,3 +6,6 @@
 snippets
 node_modules
 .ipynb_checkpoints
+*~
+_book
+.DS_Store
