@@ -1,0 +1,802 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: web3.js Tutorial · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="appdx-dev-tools.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix A: web3.js Tutorial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="web3js_tutorial">Appendix A: web3.js Tutorial</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_description">Description</h3>
+<div class="paragraph">
+<p>This tutorial is based on web3@1.0.0-beta.29 web3.js. It is intended as an introduction to web3.js.</p>
+</div>
+<div class="paragraph">
+<p>The web3.js JavaScript library is a collection of modules that contain specific functionality for the Ethereum ecosystem, together with an Ethereum-compatible JavaScript API that implements the Generic JSON RPC spec.</p>
+</div>
+<div class="paragraph">
+<p>To run this script you don&#x2019;t need to run your own local node, because it uses the <a href="https://infura.io" target="_blank">Infura services</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_web3_js_contract_basic_interaction_in_a_nonblocked_async_fashion">web3.js Contract Basic Interaction in a Nonblocked (Async) Fashion</h3>
+<div class="paragraph">
+<p>Check you have a valid npm version:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm -v</strong>
+5.6.0
+</pre>
+<div class="paragraph">
+<p>If you haven&#x2019;t, initialize npm:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm init</strong>
+</pre>
+<div class="paragraph">
+<p>Install basic dependencies:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm i command-line-args</strong>
+$ <strong>npm i web3</strong>
+$ <strong>npm i node-rest-client-promise</strong>
+</pre>
+<div class="paragraph">
+<p>This will update your <em>package.json</em> configuration file with your new dependencies.</p>
+</div>
+<div class="sect3">
+<h4 id="_node_js_script_execution">Node.js Script Execution</h4>
+<div class="paragraph">
+<p>Basic execution:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>node code/web3js/web3-contract-basic-interaction.js</strong>
+</pre>
+<div class="paragraph">
+<p>Use your own Infura token (register at <a href="https://infura.io/" class="bare" target="_blank">https://infura.io/</a> and store the api-key in a local file called <em>infura_token</em>):</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>node code/web3js/web3-contract-basic-interaction.js \
+  --infuraFileToken /path/to/file/with/infura_token</strong>
+</pre>
+<div class="paragraph">
+<p>or:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>node code/web3js/web3-contract-basic-interaction.js \
+  /path/to/file/with/infura_token</strong>
+</pre>
+<div class="paragraph">
+<p>This will read the file with your own token and pass it in as a command-line argument to the actual command.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reviewing_the_demo_script">Reviewing the Demo Script</h3>
+<div class="paragraph">
+<p>Next, let&#x2019;s review our demo script, <em>web3-contract-basic-interaction</em>.</p>
+</div>
+<div class="paragraph">
+<p>We use the Web3 object to obtain a basic web3 provider:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">var web3 = new Web3(infura_host);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We can then interact with web3 and try some basic functions. Let&#x2019;s see the protocol version:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">web3.eth.getProtocolVersion().then(function(protocolVersion) {
+      console.log(`Protocol Version: ${protocolVersion}`);
+  })</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now let&#x2019;s look at the current gas price:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">web3.eth.getGasPrice().then(function(gasPrice) {
+      console.log(`Gas Price: ${gasPrice}`);
+  })</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What&#x2019;s the last mined block in the current chain?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">web3.eth.getBlockNumber().then(function(blockNumber) {
+      console.log(`Block Number: ${blockNumber}`);
+  })</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_contract_interaction">Contract Interaction</h3>
+<div class="paragraph">
+<p>Now let&#x2019;s try some basic interactions with a contract. For these examples, we&#x2019;ll use the <a href="https://bit.ly/2MPZZLx" target="_blank">WETH9_ contract</a> on the Kovan testnet.</p>
+</div>
+<div class="paragraph pagebreak-before">
+<p>First, let&#x2019;s initialize our contract address:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">var our_contract_address = &quot;0xd0A1E359811322d97991E03f863a0C30C2cF029C&quot;;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We can then look at its balance:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">web3.eth.getBalance(our_contract_address).then(function(balance) {
+      console.log(`Balance of ${our_contract_address}: ${balance}`);
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and see its bytecode:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">web3.eth.getCode(our_contract_address).then(function(code) {
+      console.log(code);
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Next, we&#x2019;ll prepare our environment to interact with the Etherscan explorer API.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s initialize our contract URL in the Etherscan explorer API for the Kovan chain:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">var etherscan_url =
+  &quot;https://kovan.etherscan.io/api?module=contract&amp;action=getabi&amp;
+  address=${our_contract_address}&quot;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And let&#x2019;s initialize a REST client to interact with the Etherscan API:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">var client = require(&apos;node-rest-client-promise&apos;).Client();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and get a client promise:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">client.getPromise(etherscan_url)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once we&#x2019;ve got a valid client promise, we can get our contract ABI from the Etherscan API:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">.then((client_promise) =&gt; {
+  our_contract_abi = JSON.parse(client_promise.data.result);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And now we can create our contract object as a promise to consume later:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">  return new Promise((resolve, reject) =&gt; {
+      var our_contract = new web3.eth.Contract(our_contract_abi,
+                                               our_contract_address);
+      try {
+        // If all goes well
+        resolve(our_contract);
+      } catch (ex) {
+        // If something goes wrong
+        reject(ex);
+      }
+    });
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If our contract promise returns successfully, we can start interacting with it:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">.then((our_contract) =&gt; {</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s see our contract address:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">console.log(`Our Contract address:
+            ${our_contract._address}`);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or alternatively:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">console.log(`Our Contract address in another way:
+            ${our_contract.options.address}`);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now let&#x2019;s query our contract ABI:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">console.log(&quot;Our contract abi: &quot; +
+            JSON.stringify(our_contract.options.jsonInterface));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We can see our contract&#x2019;s total supply using a callback:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">our_contract.methods.totalSupply().call(function(err, totalSupply) {
+    if (!err) {
+        console.log(`Total Supply with a callback:  ${totalSupply}`);
+    } else {
+        console.log(err);
+    }
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or we can use the returned promise instead of passing in the callback:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">our_contract.methods.totalSupply().call().then(function(totalSupply){
+    console.log(`Total Supply with a promise:  ${totalSupply}`);
+}).catch(function(err) {
+    console.log(err);
+});</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_asynchronous_operation_with_await">Asynchronous Operation with Await</h3>
+<div class="paragraph">
+<p>Now that you&#x2019;ve seen the basic tutorial, you can try the same interactions using an asynchronous await construct. Review the <em>web3-contract-basic-interaction-async-await.js</em> script in <a href="http://bit.ly/2ABrFkl" target="_blank"><em>code/web3js</em></a> and compare it to this tutorial to see how they differ. Async-await is easier to read, as it makes the asynchronous interaction behave more like a sequence of blocking calls.</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appdx-dev-tools.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Appendix A: Development Tools, Frameworks, and Libraries">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: web3.js Tutorial","level":"6.1","depth":1,"previous":{"title":"Appendix A: Development Tools, Frameworks, and Libraries","level":"5.1","depth":1,"path":"appdx-dev-tools.asciidoc","ref":"appdx-dev-tools.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appdx-web3js-tutorial.asciidoc","mtime":"2019-08-27T09:18:17.281Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

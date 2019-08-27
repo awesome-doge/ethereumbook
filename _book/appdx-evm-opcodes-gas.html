@@ -1,0 +1,1685 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: Ethereum EVM Opcodes and Gas Consumption · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="appdx-dev-tools.html" />
+    
+    
+    <link rel="prev" href="appdx-standards-eip-erc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix A: Ethereum EVM Opcodes and Gas Consumption</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="evm_opcodes">Appendix A: Ethereum EVM Opcodes and Gas Consumption</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This appendix is based on the consolidation work done by the people of <a href="https://github.com/trailofbits/evm-opcodes" class="bare" target="_blank">https://github.com/trailofbits/evm-opcodes</a> as a reference for Ethereum VM (EVM) opcodes and instruction information licensed under the <a href="http://bit.ly/2zfrv0b" target="_blank">Apache License 2.0</a>.</p>
+</div>
+<table id="evm_opcodes_table" class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. EVM opcodes and gas cost</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Opcode</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Extra info</th>
+<th class="tableblock halign-left valign-top">Gas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x00</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STOP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Halts execution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x01</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Addition operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x02</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MUL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplication operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x03</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SUB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subtraction operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x04</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer division operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x05</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SDIV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Signed integer division operation (truncated)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x06</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MOD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modulo remainder operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x07</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SMOD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Signed modulo remainder operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x08</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADDMOD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modulo addition operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x09</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MULMOD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Modulo multiplication operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x0a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EXP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exponential operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10***</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x0b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SIGNEXTEND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extend length of two&#x2019;s complement signed integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x0c</code> - <code>0x0f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x10</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Less-than comparison</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x11</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greater-than comparison</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x12</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SLT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Signed less-than comparison</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x13</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SGT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Signed greater-than comparison</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x14</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EQ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equality comparison</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x15</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISZERO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simple NOT operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x16</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bitwise AND operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x17</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bitwise OR operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x18</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XOR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bitwise XOR operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x19</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bitwise NOT operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x1a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BYTE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Retrieve single byte from word</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x1b</code> - <code>0x1f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x20</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SHA3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compute Keccak-256 hash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x21</code> - <code>0x2f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x30</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADDRESS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get address of currently executing account</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x31</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BALANCE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get balance of the given account</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">400</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x32</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ORIGIN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get execution origination address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x33</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get caller address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x34</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLVALUE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get deposited value by the instruction/transaction responsible for this execution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x35</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLDATALOAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get input data of current environment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x36</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLDATASIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get size of input data in current environment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x37</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLDATACOPY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copy input data in current environment to memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x38</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CODESIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get size of code running in current environment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x39</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CODECOPY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copy code running in current environment to memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x3a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GASPRICE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get price of gas in current environment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x3b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EXTCODESIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get size of an account&#x2019;s code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">700</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x3c</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EXTCODECOPY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copy an account&#x2019;s code to memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">700</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x3d</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RETURNDATASIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pushes the size of the return data buffer onto the stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2zaBcNe" target="_blank">EIP-211</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x3e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RETURNDATACOPY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copies data from the return data buffer to memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2zaBcNe" target="_blank">EIP-211</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x3f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x40</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BLOCKHASH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the hash of one of the 256 most recent complete blocks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x41</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COINBASE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the block&#x2019;s beneficiary address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x42</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TIMESTAMP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the block&#x2019;s timestamp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x43</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NUMBER</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the block&#x2019;s number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x44</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DIFFICULTY</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the block&#x2019;s difficulty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x45</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GASLIMIT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the block&#x2019;s gas limit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x46</code> - <code>0x4f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x50</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remove word from stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x51</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MLOAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Load word from memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x52</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MSTORE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save word to memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x53</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MSTORE8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save byte to memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x54</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SLOAD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Load word from storage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">200</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x55</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSTORE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save word to storage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x56</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alter the program counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x57</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMPI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditionally alter the program counter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x58</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GETPC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the value of the program counter prior to the increment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x59</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MSIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the size of active memory in bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x5a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GAS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the amount of available gas, including the corresponding reduction in the amount of available gas</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x5b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMPDEST</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mark a valid destination for jumps</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x5c</code> - <code>0x5f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x60</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 1-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x61</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 2-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x62</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 3-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x63</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 4-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x64</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 5-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x65</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 6-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x66</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 7-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x67</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 8-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x68</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 9-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x69</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 10-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x6a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 11-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x6b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 12-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x6c</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 13-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x6d</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 14-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x6e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 15-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x6f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 16-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x70</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 17-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x71</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 18-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x72</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 19-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x73</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 20-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x74</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 21-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x75</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 22-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x76</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH23</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 23-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x77</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 24-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x78</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 25-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x79</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 26-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x7a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 27-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x7b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH28</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 28-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x7c</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH29</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 29-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x7d</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 30-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x7e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 31-byte item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x7f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUSH32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Place 32-byte (full word) item on stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x80</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 1st stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x81</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 2nd stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x82</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 3rd stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x83</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 4th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x84</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 5th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x85</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 6th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x86</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 7th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x87</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 8th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x88</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 9th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x89</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 10th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x8a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 11th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x8b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 12th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x8c</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 13th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x8d</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 14th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x8e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 15th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x8f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DUP16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplicate 16th stack item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x90</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 2nd stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x91</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 3rd stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x92</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 4th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x93</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 5th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x94</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 6th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x95</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 7th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x96</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 8th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x97</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 9th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x98</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 10th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x99</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 11th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x9a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 12th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x9b</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 13th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x9c</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 14th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x9d</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 15th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x9e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 16th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0x9f</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SWAP16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exchange 1st and 17th stack items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xa0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOG0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Append log record with no topics</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">375</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xa1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOG1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Append log record with one topic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">750</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xa2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOG2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Append log record with two topics</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1125</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xa3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOG3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Append log record with three topics</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1500</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xa4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOG4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Append log record with four topics</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1875</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xa5</code> - <code>0xaf</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMPTO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative <a href="http://bit.ly/2Sx2Vkg" target="_blank">libevmasm has different numbers</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP 615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMPIF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMPSUB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JUMPSUBV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BEGINSUB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb6</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BEGINDATA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb8</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RETURNSUB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xb9</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PUTLOCAL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xba</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GETLOCA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tentative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://bit.ly/2CR77pu" target="_blank">EIP-615</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xbb</code> - <code>0xe0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xe1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SLOADBYTES</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only referenced in pyethereum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xe2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSTOREBYTES</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only referenced in pyethereum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xe3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SSIZE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only referenced in pyethereum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xe4</code> - <code>0xef</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CREATE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create a new account with associated code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message-call into an account</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Complicated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLCODE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message-call into this account with alternative account&#x2019;s code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Complicated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RETURN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Halt execution returning output data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DELEGATECALL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Message-call into this account with an alternative account&#x2019;s code, but persisting into this account with an alternative account&#x2019;s code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Complicated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CALLBLACKBOX</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xf6</code> - <code>0xf9</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unused</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xfa</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STATICCALL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Similar to CALL, but does not modify state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">40</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xfb</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CREATE2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create a new account and set creation address to <code>sha3(sender + sha3(init code)) % 2**160</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xfc</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TXEXECGAS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not in yellow paper FIXME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xfd</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REVERT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop execution and revert state changes, without consuming all provided gas and providing a reason</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xfe</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INVALID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Designated invalid instruction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0xff</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SELFDESTRUCT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Halt execution and register account for later deletion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5000*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appdx-standards-eip-erc.html" class="navigation navigation-prev " aria-label="Previous page: Appendix A: Ethereum Standards">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="appdx-dev-tools.html" class="navigation navigation-next " aria-label="Next page: Appendix A: Development Tools, Frameworks, and Libraries">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: Ethereum EVM Opcodes and Gas Consumption","level":"4.1","depth":1,"next":{"title":"Appendix A: Development Tools, Frameworks, and Libraries","level":"5.1","depth":1,"path":"appdx-dev-tools.asciidoc","ref":"appdx-dev-tools.asciidoc","articles":[]},"previous":{"title":"Appendix A: Ethereum Standards","level":"3.1","depth":1,"path":"appdx-standards-eip-erc.asciidoc","ref":"appdx-standards-eip-erc.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appdx-evm-opcodes-gas.asciidoc","mtime":"2019-08-27T09:18:17.279Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

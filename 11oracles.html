@@ -1,0 +1,932 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 11: Oracles · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12dapps.html" />
+    
+    
+    <link rel="prev" href="10tokens.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 11: Oracles</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="oracles_chap">Oracles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this chapter we discuss <em>oracles</em>, which are systems that can provide external data sources to Ethereum smart contracts. The term &quot;oracle&quot; comes from Greek mythology, where it referred to a person in communication with the gods who could see visions of the future. In the context of blockchains, an oracle is a system that can answer questions that are external to Ethereum. Ideally oracles are systems that are <em>trustless</em>, meaning that they do not need to be trusted because they operate on decentralized principles.</p>
+</div>
+<div class="sect2">
+<h3 id="why_oracles">Why Oracles Are Needed</h3>
+<div class="paragraph">
+<p>A key component of the Ethereum platform is the Ethereum Virtual Machine, with its ability to execute programs and update the state of Ethereum, constrained by consensus rules, on any node in the decentralized network. In order to maintain consensus, EVM execution must be totally deterministic and based only on the shared context of the Ethereum state and signed transactions. This has two particularly important consequences: the first is that there can be no intrinsic source of randomness for the EVM and smart contracts to work with; the second is that extrinsic data can only be introduced as the data payload of a transaction.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s unpack those two consequences further. To understand the prohibition of a true random function in the EVM to provide randomness for smart contracts, consider the effect on attempts to achieve consensus after the execution of such a function: node A would execute the command and store 3 on behalf of the smart contract in its storage, while node B, executing the same smart contract, would store 7 instead. Thus, nodes A and B would come to different conclusions about what the resulting state should be, despite having run exactly the same code in the same context. Indeed, it could be that a different resulting state would be achieved every time that the smart contract is evaluated. As such, there would be no way for the network, with its multitude of nodes running independently around the world, to ever come to a decentralized consensus on what the resulting state should be. In practice, it would get much worse than this example very quickly, because knock-on effects, including ether transfers, would build up exponentially.</p>
+</div>
+<div class="paragraph">
+<p>Note that pseudorandom functions, such as cryptographically secure hash functions (which are deterministic and therefore can be, and indeed are, part of the EVM), are not enough for many applications. Take a gambling game that simulates coin flips to resolve bet payouts, which needs to randomize heads or tails&#x2014;a miner can gain an advantage by playing the game and only including their transactions in blocks for which they will win. So how do we get around this problem? Well, all nodes can agree on the contents of signed transactions, so extrinsic information, including sources of randomness, price information, weather forecasts, etc., can be introduced as the data part of transactions sent to the network. However, such data simply cannot be trusted, because it comes from unverifiable sources. As such, we have just deferred the problem. We use oracles to attempt to solve these problems, which we will discuss in detail, in the rest of this chapter.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oracle_use_cases">Oracle Use Cases and Examples</h3>
+<div class="paragraph">
+<p>Oracles, ideally, provide a trustless (or at least near-trustless) way of getting extrinsic (i.e., &quot;rea-world&quot; or off-chain) information, such as the results of football games, the price of gold, or truly random numbers, onto the Ethereum platform for smart contracts to use. They can also be used to relay data securely to DApp frontends directly. Oracles can therefore be thought of as a mechanism for bridging the gap between the off-chain world and smart contracts. Allowing smart contracts to enforce contractual relationships based on real-world events and data broadens their scope dramatically. However, this can also introduce external risks to Ethereum&#x2019;s security model. Consider a &quot;smart will&quot; contract that distributes assets when a person dies. This is something frequently discussed in the smart contract space, and highlights the risks of a trusted oracle. If the inheritance amount controlled by such a contract is high enough, the incentive to hack the oracle and trigger distribution of assets <em>before</em> the owner dies is very high.</p>
+</div>
+<div class="paragraph">
+<p>Note that some oracles provide data that is particular to a specific private data source, such as academic certificates or government IDs. The source of such data, such as a university or government department, is fully trusted, and the truth of the data is subjective (truth is only determined by appeal to the authority of the source). Such data cannot therefore be provided trustlessly&#x2014;i.e., without  trusting a source&#x2014;as there is no independently verifiably objective truth. As such, we include these data sources in our definition of what counts as &quot;oracles&quot; because they also provide a data bridge for smart contracts. The data they provide generally takes the form of attestations, such as passports or records of achievement. Attestations will become a big part of the success of blockchain platforms in the future, particularly in relation to the related issues of verifying identity or reputation, so it is important to explore how they can be served by blockchain platforms.</p>
+</div>
+<div class="paragraph">
+<p>Some more examples of data that might be provided by oracles include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Random numbers/entropy from physical sources such as quantum/thermal processes: e.g., to fairly select a winner in a lottery smart contract</p>
+</li>
+<li>
+<p>Parametric triggers indexed to natural hazards: e.g., triggering of catastrophe bond smart contracts, such as Richter scale measurements for an earthquake bond</p>
+</li>
+<li>
+<p>Exchange rate data: e.g., for accurate pegging of cryptocurrencies to fiat currency</p>
+</li>
+<li>
+<p>Capital markets data: e.g., pricing baskets of tokenized assets/securities</p>
+</li>
+<li>
+<p>Benchmark reference data: e.g., incorporating interest rates into smart financial derivatives</p>
+</li>
+<li>
+<p>Static/pseudostatic data: security identifiers, country codes, currency codes, etc.</p>
+</li>
+<li>
+<p>Time and interval data: for event triggers grounded in precise time measurements</p>
+</li>
+<li>
+<p>Weather data: e.g., insurance premium calculations based on weather forecasts</p>
+</li>
+<li>
+<p>Political events: for prediction market resolution</p>
+</li>
+<li>
+<p>Sporting events: for prediction market resolution and fantasy sports contracts</p>
+</li>
+<li>
+<p>Geolocation data: e.g., as used in supply chain tracking</p>
+</li>
+<li>
+<p>Damage verification: for insurance contracts</p>
+</li>
+<li>
+<p>Events occurring on other blockchains: interoperability functions</p>
+</li>
+<li>
+<p>Ether market price: e.g., for fiat gas price oracles</p>
+</li>
+<li>
+<p>Flight statistics: e.g., as used by groups and clubs for flight ticket pooling</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the following sections, we will examine some of the ways oracles can be implemented, including basic oracle patterns, computation oracles, decentralized oracles, and oracle client implementations in Solidity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oracle_design_patterns">Oracle Design Patterns</h3>
+<div class="paragraph">
+<p>All oracles provide a few key functions, by definition. These include the ability to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Collect data from an off-chain source.</p>
+</li>
+<li>
+<p>Transfer the data on-chain with a signed message.</p>
+</li>
+<li>
+<p>Make the data available by putting it in a smart contract&#x2019;s storage.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Once the data is available in a smart contract&#x2019;s storage, it can be accessed by other smart contracts via message calls that invoke a &quot;retrieve&quot; function of the oracle&#x2019;s smart contract; it can also be accessed by Ethereum nodes or network-enabled clients directly by &quot;looking into&#x201D; the oracle&#x2019;s storage.</p>
+</div>
+<div class="paragraph">
+<p>The three main ways to set up an oracle can be categorized as <em>request&#x2013;response</em>, <span class="keep-together"><em>publish-subscribe</em></span>, and <em>immediate-read</em>.</p>
+</div>
+<div class="paragraph">
+<p>Starting with the simplest, <em>immediate-read</em> oracles are those that provide data that is only needed for an immediate decision, like &quot;What is the address for <em>ethereumbook.info</em>?&quot; or &quot;Is this person over 18?&quot; Those wishing to query this kind of data tend to do so on a &quot;just-in-time&quot; basis; the lookup is done when the information is needed and possibly never again. Examples of such oracles include those that hold data about or issued by organizations, such as academic certificates, dial codes, institutional memberships, airport identifiers, self-sovereign IDs, etc. This type of oracle stores data once in its contract storage, whence any other smart contract can look it up using a request call to the oracle contract. It may be updated. The data in the oracle&#x2019;s storage is also available for direct lookup by blockchain-enabled (i.e., Ethereum <span class="keep-together">client&#x2013;connected</span>) applications without having to go through the palaver and incurring the gas costs of issuing a transaction. A shop wanting to check the age of a customer wishing to purchase alcohol could use an oracle in this way. This type of oracle is attractive to an organization or company that might otherwise have to run and maintain servers to answer such data requests. Note that the data stored by the oracle is likely not to be the raw data that the oracle is serving, e.g., for efficiency or privacy reasons. A university might set up an oracle for the certificates of academic achievement of past students. However, storing the full details of the certificates (which could run to pages of courses taken and grades achieved) would be excessive. Instead, a hash of the certificate is sufficient. Likewise, a government might wish to put citizen IDs onto the Ethereum platform, where clearly the details included need to be kept private. Again, hashing the data (more carefully, in Merkle trees with salts) and only storing the root hash in the smart contract&#x2019;s storage would be an efficient way to organize such a service.</p>
+</div>
+<div class="paragraph">
+<p>The next setup is <em>publish&#x2013;subscribe</em>, where an oracle that effectively provides a broadcast service for data that is expected to change (perhaps both regularly and frequently) is either polled by a smart contract on-chain, or watched by an off-chain daemon for updates. This category has a pattern similar to RSS feeds, WebSub, and the like, where the oracle is updated with new information and a flag signals that new data is available to those who consider themselves &quot;subscribed.&quot; Interested parties must either poll the oracle to check whether the latest information has changed, or listen for updates to oracle contracts and act when they occur. Examples include price feeds, weather information, economic or social statistics, traffic data, etc. Polling is very inefficient in the world of web servers, but not so in the peer-to-peer context of blockchain platforms: Ethereum clients have to keep up with all state changes, including changes to contract storage, so polling for data changes is a local call to a synced client. Ethereum event logs make it particularly easy for applications to look out for oracle updates, and so this pattern can in some ways even be considered a &quot;push&quot; service. However, if the polling is done from a smart contract, which might be necessary for some decentralized applications (e.g., where activation incentives are not possible), then significant gas expenditure may be incurred.</p>
+</div>
+<div class="paragraph">
+<p>The <em>request&#x2013;response</em> category is the most complicated: this is where the data space is too huge to be stored in a smart contract and users are expected to only need a small part of the overall dataset at a time. It is also an applicable model for data provider businesses. In practical terms, such an oracle might be implemented as a system of on-chain smart contracts and off-chain infrastructure used to monitor requests and retrieve and return data. A request for data from a decentralized application would typically be an asynchronous process involving a number of steps. In this pattern, firstly, an EOA transacts with a decentralized application, resulting in an interaction with a function defined in the oracle smart contract. This function initiates the request to the oracle, with the associated arguments detailing the data requested in addition to supplementary information that might include callback functions and scheduling parameters. Once this transaction has been validated, the oracle request can be observed as an EVM event emitted by the oracle contract, or as a state change; the arguments can be retrieved and used to perform the actual query of the off-chain data source. The oracle may also require payment for processing the request, gas payment for the callback, and permissions to access the requested data. Finally, the resulting data is signed by the oracle owner, attesting to the validity of the data at a given time, and delivered in a transaction to the decentralized application that made the request&#x2014;either directly or via the oracle contract. Depending on the scheduling parameters, the oracle may broadcast further transactions updating the data at regular intervals (e.g., end-of-day pricing information).</p>
+</div>
+<div class="paragraph">
+<p>The steps for a request&#x2013;response oracle may be summarized as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Receive a query from a DApp.</p>
+</li>
+<li>
+<p>Parse the query.</p>
+</li>
+<li>
+<p>Check that payment and data access permissions are provided.</p>
+</li>
+<li>
+<p>Retrieve relevant data from an off-chain source (and encrypt it if necessary).</p>
+</li>
+<li>
+<p>Sign the transaction(s) with the data included.</p>
+</li>
+<li>
+<p>Broadcast the transaction(s) to the network.</p>
+</li>
+<li>
+<p>Schedule any further necessary transactions, such as notifications, etc.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>A range of other schemes are also possible; for example, data can be requested from and returned directly by an EOA, removing the need for an oracle smart contract. Similarly, the request and response could be made to and from an Internet of Things&#x2013;enabled hardware sensor. Therefore, oracles can be human, software, or hardware.</p>
+</div>
+<div class="paragraph">
+<p>The request&#x2013;response pattern described here is commonly seen in client&#x2013;server architectures. While this is a useful messaging pattern that allows applications to have a two-way conversation, it is perhaps inappropriate under certain conditions. For example, a smart bond requiring an interest rate from an oracle might have to request the data on a daily basis under a request&#x2013;response pattern in order to ensure the rate is always correct. Given that interest rates change infrequently, a publish&#x2013;subscribe pattern may be more appropriate here&#x2014;especially when taking into consideration Ethereum&#x2019;s limited bandwidth.</p>
+</div>
+<div class="paragraph">
+<p>Publish&#x2013;subscribe is a pattern where publishers (in this context, oracles) do not send messages directly to receivers, but instead categorize published messages into distinct classes. Subscribers are able to express an interest in one or more classes and retrieve only those messages that are of interest. Under such a pattern, an oracle might write the interest rate to its own internal storage each time it changes. Multiple subscribed DApps can simply read it from the oracle contract, thereby reducing the impact on network bandwidth while minimizing storage costs.</p>
+</div>
+<div class="paragraph">
+<p>In a broadcast or multicast pattern, an oracle would post all messages to a channel and subscribing contracts would listen to the channel under a variety of subscription modes. For example, an oracle might publish messages to a cryptocurrency exchange rate channel. A subscribing smart contract could request the full content of the channel if it required the time series for, e.g., a moving average calculation; another might require only the latest rate for a spot price calculation. A broadcast pattern is appropriate where the oracle does not need to know the identity of the subscribing <span class="keep-together">contract</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="data_authentication_sec">Data Authentication</h3>
+<div class="paragraph">
+<p>If we assume that the source of data being queried by a DApp is both authoritative and trustworthy (a not insignificant assumption), an outstanding question remains: given that the oracle and the request&#x2013;response mechanism may be operated by distinct entities, how are we able trust this mechanism? There is a distinct possibility that data may be tampered with in transit, so it is critical that off-chain methods are able to attest to the returned data&#x2019;s integrity. Two common approaches to data authentication are <em>authenticity proofs</em> and <em>trusted execution environments</em> (TEEs).</p>
+</div>
+<div class="paragraph">
+<p>Authenticity proofs are cryptographic guarantees that data has not been tampered with. Based on a variety of attestation techniques (e.g., digitally signed proofs), they effectively shift the trust from the data carrier to the attestor (i.e., the provider of the attestation). By verifying the authenticity proof on-chain, smart contracts are able to verify the integrity of the data before operating upon it. <a href="http://www.oraclize.it/" target="_blank">Oraclize</a> is an example of an oracle service leveraging a variety of authenticity proofs. One such proof that is currently available for data queries from the Ethereum main network is the TLSNotary proof. TLSNotary proofs allow a client to provide evidence to a third party that HTTPS web traffic occurred between the client and a server. While HTTPS is itself secure, it doesn&#x2019;t support data signing. As a result, TLSNotary proofs rely on TLSNotary (via PageSigner) signatures. TLSNotary proofs leverage the Transport Layer Security (TLS) protocol, enabling the TLS master key, which signs the data after it has been accessed, to be split between three parties: the server (the oracle), an auditee (Oraclize), and an auditor. Oraclize uses an Amazon Web Services (AWS) virtual machine instance as the auditor, which can be verified as having been unmodified since instantiation. This AWS instance stores the TLSNotary secret, allowing it to provide honesty proofs. Although it offers higher assurances against data tampering than a pure request&#x2013;response mechanism, this approach does require the assumption that Amazon itself will not tamper with the VM instance.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.town-crier.org/" target="_blank">Town Crier</a> is an authenticated data feed oracle system based on the TEE approach; such methods utilize hardware-based secure enclaves to ensure data integrity. Town Crier uses Intel&#x2019;s  Software Guard eXtensions (SGX) to ensure that responses from HTTPS queries can be verified as authentic. SGX provides guarantees of integrity, ensuring that applications running within an enclave are protected by the CPU against tampering by any other process. It also provides confidentiality, ensuring that an application&#x2019;s state is opaque to other processes when running within the enclave. And finally, SGX allows attestation, by generating a digitally signed proof that an application&#x2014;securely identified by a hash of its build&#x2014;is actually running within an enclave. By verifying this digital signature, it is possible for a decentralized application to prove that a Town Crier instance is running securely within an SGX enclave. This, in turn, proves that the instance has not been tampered with and that the data emitted by Town Crier is therefore authentic. The confidentiality property additionally enables Town Crier to handle private data by allowing data queries to be encrypted using the Town Crier instance&#x2019;s public key. Operating an oracle&#x2019;s query/response mechanism within an enclave such as SGX effectively allows us to think of it as running securely on trusted third-party hardware, ensuring that the requested data is returned untampered with (assuming that we trust Intel/SGX).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="computation_oracles_sec">Computation Oracles</h3>
+<div class="paragraph">
+<p>So far, we have only discussed oracles in the context of requesting and delivering data. However, oracles can also be used to perform arbitrary computation, a function that can be especially useful given Ethereum&#x2019;s inherent block gas limit and comparatively expensive computation costs. Rather than just relaying the results of a query, computation oracles can be used to perform computation on a set of inputs and return a calculated result that may have been infeasible to calculate on-chain. For example, one might use a computation oracle to perform a computationally intensive regression calculation in order to estimate the yield of a bond contract.</p>
+</div>
+<div class="paragraph">
+<p>If you are willing to trust a centralized but auditable service, you can go again to Oraclize. They provide a service that allows decentralized applications to request the output of a computation performed in a sandboxed AWS virtual machine. The AWS instance creates an executable container from a user-configured Dockerfile packed in an archive that is uploaded to the Inter-Planetary File System (IPFS; see <a href="#data_storage_sec">[data_storage_sec]</a>). On request, Oraclize retrieves this archive using its hash and then initializes and executes the Docker container on AWS, passing any arguments that are provided to the application as environment variables. The containerized application performs the calculation, subject to a time constraint, and writes the result to standard output, where it can be retrieved by Oraclize and returned to the decentralized application. Oraclize currently offers this service on an auditable t2.micro AWS instance, so if the computation is of some nontrivial value, it is possible to check that the correct Docker container was executed. Nonetheless, this is not a truly decentralized solution.</p>
+</div>
+<div class="paragraph">
+<p>The concept of a &apos;cryptlet&apos; as a standard for verifiable oracle truths has been formalized as part of Microsoft&#x2019;s wider ESC Framework.  Cryptlets execute within an encrypted capsule that abstracts away the infrastructure, such as I/O, and has the CryptoDelegate attached so incoming and outgoing messages are signed, validated, and proven automatically.  Cryptlets support distributed transactions so that contract logic can take on complex multistep, multiblockchain, and external system transactions in an ACID manner.  This allows developers to create portable, isolated, and private resolutions of the truth for use in smart contracts. Cryptlets follow the format shown here:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">public class SampleContractCryptlet : Cryptlet
+  {
+        public SampleContractCryptlet(Guid id, Guid bindingId, string name,
+            string address, IContainerServices hostContainer, bool contract)
+            : base(id, bindingId, name, address, hostContainer, contract)
+        {
+            MessageApi = new CryptletMessageApi(GetType().FullName,
+                new SampleContractConstructor())</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For a more decentralized solution, we can turn to <a href="https://truebit.io/" target="_blank">TrueBit</a>, which offers a solution for scalable and verifiable off-chain computation. They use a system of solvers and verifiers who are incentivized to perform computations and verification of those computations, respectively. Should a solution be challenged, an iterative verification process on subsets of the computation is performed on-chain&#x2014;a kind of &apos;verification game&apos;. The game proceeds through a series of rounds, each recursively checking a smaller and smaller subset of the computation. The game eventually reaches a final round, where the challenge is sufficiently trivial such that the judges&#x2014;Ethereum miners&#x2014;can make a final ruling on whether the challenge was met, on-chain. In effect, TrueBit is an implementation of a computation market, allowing decentralized applications to pay for verifiable computation to be performed outside of the network, but relying on Ethereum to enforce the rules of the verification game. In theory, this enables trustless smart contracts to securely perform any computation task.</p>
+</div>
+<div class="paragraph">
+<p>A broad range of applications exist for systems like TrueBit, ranging from machine learning to verification of proof of work. An example of the latter is the Doge&#x2013;Ethereum bridge, which uses TrueBit to verify Dogecoin&#x2019;s proof of work (Scrypt), which is a memory-hard and computationally intensive function that cannot be computed within the Ethereum block gas limit. By performing this verification on TrueBit, it has been possible to securely verify Dogecoin transactions within a smart contract on Ethereum&#x2019;s Rinkeby testnet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="decentralized_orackes_sec">Decentralized Oracles</h3>
+<div class="paragraph">
+<p>While centralized data or computation oracles suffice for many applications, they represent single points of failure in the Ethereum network. A number of schemes have been proposed around the idea of decentralized oracles as a means of ensuring data availability and the creation of a network of individual data providers with an on-chain data aggregation system.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.smartcontract.com/link" target="_blank">ChainLink</a> has proposed a decentralized oracle network consisting of three key smart contracts&#x2014;a reputation contract, an order-matching contract, and an aggregation contract&#x2014;and an off-chain registry of data providers. The reputation contract is used to keep track of data providers&apos; performance. Scores in the reputation contract are used to populate the off-chain registry. The order-matching contract selects bids from oracles using the reputation contract. It then finalizes a service-level agreement, which includes query parameters and the number of oracles required. This means that the purchaser needn&#x2019;t transact with the individual oracles directly. The aggregation contract collects responses (submitted using a commit&#x2013;reveal scheme) from multiple oracles, calculates the final collective result of the query, and finally feeds the results back into the reputation contract.</p>
+</div>
+<div class="paragraph">
+<p>One of the main challenges with such a decentralized approach is the formulation of the aggregation function. ChainLink proposes calculating a weighted response, allowing a validity score to be reported for each oracle response. Detecting an &apos;invalid&apos; score here is nontrivial, since it relies on the premise that outlying data points, measured by deviations from responses provided by peers, are incorrect. Calculating a validity score based on the location of an oracle response among a distribution of responses risks penalizing correct answers over average ones. Therefore, ChainLink offers a standard set of aggregation contracts, but also allows customized aggregation contracts to be specified.</p>
+</div>
+<div class="paragraph">
+<p>A related idea is the SchellingCoin protocol. Here, multiple participants report values and the median is taken as the &#x201C;correct&#x201D; answer. Reporters are required to provide a deposit that is redistributed in favor of values that are closer to the median, therefore incentivizing the reporting of values that are similar to others. A common value, also known as the Schelling point, which respondents might consider as the natural and obvious target around which to coordinate is expected to be close to the actual value.</p>
+</div>
+<div class="paragraph">
+<p>Jason Teutsch of TrueBit recently proposed a new design for a decentralized off-chain data availability oracle. This design leverages a dedicated proof-of-work blockchain that is able to correctly report on whether or not registered data is available during a given epoch. Miners attempt to download, store, and propagate all currently registered data, thereby guaranteeing data is available locally. While such a system is expensive in the sense that every mining node stores and propagates all registered data, the system allows storage to be reused by releasing data after the registration period ends.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oracle_client_interfaces_in_solidity_sec">Oracle Client Interfaces in Solidity</h3>
+<div class="paragraph">
+<p><a href="#using_oraclize_to_update_the_eth_usd">Using Oraclize to update the ETH/USD exchange rate from an external source</a> is a Solidity example demonstrating how Oraclize can be used to continuously poll for the ETH/USD price from an API and store the result in a usable manner.</p>
+</div>
+<div id="using_oraclize_to_update_the_eth_usd" class="exampleblock">
+<div class="title">Example 1. Using Oraclize to update the ETH/USD exchange rate from an external source</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">/*
+   ETH/USD price ticker leveraging CryptoCompare API
+
+   This contract keeps in storage an updated ETH/USD price,
+   which is updated every 10 minutes.
+ */
+
+pragma solidity ^0.4.1;
+import &quot;github.com/oraclize/ethereum-api/oraclizeAPI.sol&quot;;
+
+/*
+   &quot;oraclize_&quot; prepended methods indicate inheritance from &quot;usingOraclize&quot;
+ */
+contract EthUsdPriceTicker is usingOraclize {
+
+    uint public ethUsd;
+
+    event newOraclizeQuery(string description);
+    event newCallbackResult(string result);
+
+    function EthUsdPriceTicker() payable {
+        // signals TLSN proof generation and storage on IPFS
+        oraclize_setProof(proofType_TLSNotary | proofStorage_IPFS);
+
+        // requests query
+        queryTicker();
+    }
+
+    function __callback(bytes32 _queryId, string _result, bytes _proof) public {
+        if (msg.sender != oraclize_cbAddress()) throw;
+        newCallbackResult(_result);
+
+        /*
+         * Parse the result string into an unsigned integer for on-chain use.
+         * Uses inherited &quot;parseInt&quot; helper from &quot;usingOraclize&quot;, allowing for
+         * a string result such as &quot;123.45&quot; to be converted to uint 12345.
+         */
+        ethUsd = parseInt(_result, 2);
+
+        // called from callback since we&apos;re polling the price
+        queryTicker();
+    }
+
+    function queryTicker() public payable {
+        if (oraclize_getPrice(&quot;URL&quot;) &gt; this.balance) {
+            newOraclizeQuery(&quot;Oraclize query was NOT sent, please add some ETH
+                to cover for the query fee&quot;);
+        } else {
+            newOraclizeQuery(&quot;Oraclize query was sent, standing by for the
+                answer...&quot;);
+
+            // query params are (delay in seconds, datasource type,
+            // datasource argument)
+            // specifies JSONPath, to fetch specific portion of JSON API result
+            oraclize_query(60 * 10, &quot;URL&quot;,
+                &quot;json(https://min-api.cryptocompare.com/data/price?\
+                fsym=ETH&amp;tsyms=USD,EUR,GBP).USD&quot;);
+        }
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>To integrate with Oraclize, the contract EthUsdPriceTicker must be a child of <span class="keep-together"><code>usingOraclize</code></span>; the usingOraclize contract is defined in the <em>oraclizeAPI</em> file. The data request is made using the oraclize_query function, which is inherited from the usingOraclize contract. This is an overloaded function that expects at least two arguments:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The supported data source to use, such as URL, WolframAlpha, IPFS, or computation</p>
+</li>
+<li>
+<p>The argument for the given data source, which may include the use of JSON or XML parsing helpers</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The price query is performed in the queryTicker function. In order to perform the query, Oraclize requires the payment of a small fee in ether, covering the gas cost for processing the result and transmitting it to the __callback function and an accompanying surcharge for the service. This amount is dependent on the data source and, where specified, the type of authenticity proof that is required. Once the data has been retrieved, the __callback function is called by an Oraclize-controlled account permissioned to do the callback; it passes in the response value and a unique queryId argument, which, for example, can be used to handle and track multiple pending callbacks from Oraclize.</p>
+</div>
+<div class="paragraph">
+<p>Financial data provider Thomson Reuters also provides an oracle service for Ethereum, called BlockOne IQ, allowing market and reference data to be requested by smart contracts running on private or permissioned networks. <a href="#contract_calling_the_blockone_iq_service_for_market_data">Contract calling the BlockOne IQ service for market data</a> shows the interface for the oracle, and a client contract that will make the request.</p>
+</div>
+<div id="contract_calling_the_blockone_iq_service_for_market_data" class="exampleblock">
+<div class="title">Example 2. Contract calling the BlockOne IQ service for market data</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">pragma solidity ^0.4.11;
+
+contract Oracle {
+    uint256 public divisor;
+    function initRequest(
+       uint256 queryType, function(uint256) external onSuccess,
+       function(uint256
+    ) external onFailure) public returns (uint256 id);
+    function addArgumentToRequestUint(uint256 id, bytes32 name, uint256 arg) public;
+    function addArgumentToRequestString(uint256 id, bytes32 name, bytes32 arg)
+        public;
+    function executeRequest(uint256 id) public;
+    function getResponseUint(uint256 id, bytes32 name) public constant
+        returns(uint256);
+    function getResponseString(uint256 id, bytes32 name) public constant
+        returns(bytes32);
+    function getResponseError(uint256 id) public constant returns(bytes32);
+    function deleteResponse(uint256 id) public constant;
+}
+
+contract OracleB1IQClient {
+
+    Oracle private oracle;
+    event LogError(bytes32 description);
+
+    function OracleB1IQClient(address addr) public payable {
+        oracle = Oracle(addr);
+        getIntraday(&quot;IBM&quot;, now);
+    }
+
+    function getIntraday(bytes32 ric, uint256 timestamp) public {
+        uint256 id = oracle.initRequest(0, this.handleSuccess, this.handleFailure);
+        oracle.addArgumentToRequestString(id, &quot;symbol&quot;, ric);
+        oracle.addArgumentToRequestUint(id, &quot;timestamp&quot;, timestamp);
+        oracle.executeRequest(id);
+    }
+
+    function handleSuccess(uint256 id) public {
+        assert(msg.sender == address(oracle));
+        bytes32 ric = oracle.getResponseString(id, &quot;symbol&quot;);
+        uint256 open = oracle.getResponseUint(id, &quot;open&quot;);
+        uint256 high = oracle.getResponseUint(id, &quot;high&quot;);
+        uint256 low = oracle.getResponseUint(id, &quot;low&quot;);
+        uint256 close = oracle.getResponseUint(id, &quot;close&quot;);
+        uint256 bid = oracle.getResponseUint(id, &quot;bid&quot;);
+        uint256 ask = oracle.getResponseUint(id, &quot;ask&quot;);
+        uint256 timestamp = oracle.getResponseUint(id, &quot;timestamp&quot;);
+        oracle.deleteResponse(id);
+        // Do something with the price data
+    }
+
+    function handleFailure(uint256 id) public {
+        assert(msg.sender == address(oracle));
+        bytes32 error = oracle.getResponseError(id);
+        oracle.deleteResponse(id);
+        emit LogError(error);
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The data request is initiated using the initRequest function, which allows the query type (in this example, a request for an intraday price) to be specified, in addition to two callback functions.
+This returns a uint256 identifier that can then be used to provide additional arguments. The addArgumentToRequestString function is used to specify the Reuters Instrument Code (RIC), here for IBM stock, and <span class="keep-together"><code>addArgumentToRequestUint</code></span> allows the timestamp to be specified. Now, passing in an alias for block.timestamp will retrieve the current price for IBM. The request is then executed by the executeRequest function. Once the request has been processed, the oracle contract will call the onSuccess callback function with the query identifier, allowing the resulting data to be retrieved; in the event of retrieval failure, the <span class="keep-together"><code>onFailure</code></span> callback will return an error code instead. The available fields that can be retrieved on success include open, high, low, close (OHLC), and bid/ask prices.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conclusions">Conclusions</h3>
+<div class="paragraph">
+<p>As you can see, oracles provide a crucial service to smart contracts: they bring external facts to contract execution. With that, of course, oracles also introduce a significant risk&#x2014;if they are trusted sources and can be compromised, they can result in compromised execution of the smart contracts they feed.</p>
+</div>
+<div class="paragraph">
+<p>Generally, when considering the use of an oracle be very careful about the <em>trust model</em>. If you assume the oracle can be trusted, you may be undermining the security of your smart contract by exposing it to potentially false inputs. That said, oracles can be very useful if the security assumptions are carefully considered.</p>
+</div>
+<div class="paragraph">
+<p>Decentralized oracles can resolve some of these concerns and offer Ethereum smart contracts trustless external data. Choose carefully and you can start exploring the bridge between Ethereum and the &quot;real world&quot; that oracles offer.</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10tokens.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 10: Tokens">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12dapps.html" class="navigation navigation-next " aria-label="Next page: Chapter 12: Decentralized Applications (DApps)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 11: Oracles","level":"1.14","depth":1,"next":{"title":"Chapter 12: Decentralized Applications (DApps)","level":"1.15","depth":1,"path":"12dapps.asciidoc","ref":"12dapps.asciidoc","articles":[]},"previous":{"title":"Chapter 10: Tokens","level":"1.13","depth":1,"path":"10tokens.asciidoc","ref":"10tokens.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11oracles.asciidoc","mtime":"2019-08-27T09:18:17.276Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

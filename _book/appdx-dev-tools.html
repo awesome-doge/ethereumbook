@@ -1,0 +1,1446 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix A: Development Tools, Frameworks, and Libraries · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="appdx-web3js-tutorial.html" />
+    
+    
+    <link rel="prev" href="appdx-evm-opcodes-gas.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix A: Development Tools, Frameworks, and Libraries</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="dev_tools_frameworks">Appendix A: Development Tools, Frameworks, <span class="keep-together">and Libraries</span></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_frameworks">Frameworks</h3>
+<div class="paragraph">
+<p>Frameworks can be used to ease Ethereum smart contract development. By doing everything yourself you get a better understanding of how everything fits together, but it&#x2019;s a lot of tedious, repetitive work. The frameworks described in this section can automate certain tasks and make development easier.</p>
+</div>
+<div class="sect3">
+<h4 id="truffle">Truffle</h4>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/trufflesuite/truffle" class="bare" target="_blank">https://github.com/trufflesuite/truffle</a></p>
+</div>
+<div class="paragraph">
+<p>Website: <a href="https://truffleframework.com" class="bare" target="_blank">https://truffleframework.com</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://truffleframework.com/docs" class="bare" target="_blank">https://truffleframework.com/docs</a></p>
+</div>
+<div class="paragraph">
+<p>Truffle Boxes: <a href="http://truffleframework.com/boxes/" class="bare" target="_blank">http://truffleframework.com/boxes/</a></p>
+</div>
+<div class="paragraph">
+<p>npm package repository: <a href="https://www.npmjs.com/package/truffle" class="bare" target="_blank">https://www.npmjs.com/package/truffle</a></p>
+</div>
+<div class="sect4">
+<h5 id="installing_truffle">Installing the Truffle framework</h5>
+<div class="paragraph">
+<p>The Truffle framework comprises several Node.js packages. Before you install truffle, you need to have an up-to-date and working installation of Node.js and the Node Package Manager (npm).</p>
+</div>
+<div class="paragraph">
+<p>The recommended way to install Node.js and npm is to use the Node Version Manager (nvm). Once you install nvm, it will handle all the dependencies and updates for you. Follow the instructions found at <a href="http://nvm.sh" class="bare" target="_blank">http://nvm.sh</a>.</p>
+</div>
+<div class="paragraph">
+<p>Once nvm is installed on your operating system, installing Node.js is simple. Use the --lts flag to tell nvm that you want the most recent &#x201C;long-term support&#x201D; (LTS) version of Node.js:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>nvm install --lts</strong>
+</pre>
+<div class="paragraph">
+<p>Confirm you have node and npm installed:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>node -v</strong>
+v8.9.4
+$ <strong>npm -v</strong>
+5.6.0
+</pre>
+<div class="paragraph">
+<p>Next, create a hidden file, <em>.nvmrc</em>, that contains the Node.js version supported by your DApp so developers just need to run <code>nvm install</code> in the root of the project directory and it will automatically install and switch to using that version:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>node -v &gt; .nvmrc</strong>
+$ <strong>nvm install</strong>
+</pre>
+<div class="paragraph">
+<p>Looking good. Now to install truffle:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm -g install truffle</strong>
+
++ truffle@4.0.6
+installed 1 package in 37.508s
+</pre>
+</div>
+<div class="sect4">
+<h5 id="truffle_box">Integrating a prebuilt Truffle project (Truffle Box)</h5>
+<div class="paragraph">
+<p>If you want to use or create a DApp that builds upon prebuilt boilerplate, go to the Truffle Boxes website, choose an existing Truffle project, and then run the following command to download and extract it:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>truffle unbox <em>BOX_NAME</em></strong>
+</pre>
+</div>
+<div class="sect4">
+<h5 id="truffle_project_directory">Creating a truffle project directory</h5>
+<div class="paragraph">
+<p>For each project where you will use truffle, create a project directory and initialize truffle within that directory. truffle will create the necessary directory structure inside your project directory. It&#x2019;s customary to give the project directory a name that describes the project. For this example, we will use truffle to deploy our Faucet contract from <a href="#simple_contract_example">[simple_contract_example]</a>, and therefore we will name the project folder <em>Faucet</em>:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>mkdir Faucet</strong>
+$ <strong>cd Faucet</strong>
+Faucet $
+</pre>
+<div class="paragraph">
+<p>Once inside the <em>Faucet</em> directory, we initialize truffle:</p>
+</div>
+<pre data-type="programlisting">
+Faucet $ <strong>truffle init</strong>
+</pre>
+<div class="paragraph">
+<p>truffle creates a directory structure and some default files:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Faucet
++---- contracts
+|   `---- Migrations.sol
++---- migrations
+|   `---- 1_initial_migration.js
++---- test
++---- truffle-config.js
+`---- truffle.js</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We will also use a number of JavaScript (Node.js) support packages, in addition to truffle itself. We can install these with npm. We initialize the npm directory structure and accept the defaults suggested by npm:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm init</strong>
+
+package name: (faucet)
+version: (1.0.0)
+description:
+entry point: (truffle-config.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to Faucet/package.json:
+
+{
+  &quot;name&quot;: &quot;faucet&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;truffle-config.js&quot;,
+  &quot;directories&quot;: {
+    &quot;test&quot;: &quot;test&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+
+
+Is this ok? (yes)
+</pre>
+<div class="paragraph">
+<p>Now, we can install the dependencies that we will use to make working with truffle easier:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm install dotenv truffle-wallet-provider ethereumjs-wallet</strong>
+</pre>
+<div class="paragraph">
+<p>We now have a <em>node_modules</em> directory with several thousand files inside our <em>Faucet</em> directory.</p>
+</div>
+<div class="paragraph">
+<p>Prior to deploying a DApp to a cloud production or continuous integration environment, it is important to specify the engines field so that your DApp is built with the correct Node.js version and its associated dependencies are installed. For details on configuring this field, see the <a href="http://bit.ly/2zp2GPF" target="_blank">documentation</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_configuring_truffle">Configuring truffle</h5>
+<div class="paragraph">
+<p>truffle creates some empty configuration files, <em>truffle.js</em> and <em>truffle-config.js</em>. On Windows systems the <em>truffle.js</em> name may cause a conflict when you try to run the command truffle and Windows attempts to run <em>truffle.js</em> instead. To avoid this, we will delete <em>truffle.js</em> and use <em>truffle-config.js</em> (in support of Windows users, who, honestly, suffer enough already):</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>rm truffle.js</strong>
+</pre>
+<div class="paragraph">
+<p>Now we edit <em>truffle-config.js</em> and replace the contents with the sample configuation shown here:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript"><span class="hljs-built_in">module</span>.exports = {
+  networks: {
+    localnode: { <span class="hljs-comment">// Whatever network our local node connects to</span>
+      network_id: <span class="hljs-string">&quot;*&quot;</span>, <span class="hljs-comment">// Match any network ID</span>
+      host: <span class="hljs-string">&quot;localhost&quot;</span>,
+      port: <span class="hljs-number">8545</span>,
+    }
+  }
+};</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This configuration is a good starting point. It sets up one default Ethereum network (named localnode), which assumes we are running an Ethereum client such as Parity, either as a full node or as a light client. This configuration will instruct truffle to communicate with the local node over RPC, on port 8545. truffle will use whatever Ethereum network the local node is connected to, such as the Ethereum main network, or a test network like Ropsten. The local node will also be providing the wallet functionality.</p>
+</div>
+<div class="paragraph">
+<p>In following sections, we will configure additional networks for truffle to use, such as the ganache local test blockchain and Infura, a hosted network provider. As we add more networks, the configuration file will get more complex, but it will also give us more options for our testing and development workflow.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_using_truffle_to_deploy_a_contract">Using truffle to deploy a contract</h5>
+<div class="paragraph">
+<p>We now have a basic working directory for our <em>Faucet</em> project, and we have truffle and its dependencies configured. Contracts go in the <em>contracts</em> subdirectory of our project. The directory already contains a &quot;helper&quot; contract, <em>Migrations.sol</em>, which manages contract upgrades for us. We&#x2019;ll examine the use of <em>Migrations.sol</em> in the next section.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s copy the <em>Faucet.sol</em> contract (from <a href="#solidity_faucet_example">[solidity_faucet_example]</a>) into the <em>contracts</em> subdirectory, so that the project directory looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Faucet
++---- contracts
+|   +---- Faucet.sol
+|   `---- Migrations.sol
+...</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We can now ask truffle to compile the contract for us:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>truffle compile</strong>
+Compiling ./contracts/Faucet.sol...
+Compiling ./contracts/Migrations.sol...
+Writing artifacts to ./build/contracts
+</pre>
+</div>
+<div class="sect4">
+<h5 id="truffle_migrations_understanding_deployment_scripts">Truffle migrations&#x2014;understanding deployment scripts</h5>
+<div class="paragraph">
+<p>Truffle offers a deployment system called a <em>migration</em>. If you have worked in other frameworks, you may have seen something similar: Ruby on Rails, Python Django, and many other languages and frameworks have a migrate command.</p>
+</div>
+<div class="paragraph">
+<p>In all those frameworks, the purpose of a migration is to handle changes in the data schema between different versions of the software. The purpose of migrations in Ethereum is slightly different. Because Ethereum contracts are immutable and cost gas to deploy, Truffle offers a migration mechanism to keep track of which contracts (and which versions) have already been deployed. In a complex project with dozens of contracts and complex dependencies, you would not want to have to pay to redeploy contracts that haven&#x2019;t changed. You would also not want to manually track which versions of which contracts have been deployed already. The Truffle migration mechanism does all that by deploying the smart contract <em>Migrations.sol</em>, which then keeps track of all other contract deployments.</p>
+</div>
+<div class="paragraph">
+<p>We have only one contract, <em>Faucet.sol</em>, which means that the migration system is overkill, to say the least. Unfortunately, we have to use it. But, by learning how to use it for one contract, we can start practicing some good habits for our development workflow. The effort will pay off as things get more complicated.</p>
+</div>
+<div class="paragraph">
+<p>Truffle&#x2019;s <em>migrations</em> directory is where the migration scripts are found. Right now there&#x2019;s only one script, <em>1_initial_migration.js</em>, which deploys the <em>Migrations.sol</em> contract itself:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">link:code/truffle/Faucet/migrations/<span class="hljs-number">1</span>_initial_migration.js[]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We need a second migration script, to deploy <em>Faucet.sol</em>. Let&#x2019;s call it <em>2_deploy_contracts.js</em>. It is very simple, just like <em>1_initial_migration.js</em>, with only a few small changes. In fact, you can copy the contents of <em>1_initial_migration.j</em> and simply replace all instances of Migrations with Faucet:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">link:code/truffle/Faucet/migrations/<span class="hljs-number">2</span>_deploy_contracts.js[]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The script initializes a variable Faucet, identifying the <em>Faucet.sol</em> Solidity source code as the artifact that defines Faucet. Then it calls the <code>deploy</code> function to deploy this contract.</p>
+</div>
+<div class="paragraph">
+<p>We&#x2019;re all set. Let&#x2019;s use truffle migrate to deploy it on. We have to specify which network to deploy the contract, using the --network argument. We only have one network specified in the configuration file, which we named localnode. Make sure your local Ethereum client is running and then type:</p>
+</div>
+<pre data-type="programlisting">
+Faucet $ <strong>truffle migrate --network localnode</strong>
+</pre>
+<div class="paragraph">
+<p>Because we are using a local node to connect to the Ethereum network and manage our wallet, we have to authorize the transaction that truffle creates. We&#x2019;re running parity connected to the Ropsten test blockchain, so during the migration we&#x2019;ll see a pop-up like the one in <a href="#parity_deployment_confirmation">Parity asking for confirmation to deploy Faucet</a> on Parity&#x2019;s web console.</p>
+</div>
+<div id="parity_deployment_confirmation" class="imageblock">
+<div class="content">
+<img src="images/parity_deployment_confirmation.png" alt="Parity asking for confirmation to deploy Faucet">
+</div>
+<div class="title">Figure 1. Parity asking for confirmation to deploy Faucet</div>
+</div>
+<div class="paragraph">
+<p>There are four transactions in total: one to deploy Migrations, one to update the deployments counter to 1, one to deploy Faucet, and one to update the deployments counter to 2.</p>
+</div>
+<div class="paragraph">
+<p>Truffle will show the migrations completing, show each of the transactions, and show the contract addresses:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>truffle migrate --network localnode</strong>
+Using network &apos;localnode&apos;.
+
+Running migration: 1_initial_migration.js
+  Deploying Migrations...
+  ... 0xfa090db179d023d2abae543b4a21a1479e70ca7d35a469a5d1a98bfc6bd80fe8
+  Migrations: 0x8861c27715550bed8362c0345add158489df6db0
+Saving successful migration to network...
+  ... 0x985c4a32716826ddbe4eae284104bef8bc69e959899f62246a1b27c9dfcd6c03
+Saving artifacts...
+Running migration: 2_deploy_contracts.js
+  Deploying Faucet...
+  ... 0xecdbeef77f0558edc689440e34b7bba0a3ba7a45e4b680b071b47c30a930e9d6
+  Faucet: 0xd01cd8e7bd29e4bff8c1693f59eee46137a9f300
+Saving successful migration to network...
+  ... 0x11f376bd7307edddfd40dc4a14c3f7cb84b6c921ac2465602060b67d08f9fd8a
+Saving artifacts...
+</pre>
+</div>
+<div class="sect4">
+<h5 id="_using_the_truffle_console">Using the Truffle console</h5>
+<div class="paragraph">
+<p>Truffle offers a JavaScript console that we can use to interact with the Ethereum network (via the local node), interact with deployed contracts, and interact with the wallet provider. In our current configuration (localnode), the node and wallet provider is our local Parity client.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s start the Truffle console and try some commands:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>truffle console --network localnode</strong>
+truffle(localnode)&gt;
+</pre>
+<div class="paragraph">
+<p>Truffle presents a prompt, showing the selected network configuration (localnode).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It&#x2019;s important to remember and be aware of which network you are using. You wouldn&#x2019;t want to accidentally deploy a test contract or make a transaction on the Ethereum main network. That could be an expensive mistake!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The Truffle console offers an autocomplete function that makes it easy for us to explore the environment. If we press Tab after a partially completed command, Truffle will complete the command for us. Pressing Tab twice will show all possible completions if more than one command matches our input. In fact, if we press Tab twice on an empty prompt, Truffle lists all the available commands:</p>
+</div>
+<pre data-type="programlisting" class="codewrap">
+truffle(localnode)&gt;
+Array Boolean Date Error EvalError Function Infinity JSON Math NaN Number Object RangeError ReferenceError RegExp String SyntaxError TypeError URIError decodeURI decodeURIComponent encodeURI encodeURIComponent eval isFinite isNaN parseFloat parseInt undefined
+
+ArrayBuffer Buffer DataView Faucet Float32Array Float64Array GLOBAL Int16Array Int32Array Int8Array Intl Map Migrations Promise Proxy Reflect Set StateManager Symbol Uint16Array Uint32Array Uint8Array Uint8ClampedArray WeakMap WeakSet WebAssembly XMLHttpRequest _ assert async_hooks buffer child_process clearImmediate clearInterval clearTimeout cluster console crypto dgram dns domain escape events fs global http http2 https module net os path perf_hooks process punycode querystring readline repl require root setImmediate setInterval setTimeout stream string_decoder tls tty unescape url util v8 vm web3 zlib
+
+__defineGetter__ __defineSetter__ __lookupGetter__ __lookupSetter__ __proto__ constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf
+</pre>
+<div class="paragraph">
+<p>The vast majority of the wallet- and node-related functions are provided by the web3 object, which is an instance of the web3.js library. The web3 object abstracts the RPC interface to our Parity node. You will also notice two objects with familiar names: Migrations and Faucet. Those represent the contracts we just deployed. We will use the Truffle console to interact with a contract. First, let&#x2019;s check our wallet via the web3 object:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>web3.eth.accounts</strong>
+[ &apos;0x9e713963a92c02317a681b9bb3065a8249de124f&apos;,
+  &apos;0xdb5dc1a13e3a55cf3b4587cd8d1e5fdeb6738145&apos; ]
+</pre>
+<div class="paragraph">
+<p>Our Parity client has two wallets, with some test ether on Ropsten. The web3.eth.accounts attribute contains a list of all the accounts. We can check the balance of the first account using the getBalance function:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>web3.eth.getBalance(web3.eth.accounts[0]).toNumber()</strong>
+191198572800000000
+truffle(localnode)&gt;
+</pre>
+<div class="paragraph">
+<p>web3.js is a large JavaScript library that offers a comprehensive interface to the Ethereum system, via a provider such as a local client. We will examine web3.js in more detail in <a href="#web3js_tutorial">[web3js_tutorial]</a>. Now let&#x2019;s try to interact with our contracts:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>Faucet.address</strong>
+&apos;0xd01cd8e7bd29e4bff8c1693f59eee46137a9f300&apos;
+truffle(localnode)&gt; <strong>web3.eth.getBalance(Faucet.address).toNumber()</strong>
+0
+truffle(localnode)&gt;
+</pre>
+<div class="paragraph">
+<p>Next, we&#x2019;ll use sendTransaction to send some test ether to fund the Faucet contract. Note the use of web3.toWei to convert ether units for us. Typing 18 zeros without making a mistake is both difficult and dangerous, so it&#x2019;s always better to use a unit converter for values. Here&#x2019;s how we send the transaction:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>web3.eth.sendTransaction({from:web3.eth.accounts[0],
+                    to:Faucet.address, value:web3.toWei(0.5, &apos;ether&apos;)});</strong>
+&apos;0xf134c75b985dc0e0c27c2f0412251e0860eb530a5055e660f21e7483ab336808&apos;
+</pre>
+<div class="paragraph">
+<p>If we switch to the Parity web interface, we&#x2019;ll see a pop-up asking us to confirm this transaction. Once the transaction is mined, we&#x2019;ll be able to see the balance of our Faucet contract:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>web3.eth.getBalance(Faucet.address).toNumber()</strong>
+500000000000000000
+</pre>
+<div class="paragraph">
+<p>Let&#x2019;s call the withdraw function now, to withdraw some test ether from the contract:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>Faucet.deployed().then(instance =&gt;
+                       {instance.withdraw(web3.toWei(0.1,
+                       &apos;ether&apos;))}).then(console.log)</strong>
+</pre>
+<div class="paragraph">
+<p>Again, we&#x2019;ll need to approve the transaction in the Parity web interface. If we check again we&#x2019;ll see that the balance of the Faucet contract has decreased, and our test wallet has received 0.1 ether:</p>
+</div>
+<pre data-type="programlisting">
+truffle(localnode)&gt; <strong>web3.eth.getBalance(Faucet.address).toNumber()</strong>
+400000000000000000
+truffle(localnode)&gt; <strong>Faucet.deployed().then(instance =&gt;
+                    {instance.withdraw(web3.toWei(1, &apos;ether&apos;))})</strong>
+StatusError: Transaction: 0xe147ae9e3610334...8612b92d3f9c
+  exited with an error (status 0).
+</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_embark">Embark</h4>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/embark-framework/embark/" class="bare" target="_blank">https://github.com/embark-framework/embark/</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://embark.status.im/docs/" class="bare" target="_blank">https://embark.status.im/docs/</a></p>
+</div>
+<div class="paragraph">
+<p>npm package repository: <a href="https://www.npmjs.com/package/embark" class="bare" target="_blank">https://www.npmjs.com/package/embark</a></p>
+</div>
+<div class="paragraph">
+<p>Embark is a framework built to allow developers to easily develop and deploy decentralized applications.
+Embark integrates with Ethereum, IPFS, Whisper, and Swarm to offer the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automatically deploy contracts and make them available in JS code.</p>
+</li>
+<li>
+<p>Watch for changes and update contracts to redeploy if needed.</p>
+</li>
+<li>
+<p>Manage and interact with different chains (e.g., testnet, local, mainnet).</p>
+</li>
+<li>
+<p>Manage complex systems of interdependent contracts.</p>
+</li>
+<li>
+<p>Store and retrieve data, including uploading and retrieving files hosted in IPFS.</p>
+</li>
+<li>
+<p>Ease the process of deploying the full application to IPFS or Swarm.</p>
+</li>
+<li>
+<p>Send and receive messages through Whisper.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can install it with npm:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm -g install embark</strong>
+</pre>
+</div>
+<div class="sect3 pagebreak-before">
+<h4 id="_openzeppelin">OpenZeppelin</h4>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/OpenZeppelin/openzeppelin-solidity" class="bare" target="_blank">https://github.com/OpenZeppelin/openzeppelin-solidity</a></p>
+</div>
+<div class="paragraph">
+<p>Website: <a href="https://openzeppelin.org/" class="bare" target="_blank">https://openzeppelin.org/</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://openzeppelin.org/api/docs/open-zeppelin.html" class="bare" target="_blank">https://openzeppelin.org/api/docs/open-zeppelin.html</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://openzeppelin.org/" target="_blank">OpenZeppelin</a> is an open framework of reusable and secure smart contracts in the Solidity language.</p>
+</div>
+<div class="paragraph">
+<p>It is community-driven, led by the <a href="https://zeppelin.solutions/" target="_blank">Zeppelin</a> team, with over a hundred external contributors. The main focus of the framework is security, achieved by applying industry-standard contract security patterns and best practices, drawing on all the experience the Zeppelin devs have gained from <a href="https://blog.zeppelin.solutions/tagged/security" target="_blank">auditing</a> a huge number of contracts, and through constant testing and auditing from the community that uses the framework as a base for their real-world applications.</p>
+</div>
+<div class="paragraph">
+<p>The OpenZeppelin framework is the most widely used solution for Ethereum smart contracts. The framework currently has an ample library of contracts including implementations of ERC20 and ERC721 tokens, many flavors of crowdsale models, and simple behaviors commonly found in contracts such as <code>Ownable</code>, <code>Pausable</code>, or <code>LimitBalance</code>. The contracts in this repository in some cases function as <em>de facto</em> standard implementations.</p>
+</div>
+<div class="paragraph">
+<p>The framework is licensed under an MIT license, and all the contracts have been designed with a modular approach to guarantee ease of reuse and extension. These are clean and basic building blocks, ready to be used in your next Ethereum project. Let&#x2019;s set up the framework and build a simple crowdsale using the OpenZeppelin contracts, to demonstrate how easy it is to use. This example also stresses the importance of reusing secure components instead of writing them by yourself.</p>
+</div>
+<div class="paragraph">
+<p>First, we will need to install the openzeppelin-solidity library into our workspace. The latest release as of the time of this writing is v1.9.0, so we will use that one:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>mkdir sample-crowdsale</strong>
+$ <strong>cd sample-crowdsale</strong>
+$ <strong>npm install openzeppelin-solidity@1.9.0</strong>
+$ <strong>mkdir contracts</strong>
+</pre>
+<div class="paragraph">
+<p>At the time of writing, OpenZeppelin includes multiple basic token contracts that follow the ERC20, ERC721, and ERC827 standards, with different characteristics for emission, limits, vesting, life cycle, etc.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s make an ERC20 token that&#x2019;s mintable, meaning that the initial supply starts at 0 and new tokens can be created by the token owner (in our case, the crowdsale <span class="keep-together">contract</span>) and sold to buyers. In order to do this, we&#x2019;ll create a <em>contracts/SampleToken.sol</em> file with the following contents:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">link:code/OpenZeppelin/contracts/SampleToken.sol[]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>OpenZeppelin already provides a MintableToken contract that we can use as a base for our token, so we only define the details that are specific to our case. Next, let&#x2019;s make the crowdsale contract. Just like with tokens, OpenZeppelin already provides a wide variety of crowdsale flavors. Currently, you will find contracts for various scenarios involving distribution, emission, price, and validation. So, let&#x2019;s say that you want to set a goal for your crowdsale and if it&#x2019;s not met by the time the sale finishes, you want to refund all your investors. For that, you can use the <a href="http://bit.ly/2yHoh65" target="_blank">RefundableCrowdsale</a> contract. Or maybe you want to define a crowdsale with an increasing price to incentivize early buyers; there is an <a href="http://bit.ly/2PtWOys" target="_blank">IncreasingPriceCrowdsale</a> contract just for that. You can also end the crowdsale when a specified amount of ether has been received by the contract (<a href="http://bit.ly/2OVsCN8" target="_blank">CappedCrowdsale</a>), or set a finishing time with the <a href="http://bit.ly/2zp2Nuz" target="_blank">TimedCrowdsale</a> contract, or create a whitelist of buyers with the <a href="http://bit.ly/2CN8Hc9" target="_blank">WhitelistedCrowdsale</a> contract.</p>
+</div>
+<div class="paragraph">
+<p>As we said before, the OpenZeppelin contracts are basic building blocks. These crowdsale contracts have been designed to be combined; just read the source code of the base <a href="http://bit.ly/2ABIQSI" target="_blank">Crowdsale</a> contract for directions on how to extend it. For the crowdsale of our token, we need to mint tokens when ether is received by the crowdsale contract, so let&#x2019;s use <a href="http://bit.ly/2Sx3HOc" target="_blank">MintedCrowdsale</a> as a base. And to make it more interesting, let&#x2019;s also make it a <a href="http://bit.ly/2Qef0Jm" target="_blank">PostDeliveryCrowdsale</a> so the tokens can only be withdrawn after the crowdsale ends. To do this, we&#x2019;ll write the following into <em>contracts/SampleCrowdsale.sol</em>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">link:code/OpenZeppelin/contracts/SampleCrowdsale.sol[]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Again, we barely had to write any code; we just reused the battle-tested code that the OpenZeppelin community made available. However, it is important to note that this case is different than that of our <code>SampleToken</code> contract. If you go to the <a href="http://bit.ly/2Q8lQ3o" target="_blank">Crowdsale automated tests</a> you will see that they are tested in isolation. When you integrate different units of code into a bigger component, it&#x2019;s not enough to test all the units separately, because the interactions between them might cause behaviors that you didn&#x2019;t expect. In particular, you will see that here we introduced multiple inheritance, which can surprise the developer if they don&#x2019;t understand the details of Solidity. Our <span class="keep-together"><code>SampleCrowdsale</code></span> contract is simple, and it will work just as we expect because the framework was designed to make cases like these straightforward; but do not relax your vigilance because of the simplicity that this framework introduces. Every time you integrate parts of the OpenZeppelin framework to build a more complex solution, you must fully test every aspect of your solution to ensure that all the interactions of the units work as you intend.</p>
+</div>
+<div class="paragraph">
+<p>Finally, when we are happy with our solution and have tested it thoroughly, we need to deploy it. OpenZeppelin integrates well with Truffle, so we can just write a migrations file like the following (<em>migrations/2_deploy_contracts.js</em>), as explained in <a href="#truffle_migrations_understanding_deployment_scripts">Truffle migrations&#x2014;understanding deployment scripts</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-js" data-lang="js">link:code/OpenZeppelin/migrations/<span class="hljs-number">2</span>_deploy_contracts.js[]</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This was just a quick overview of a few of the contracts that are part of the OpenZeppelin framework. You are welcome to join the OpenZeppelin development community to learn and contribute.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_zeppelinos">ZeppelinOS</h4>
+<div class="paragraph">
+<p>GitHhub: <a href="https://github.com/zeppelinos" class="bare" target="_blank">https://github.com/zeppelinos</a></p>
+</div>
+<div class="paragraph">
+<p>Website: <a href="https://zeppelinos.org" class="bare" target="_blank">https://zeppelinos.org</a></p>
+</div>
+<div class="paragraph">
+<p>Blog: <a href="https://blog.zeppelinos.org" class="bare" target="_blank">https://blog.zeppelinos.org</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/zeppelinos" target="_blank">ZeppelinOS</a> is &#x201C;an open source, distributed platform of tools and services on top of the EVM
+to develop and manage smart contract applications securely.&#x201D;</p>
+</div>
+<div class="paragraph">
+<p>Unlike OpenZeppelin&#x2019;s code, which needs to be redeployed with each application every time it&#x2019;s used, ZeppelinOS&#x2019;s code lives on-chain. Applications that need a given functionality&#x2014;say, an ERC20 token&#x2014;not only do not have to redesign and reaudit its implementation (something that OpenZeppelin solved) but do not even need to deploy it. With ZeppelinOS, an application interacts with the token&#x2019;s on-chain implementation directly, in much the same way as a desktop application interacts with the components of its underlying OS.</p>
+</div>
+<div class="paragraph">
+<p>At the core of ZeppelinOS sits a very clever contract known as a <em>proxy</em>. A proxy is a contract that is capable of wrapping any other contract, exposing its interface without having to manually implement setters and getters for it, and can upgrade it without losing state. In Solidity terms, it can be seen as a normal contract whose business logic is contained within a library, which can be swapped for a new library at any time without losing its state. The way in which the proxy links to its implementation is completely automated and encapsulated for the developer. Practically any contract can be made upgradeable with little to no change in its code. More about ZeppelinOS&#x2019;s proxy mechanism can be found in the  <a href="http://bit.ly/2OfuNpu" target="_blank">blog</a>, and an example of how to use it can be found <a href="http://bit.ly/2OfuE5q" target="_blank">on GitHub</a>.</p>
+</div>
+<div class="paragraph">
+<p>Developing applications using ZeppelinOS is similar to developing JavaScript applications using npm. An AppManager handles an application package for each version of the application. A package is simply a directory of contracts, each of which can have one or more upgradeable proxies. The AppManager not only provides proxies for application-specific contracts, but also does so for ZeppelinOS implementations, in the form of a standard library. To see a full example of this, please visit <a href="http://bit.ly/2PtyJb3" target="_blank">examples/complex</a>.</p>
+</div>
+<div class="paragraph">
+<p>Although currently in development, ZeppelinOS aims to provide a wide set of additional features, such as developer tools, a scheduler that automates background operations within contracts, development bounties, a marketplace that facilitates communication and exchange of value between applications, and much more. All of this is described in ZeppelinOS&#x2019;s <a href="http://bit.ly/2QcxV7K" target="_blank">whitepaper</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_utilities">Utilities</h3>
+<div class="sect3">
+<h4 id="_ethereumjs_helpeth_a_command_line_utility">EthereumJS helpeth: A Command-Line Utility</h4>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/ethereumjs/helpeth" class="bare" target="_blank">https://github.com/ethereumjs/helpeth</a></p>
+</div>
+<div class="paragraph">
+<p>helpeth is a command-line tool for key and transaction manipulation that makes a developer&#x2019;s job a lot easier.</p>
+</div>
+<div class="paragraph">
+<p>It is part of the EthereumJS collection of JavaScript-based libraries and tools:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Usage: helpeth [command]
+
+Commands:
+  signMessage &lt;message&gt;                     Sign a message
+  verifySig &lt;hash&gt; &lt;sig&gt;                    Verify signature
+  verifySigParams &lt;hash&gt; &lt;r&gt; &lt;s&gt; &lt;v&gt;        Verify signature parameters
+  createTx &lt;nonce&gt; &lt;to&gt; &lt;value&gt; &lt;data&gt;      Sign a transaction
+  &lt;gasLimit&gt; &lt;gasPrice&gt;
+  assembleTx &lt;nonce&gt; &lt;to&gt; &lt;value&gt; &lt;data&gt;    Assemble a transaction from its
+  &lt;gasLimit&gt; &lt;gasPrice&gt; &lt;v&gt; &lt;r&gt; &lt;s&gt;         components
+  parseTx &lt;tx&gt;                              Parse raw transaction
+  keyGenerate [format] [icapdirect]         Generate new key
+  keyConvert                                Convert a key to V3 keystore format
+  keyDetails                                Print key details
+  bip32Details &lt;path&gt;                       Print key details for a given path
+  addressDetails &lt;address&gt;                  Print details about an address
+  unitConvert &lt;value&gt; &lt;from&gt; &lt;to&gt;           Convert between Ethereum units
+
+Options:
+  -p, --private      Private key as a hex string                        [string]
+  --password         Password for the private key                       [string]
+  --password-prompt  Prompt for the private key password               [boolean]
+  -k, --keyfile      Encoded key file                                   [string]
+  --show-private     Show private key details                          [boolean]
+  --mnemonic         Mnemonic for HD key derivation                     [string]
+  --version          Show version number                               [boolean]
+  --help             Show help                                         [boolean]</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dapp_tools">dapp.tools</h4>
+<div class="paragraph">
+<p>Website: <a href="https://dapp.tools/" class="bare" target="_blank">https://dapp.tools/</a></p>
+</div>
+<div class="paragraph">
+<p>dapp.tools is a comprehensive suite of blockchain-oriented developer tools created in the spirit of the Unix philosophy. The tools included are:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Dapp</dt>
+<dd>
+<p>Dapp is the basic user-facing tool, for creating new DApps, running Solidity unit tests, debugging and deploying contracts, launching testnets, and more.</p>
+</dd>
+<dt class="hdlist1">Seth</dt>
+<dd>
+<p>Seth is used for composing transactions, querying the blockchain, converting between data formats, performing remote calls, and similar everyday tasks.</p>
+</dd>
+<dt class="hdlist1">Hevm</dt>
+<dd>
+<p>Hevm is a Haskell EVM implementation with a nimble terminal-based Solidity debugger. It&#x2019;s used to test and debug DApps.</p>
+</dd>
+<dt class="hdlist1">evmdis</dt>
+<dd>
+<p>evmdis is an EVM disassembler; it performs static analysis on the bytecode to provide a higher level of abstraction than raw EVM operations.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sputnikvm">SputnikVM</h4>
+<div class="paragraph">
+<p><a href="https://github.com/etcdevteam/sputnikvm" target="_blank">SputnikVM</a> is a standalone pluggable virtual machine for different Ethereum-based blockchains. It&#x2019;s written in Rust and can be used as a binary, cargo crate, or shared library, or integrated through FFI, Protobuf, and JSON interfaces. It has a separate binary, sputnikvm-dev, intended for testing purposes, which emulates most of the JSON-RPC API and block mining.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_libraries">Libraries</h3>
+<div class="sect3">
+<h4 id="_web3_js">web3.js</h4>
+<div class="paragraph">
+<p>web3.js is the Ethereum-compatible JavaScript API for communicating with clients via JSON-RPC, developed by the Ethereum Foundation.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/ethereum/web3.js" class="bare" target="_blank">https://github.com/ethereum/web3.js</a></p>
+</div>
+<div class="paragraph">
+<p>npm package repository: <a href="https://www.npmjs.com/package/web3" class="bare" target="_blank">https://www.npmjs.com/package/web3</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation for web3.js API 0.2x.x: <a href="http://bit.ly/2Qcyq1C" class="bare" target="_blank">http://bit.ly/2Qcyq1C</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation for web3.js API 1.0.0-beta.xx: <a href="http://bit.ly/2CT33p0" class="bare" target="_blank">http://bit.ly/2CT33p0</a></p>
+</div>
+</div>
+<div class="sect3 pagebreak-before">
+<h4 id="_web3_py">web3.py</h4>
+<div class="paragraph">
+<p>web3.py is a Python library for interacting with the Ethereum blockchain, maintained by the Ethereum Foundation.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/ethereum/web3.py" class="bare" target="_blank">https://github.com/ethereum/web3.py</a></p>
+</div>
+<div class="paragraph">
+<p>PyPi: <a href="https://pypi.python.org/pypi/web3/4.0.0b9" class="bare" target="_blank">https://pypi.python.org/pypi/web3/4.0.0b9</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://web3py.readthedocs.io/" class="bare" target="_blank">https://web3py.readthedocs.io/</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ethereumjs">EthereumJS</h4>
+<div class="paragraph">
+<p>EthereumJS is collection of libraries and utilities for Ethereum.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/ethereumjs" class="bare" target="_blank">https://github.com/ethereumjs</a></p>
+</div>
+<div class="paragraph">
+<p>Website: <a href="https://ethereumjs.github.io/" class="bare" target="_blank">https://ethereumjs.github.io/</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_web3j">web3j</h4>
+<div class="paragraph">
+<p>web3j is a Java and Android library for integrating with Ethereum clients and working with smart contracts.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/web3j/web3j" class="bare" target="_blank">https://github.com/web3j/web3j</a></p>
+</div>
+<div class="paragraph">
+<p>Website: <a href="https://web3j.io" class="bare" target="_blank">https://web3j.io</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://docs.web3j.io" class="bare" target="_blank">https://docs.web3j.io</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_etherjar">EtherJar</h4>
+<div class="paragraph">
+<p>EtherJar is another Java library for integrating with Ethereum and working with smart contracts. It&#x2019;s designed for server-side projects based on Java 8+ and provides low-level access and a high-level wrapper around RPC, Ethereum data structures, and smart contract access.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/infinitape/etherjar" class="bare" target="_blank">https://github.com/infinitape/etherjar</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_nethereum">Nethereum</h4>
+<div class="paragraph">
+<p>Nethereum is the .Net integration library for Ethereum.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/Nethereum/Nethereum" class="bare" target="_blank">https://github.com/Nethereum/Nethereum</a></p>
+</div>
+<div class="paragraph">
+<p>Website: <a href="http://nethereum.com/" class="bare" target="_blank">http://nethereum.com/</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://nethereum.readthedocs.io/en/latest/" class="bare" target="_blank">https://nethereum.readthedocs.io/en/latest/</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ethers_js">ethers.js</h4>
+<div class="paragraph">
+<p>The ethers.js library is a compact, complete, full-featured, extensively tested MIT-licensed Ethereum library, which has received a DevEx grant from the Ethereum Foundation toward its extension and maintenance.</p>
+</div>
+<div class="paragraph">
+<p>GitHub link: <a href="https://github.com/ethers-io/ethers.js" class="bare" target="_blank">https://github.com/ethers-io/ethers.js</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://docs.ethers.io" class="bare" target="_blank">https://docs.ethers.io</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_emerald_platform">Emerald Platform</h4>
+<div class="paragraph">
+<p>Emerald Platform provides libraries and UI components to build DApps on top of Ethereum. Emerald JS and Emerald JS UI provide sets of modules and React components to build JavaScript applications and websites; Emerald SVG Icons is a set of blockchain-related icons. In addition to JavaScript libraries Emerald has a Rust library to operate private keys and transaction signatures. All Emerald libraries and components are licensed under the Apache License, version 2.0.</p>
+</div>
+<div class="paragraph">
+<p>GitHub: <a href="https://github.com/etcdevteam/emerald-platform" class="bare" target="_blank">https://github.com/etcdevteam/emerald-platform</a></p>
+</div>
+<div class="paragraph">
+<p>Documentation: <a href="https://docs.etcdevteam.com" class="bare" target="_blank">https://docs.etcdevteam.com</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="testing_frameworks">Testing Smart Contracts</h3>
+<div class="paragraph">
+<p>There are several commonly used test frameworks for smart contract development, summarized in <a href="#testing_frameworks_table">Smart contract test frameworks summary</a>:</p>
+</div>
+<table id="testing_frameworks_table" class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Smart contract test frameworks summary</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Framework</th>
+<th class="tableblock halign-left valign-top">Test language(s)</th>
+<th class="tableblock halign-left valign-top">Testing framework</th>
+<th class="tableblock halign-left valign-top">Chain emulator</th>
+<th class="tableblock halign-left valign-top">Website</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Truffle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JavaScript/Solidity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mocha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TestRPC/Ganache</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://truffleframework.com/" class="bare" target="_blank">https://truffleframework.com/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Embark</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JavaScript</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mocha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TestRPC/Ganache</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://embark.status.im/docs/" class="bare" target="_blank">https://embark.status.im/docs/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dapp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solidity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ds-test (custom)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ethrun (Parity)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://dapp.tools/dapp/" class="bare" target="_blank">https://dapp.tools/dapp/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Populus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pytest</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python chain emulator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://populus.readthedocs.io" class="bare" target="_blank">https://populus.readthedocs.io</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Truffle</dt>
+<dd>
+<p>Truffle allows for unit tests to be written in JavaScript (Mocha-based) or Solidity. These tests are run against Ganache.</p>
+</dd>
+<dt class="hdlist1">Embark</dt>
+<dd>
+<p>Embark integrates with Mocha to run unit tests written in JavaScript. The tests are in turn run against contracts deployed on TestRPC/Ganache. The Embark framework automatically deploys smart contracts, and will automatically redeploy the contracts when they are changed. It also keeps track of deployed contracts and deploys contracts only when truly needed. Embark includes a testing library to rapidly run and test your contracts in an EVM, with functions like assert.equal. The command embark test will run any test files under the directory <em>test</em>.</p>
+</dd>
+<dt class="hdlist1">Dapp</dt>
+<dd>
+<p>Dapp uses native Solidity code (a library called ds-test) and a Parity-built Rust library called ethrun to execute Ethereum bytecode and then assert correctness. The ds-test library provides assertion functions for validating correctness and events for logging data in the console.</p>
+<div class="paragraph">
+<p>The assertion functions include:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>assert(bool condition)
+assertEq(address a, address b)
+assertEq(bytes32 a, bytes32 b)
+assertEq(int a, int b)
+assertEq(uint a, uint b)
+assertEq0(bytes a, bytes b)
+expectEventsExact(address target)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The logging commands will log information to the console, making them useful for debugging:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>logs(bytes)
+log_bytes32(bytes32)
+log_named_bytes32(bytes32 key, bytes32 val)
+log_named_address(bytes32 key, address val)
+log_named_int(bytes32 key, int val)
+log_named_uint(bytes32 key, uint val)
+log_named_decimal_int(bytes32 key, int val, uint decimals)
+log_named_decimal_uint(bytes32 key, uint val, uint decimals)</pre>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Populus</dt>
+<dd>
+<p>Populus uses Python and its own chain emulator to run contracts written in Solidity. Unit tests are written in Python with the pytest library. Populus supports writing contracts specifically for testing. These contract filenames should match the glob pattern <em>Test*.sol</em> and be located anywhere under the project tests directory, <em>tests</em>.</p>
+</dd>
+</dl>
+</div>
+<div class="sect3">
+<h4 id="on_blockchain_testing_sec">On-Blockchain Testing</h4>
+<div class="paragraph">
+<p>Although most testing shouldn&#x2019;t occur on deployed contracts, a contract&#x2019;s behavior can be checked via Ethereum clients.  The following commands can be used to assess a smart contract&#x2019;s state. These commands should be typed at the geth terminal, although any web3 console will also support them.</p>
+</div>
+<div class="paragraph">
+<p>To get the address of a contract at <em>txhash</em>, use:</p>
+</div>
+<pre data-type="programlisting">
+eth.getTransactionReceipt(<em>txhash</em>);
+</pre>
+<div class="paragraph">
+<p>This command gets the code of a contract deployed at <em>contractaddress</em>; this can be used to verify proper deployment:</p>
+</div>
+<pre data-type="programlisting">
+eth.getCode(<em>contractaddress</em>)
+</pre>
+<div class="paragraph">
+<p>This gets the full logs of the contract located at the address specified in <em>options</em>, which is helpful for viewing the history of a contract&#x2019;s calls:</p>
+</div>
+<pre data-type="programlisting">
+eth.getPastLogs(<em>options</em>)
+</pre>
+<div class="paragraph">
+<p>Finally, this command gets the storage located at <em>address</em> with an offset of <em>position</em>:</p>
+</div>
+<pre data-type="programlisting">
+eth.getStorageAt(<em>address</em>, <em>position</em>)
+</pre>
+</div>
+<div class="sect3">
+<h4 id="ganache">Ganache: A Local Test Blockchain</h4>
+<div class="paragraph">
+<p>Ganache is a local test blockchain that you can use to deploy contracts, develop your applications, and run tests. It is available as a desktop application (with a graphical user interface) for Windows, macOS, and Linux. It is also available as a command-line utility called ganache-cli. For more details and installation instructions for the Ganache desktop application, see <a href="https://truffleframework.com/ganache" class="bare" target="_blank">https://truffleframework.com/ganache</a>.</p>
+</div>
+<div class="paragraph">
+<p>The ganache-cli code can be found at <a href="https://github.com/trufflesuite/ganache-cli/" class="bare" target="_blank">https://github.com/trufflesuite/ganache-cli/</a>.</p>
+</div>
+<div class="paragraph">
+<p>To install the command line ganache-cli, use npm:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm install -g ganache-cli</strong>
+</pre>
+<div class="paragraph">
+<p>You can use ganache-cli to start a local blockchain for testing as follows:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>ganache-cli \
+  --networkId=3 \
+  --port=&quot;8545&quot; \
+  --verbose \
+  --gasLimit=8000000 \
+  --gasPrice=4000000000;</strong>
+</pre>
+<div class="paragraph">
+<p>A few notes on this command line:</p>
+</div>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p>&#x274F; Check the <code>--networkId</code> and <code>--port</code> flag values match your configuration in <em>truffle.js</em>.</p>
+</li>
+<li>
+<p>&#x274F; Check the <code>--gasLimit</code> flag value matches the latest mainnet gas limit (e.g., 8,000,000 gas) shown at <a href="https://ethstats.net" class="bare" target="_blank">https://ethstats.net</a> to avoid encountering &#x201C;out of gas&#x201D; exceptions unnecessarily. Note that a <code>--gasPrice</code> of 4000000000 represents a gas price of 4 gwei.</p>
+</li>
+<li>
+<p>&#x274F; You can optionally enter a <code>--mnemonic</code> flag value to restore a previous HD wallet and associated addresses.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appdx-evm-opcodes-gas.html" class="navigation navigation-prev " aria-label="Previous page: Appendix A: Ethereum EVM Opcodes and Gas Consumption">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="appdx-web3js-tutorial.html" class="navigation navigation-next " aria-label="Next page: Appendix A: web3.js Tutorial">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix A: Development Tools, Frameworks, and Libraries","level":"5.1","depth":1,"next":{"title":"Appendix A: web3.js Tutorial","level":"6.1","depth":1,"path":"appdx-web3js-tutorial.asciidoc","ref":"appdx-web3js-tutorial.asciidoc","articles":[]},"previous":{"title":"Appendix A: Ethereum EVM Opcodes and Gas Consumption","level":"4.1","depth":1,"path":"appdx-evm-opcodes-gas.asciidoc","ref":"appdx-evm-opcodes-gas.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appdx-dev-tools.asciidoc","mtime":"2019-08-27T09:18:17.279Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

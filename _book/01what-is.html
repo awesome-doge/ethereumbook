@@ -1,0 +1,957 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 1: What Is Ethereum? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02intro.html" />
+    
+    
+    <link rel="prev" href="glossary.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 1: What Is Ethereum?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1 pagenumrestart">
+<h2 id="whatis_chapter">What Is Ethereum?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ethereum is often described as &quot;the world computer.&#x201D; But what does that mean? Let&#x2019;s start with a computer science&#x2013;focused description, and then try to decipher that with a more practical analysis of Ethereum&#x2019;s capabilities and characteristics, while comparing it to Bitcoin and other decentralized information exchange platforms (or &quot;blockchains&quot; for short).</p>
+</div>
+<div class="paragraph">
+<p>From a computer science perspective, Ethereum is a deterministic but practically unbounded state machine, consisting of a globally accessible singleton state and a virtual machine that applies changes to that state.</p>
+</div>
+<div class="paragraph">
+<p>From a more practical perspective, Ethereum is an open source, globally decentralized computing infrastructure that executes programs called <em>smart contracts</em>. It uses a blockchain to synchronize and store the system&#x2019;s state changes, along with a cryptocurrency called <em>ether</em> to meter and constrain execution resource costs.</p>
+</div>
+<div class="paragraph">
+<p>The Ethereum platform enables developers to build powerful decentralized applications with built-in economic functions. While providing high availability, auditability, transparency, and neutrality, it also reduces or eliminates censorship and reduces certain counterparty risks.</p>
+</div>
+<div class="sect2">
+<h3 id="bitcoin_comparison">Compared to Bitcoin</h3>
+<div class="paragraph">
+<p>Many people will come to Ethereum with some prior experience of cryptocurrencies, specifically Bitcoin. Ethereum shares many common elements with other open blockchains: a peer-to-peer network connecting participants, a Byzantine fault&#x2013;tolerant consensus algorithm for synchronization of state updates (a proof-of-work blockchain), the use of cryptographic primitives such as digital signatures and hashes, and a digital currency (ether).</p>
+</div>
+<div class="paragraph">
+<p>Yet in many ways, both the purpose and construction of Ethereum are strikingly different from those of the open blockchains that preceded it, including Bitcoin.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum&#x2019;s purpose is not primarily to be a digital currency payment network. While the digital currency ether is both integral to and necessary for the operation of Ethereum, ether is intended as a <em>utility currency</em> to pay for use of the Ethereum platform as the world computer.</p>
+</div>
+<div class="paragraph">
+<p>Unlike Bitcoin, which has a very limited scripting language, Ethereum is designed to be a general-purpose programmable blockchain that runs a <em>virtual machine</em> capable of executing code of arbitrary and unbounded complexity. Where Bitcoin&#x2019;s Script language is, intentionally, constrained to simple true/false evaluation of spending conditions, Ethereum&#x2019;s language is <em>Turing complete</em>, meaning that Ethereum can straightforwardly function as a general-purpose computer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="blockchain_components">Components of a Blockchain</h3>
+<div class="paragraph">
+<p>The components of an open, public blockchain are (usually):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A peer-to-peer (P2P) network connecting participants and propagating transactions and blocks of verified transactions, based on a standardized &quot;gossip&quot; <span class="keep-together">protocol</span></p>
+</li>
+<li>
+<p>Messages, in the form of transactions, representing state transitions</p>
+</li>
+<li>
+<p>A set of consensus rules, governing what constitutes a transaction and what makes for a valid state transition</p>
+</li>
+<li>
+<p>A state machine that processes transactions according to the consensus rules</p>
+</li>
+<li>
+<p>A chain of cryptographically secured blocks that acts as a journal of all the verified and accepted state transitions</p>
+</li>
+<li>
+<p>A consensus algorithm that decentralizes control over the blockchain, by forcing participants to cooperate in the enforcement of the consensus rules</p>
+</li>
+<li>
+<p>A game-theoretically sound incentivization scheme (e.g., proof-of-work costs plus block rewards) to economically secure the state machine in an open <span class="keep-together">environment</span></p>
+</li>
+<li>
+<p>One or more open source software implementations of the above (&quot;clients&quot;)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>All or most of these components are usually combined in a single software client. For example, in Bitcoin, the reference implementation is developed by the <em>Bitcoin Core</em> open source project and implemented as the <em>bitcoind</em> client. In Ethereum, rather than a reference implementation there is a <em>reference specification</em>, a mathematical description of the system in the Yellow Paper (see <a href="#references">Further Reading</a>). There are a number of clients, which are built according to the reference specification.</p>
+</div>
+<div class="paragraph">
+<p>In the past, we used the term &quot;blockchain&quot; to represent all of the components just listed, as a shorthand reference to the combination of technologies that encompass all of the characteristics described. Today, however, there are a huge variety of blockchains with different properties. We need qualifiers to help us understand the characteristics of the blockchain in question, such as <em>open, public, global, decentralized, neutral,</em> and <em>censorship-resistant</em>, to identify the important emergent characteristics of a &quot;blockchain&quot; system that these components allow.</p>
+</div>
+<div class="paragraph">
+<p>Not all blockchains are created equal. When someone tells you that something is a blockchain, you have not received an answer; rather, you need to start asking a lot of questions to clarify what they mean when they use the word &quot;blockchain.&quot; Start by asking for a description of the components in the preceding list, then ask whether this &quot;blockchain&quot; exhibits the characteristics of being <em>open, public</em>, etc.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ethereum_birth">The Birth of Ethereum</h3>
+<div class="paragraph">
+<p>All great innovations solve real problems, and Ethereum is no exception. Ethereum was conceived at a time when people recognized the power of the Bitcoin model, and were trying to move beyond cryptocurrency applications. But developers faced a conundrum: they either needed to build on top of Bitcoin or start a new blockchain. Building upon Bitcoin meant living within the intentional constraints of the network and trying to find workarounds. The limited set of transaction types, data types, and sizes of data storage seemed to limit the sorts of applications that could run directly on Bitcoin; anything else needed additional off-chain layers, and that immediately negated many of the advantages of using a public blockchain. For projects that needed more freedom and flexibility while staying on-chain, a new blockchain was the only option. But that meant a lot of work: bootstrapping all the infrastructure elements, exhaustive testing, etc.</p>
+</div>
+<div class="paragraph">
+<p>Toward the end of 2013, Vitalik Buterin, a young programmer and Bitcoin enthusiast, started thinking about further extending the capabilities of Bitcoin and Mastercoin (an overlay protocol that extended Bitcoin to offer rudimentary smart contracts). In October of that year, Vitalik proposed a more generalized approach to the Mastercoin team, one that allowed flexible and scriptable (but not Turing-complete) contracts to replace the specialized contract language of Mastercoin. While the Mastercoin team were impressed, this proposal was too radical a change to fit into their development roadmap.</p>
+</div>
+<div class="paragraph">
+<p>In December 2013, Vitalik started sharing a whitepaper that outlined the idea behind Ethereum: a Turing-complete, general-purpose blockchain. A few dozen people saw this early draft and offered feedback, helping Vitalik evolve the proposal.</p>
+</div>
+<div class="paragraph">
+<p>Both of the authors of this book received an early draft of the whitepaper and commented on it. Andreas M. Antonopoulos was intrigued by the idea and asked Vitalik many questions about the use of a separate blockchain to enforce consensus rules on smart contract execution and the implications of a Turing-complete language. Andreas continued to follow Ethereum&#x2019;s progress with great interest but was in the early stages of writing his book <em>Mastering Bitcoin</em>, and did not participate directly in Ethereum until much later. Dr. Gavin Wood, however, was one of the first people to reach out to Vitalik and offer to help with his C++ programming skills. Gavin became Ethereum&#x2019;s cofounder, codesigner, and CTO.</p>
+</div>
+<div class="paragraph">
+<p>As Vitalik recounts in his <a href="http://bit.ly/2T2t6zs" target="_blank">&quot;Ethereum Prehistory&quot; post</a>:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This was the time when the Ethereum protocol was entirely my own creation. From here on, however, new participants started to join the fold. By far the most prominent on the protocol side was Gavin Wood&#x2026;&#x200B;</p>
+</div>
+<div class="paragraph">
+<p>Gavin can also be largely credited for the subtle change in vision from viewing Ethereum as a platform for building programmable money, with blockchain-based contracts that can hold digital assets and transfer them according to pre-set rules, to a general-purpose computing platform. This started with subtle changes in emphasis and terminology, and later this influence became stronger with the increasing emphasis on the &#x201C;Web 3&#x201D; ensemble, which saw Ethereum as being one piece of a suite of decentralized technologies, the other two being Whisper and Swarm.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Starting in December 2013, Vitalik and Gavin refined and evolved the idea, together building the protocol layer that became Ethereum.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum&#x2019;s founders were thinking about a blockchain without a specific purpose, that could support a broad variety of applications by being <em>programmed</em>. The idea was that by using a general-purpose blockchain like Ethereum, a developer could program their particular application without having to implement the underlying mechanisms of peer-to-peer networks, blockchains, consensus algorithms, etc. The Ethereum platform was designed to abstract these details and provide a deterministic and secure programming environment for decentralized blockchain applications.</p>
+</div>
+<div class="paragraph">
+<p>Much like Satoshi, Vitalik and Gavin didn&#x2019;t just invent a new technology; they combined new inventions with existing technologies in a novel way and delivered the prototype code to prove their ideas to the world.</p>
+</div>
+<div class="paragraph">
+<p>The founders worked for years, building and refining the vision. And on July 30, 2015, the first Ethereum block was mined. The world&#x2019;s computer started serving the world.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Vitalik Buterin&#x2019;s article &quot;A Prehistory of Ethereum&quot; was published in September 2017 and provides a fascinating first-person view of Ethereum&#x2019;s earliest moments.</p>
+</div>
+<div class="paragraph">
+<p>You can read it at
+<a href="https://vitalik.ca/general/2017/09/14/prehistory.html" class="bare" target="_blank">https://vitalik.ca/general/2017/09/14/prehistory.html</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="development_stages">Ethereum&#x2019;s Four Stages of Development</h3>
+<div class="paragraph">
+<p>Ethereum&#x2019;s development was planned over four distinct stages, with major changes occurring at each stage. A stage may include subreleases, known as &quot;hard forks,&quot; that change functionality in a way that is not backward compatible.</p>
+</div>
+<div class="paragraph">
+<p>The four main development stages are codenamed <em>Frontier</em>, <em>Homestead</em>, <em>Metropolis</em>, and <em>Serenity</em>. The intermediate hard forks that have occurred (or are planned) to date are codenamed <em>Ice Age</em>, <em>DAO</em>, <em>Tangerine Whistle</em>, <em>Spurious Dragon</em>, <em>Byzantium</em>, and <em>Constantinople</em>. Both the development stages and the intermediate hard forks are shown on the following timeline, which is &quot;dated&quot; by  block number:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Block #0</dt>
+<dd>
+<p><em>Frontier</em>&#x2014;The initial stage of Ethereum, lasting from July 30, 2015, to March 2016.</p>
+</dd>
+<dt class="hdlist1">Block #200,000</dt>
+<dd>
+<p><em>Ice Age</em>&#x2014;A hard fork to introduce an exponential difficulty increase, to motivate a transition to PoS when ready.</p>
+</dd>
+<dt class="hdlist1">Block #1,150,000</dt>
+<dd>
+<p><em>Homestead</em>&#x2014;The second stage of Ethereum, launched in March 2016.</p>
+</dd>
+<dt class="hdlist1">Block #1,192,000</dt>
+<dd>
+<p><em>DAO</em>&#x2014;A hard fork that reimbursed victims of the hacked DAO contract and caused Ethereum and Ethereum Classic to split into two competing systems.</p>
+</dd>
+<dt class="hdlist1">Block #2,463,000</dt>
+<dd>
+<p><em>Tangerine Whistle</em>&#x2014;A hard fork to change the gas calculation for certain I/O-heavy operations and to clear the accumulated state from a denial-of-service (DoS) attack that exploited the low gas cost of those operations.</p>
+</dd>
+<dt class="hdlist1">Block #2,675,000</dt>
+<dd>
+<p><em>Spurious Dragon</em>&#x2014;A hard fork to address more DoS attack vectors, and another state clearing. Also, a replay attack protection mechanism.</p>
+</dd>
+<dt class="hdlist1">Block #4,370,000</dt>
+<dd>
+<p><em>Metropolis Byzantium</em>&#x2014;Metropolis is the third stage of Ethereum, current at the time of writing this book, launched in October 2017. Byzantium is the first of two hard forks planned for Metropolis.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>After Byzantium, there is one more hard fork planned for Metropolis: Constantinople. Metropolis will be followed by the final stage of Ethereum&#x2019;s deployment, codenamed Serenity.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="general_purpose_blockchain">Ethereum: A General-Purpose Blockchain</h3>
+<div class="paragraph">
+<p>The original blockchain, namely Bitcoin&#x2019;s blockchain, tracks the state of units of bitcoin and their ownership. You can think of Bitcoin as a distributed consensus <em>state machine</em>, where transactions cause a global <em>state transition</em>, altering the ownership of coins. The state transitions are constrained by the rules of consensus, allowing all participants to (eventually) converge on a common (consensus) state of the system, after several blocks are mined.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum is also a distributed state machine. But instead of tracking only the state of currency ownership, Ethereum tracks the state transitions of a general-purpose data store, i.e., a store that can hold any data expressible as a <em>key&#x2013;value tuple</em>. A key&#x2013;value data store holds arbitrary values, each referenced by some key; for example, the value &quot;Mastering Ethereum&quot; referenced by the key &quot;Book Title&quot;. In some ways, this serves the same purpose as the data storage model of <em>Random Access Memory</em> (RAM) used by most general-purpose computers. Ethereum has memory that stores both code and data, and it uses the Ethereum blockchain to track how this memory changes over time. Like a general-purpose stored-program computer, Ethereum can load code into its state machine and <em>run</em> that code, storing the resulting state changes in its blockchain. Two of the critical differences from most general-purpose computers are that Ethereum state changes are governed by the rules of consensus and the state is distributed globally. Ethereum answers the question: &quot;What if we could track any arbitrary state and program the state machine to create a world-wide computer operating under consensus?&quot;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ethereum_components">Ethereum&#x2019;s Components</h3>
+<div class="paragraph">
+<p>In Ethereum, the components of a blockchain system described in <a href="#blockchain_components">Components of a Blockchain</a> are, more specifically:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">P2P network</dt>
+<dd>
+<p>Ethereum runs on the <em>Ethereum main network</em>, which is addressable on TCP port 30303, and runs a protocol called <em>&#xD0;&#x39E;Vp2p</em>.</p>
+</dd>
+<dt class="hdlist1">Consensus rules</dt>
+<dd>
+<p>Ethereum&#x2019;s consensus rules are defined in the reference specification, the Yellow Paper (see <a href="#references">Further Reading</a>).</p>
+</dd>
+<dt class="hdlist1">Transactions</dt>
+<dd>
+<p>Ethereum transactions are network messages that include (among other things) a sender, recipient, value, and data payload.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist pagebreak-before">
+<dl>
+<dt class="hdlist1">State machine</dt>
+<dd>
+<p>Ethereum state transitions are processed by the <em>Ethereum Virtual Machine</em> (EVM), a stack-based virtual machine that executes <em>bytecode</em> (machine-language instructions). EVM programs, called &quot;smart contracts,&quot; are written in high-level languages (e.g., Solidity) and compiled to bytecode for execution on the EVM.</p>
+</dd>
+<dt class="hdlist1">Data structures</dt>
+<dd>
+<p>Ethereum&#x2019;s state is stored locally on each node as a <em>database</em> (usually Google&#x2019;s LevelDB), which contains the transactions and system state in a serialized hashed data structure called a <em>Merkle Patricia Tree</em>.</p>
+</dd>
+<dt class="hdlist1">Consensus algorithm</dt>
+<dd>
+<p>Ethereum uses Bitcoin&#x2019;s consensus model, Nakamoto Consensus, which uses sequential single-signature blocks, weighted in importance by PoW to determine the longest chain and therefore the current state. However, there are plans to move to a PoS weighted voting system, codenamed <em>Casper</em>, in the near future.</p>
+</dd>
+<dt class="hdlist1">Economic security</dt>
+<dd>
+<p>Ethereum currently uses a PoW algorithm called <em>Ethash</em>, but this will eventually be dropped with the move to PoS at some point in the future.</p>
+</dd>
+<dt class="hdlist1">Clients</dt>
+<dd>
+<p>Ethereum has several interoperable implementations of the client software, the most prominent of which are <em>Go-Ethereum</em> (<em>Geth</em>) and <em>Parity</em>.</p>
+</dd>
+</dl>
+</div>
+<div class="sect3">
+<h4 id="references">Further Reading</h4>
+<div class="paragraph">
+<p>The following references provide additional information on the technologies mentioned here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Ethereum Yellow Paper:
+<a href="https://ethereum.github.io/yellowpaper/paper.pdf" class="bare" target="_blank">https://ethereum.github.io/yellowpaper/paper.pdf</a></p>
+</li>
+<li>
+<p>The Beige Paper, a rewrite of the Yellow Paper for a broader audience in less formal language:
+<a href="https://github.com/chronaeon/beigepaper" class="bare" target="_blank">https://github.com/chronaeon/beigepaper</a></p>
+</li>
+<li>
+<p>&#xD0;&#x39E;Vp2p network protocol:
+<a href="http://bit.ly/2quAlTE" class="bare" target="_blank">http://bit.ly/2quAlTE</a></p>
+</li>
+<li>
+<p>Ethereum Virtual Machine list of resources:
+<a href="http://bit.ly/2PmtjiS" class="bare" target="_blank">http://bit.ly/2PmtjiS</a></p>
+</li>
+<li>
+<p>LevelDB database (used most often to store the local copy of the blockchain):
+<a href="http://leveldb.org" class="bare" target="_blank">http://leveldb.org</a></p>
+</li>
+<li>
+<p>Merkle Patricia trees:
+<a href="https://github.com/ethereum/wiki/wiki/Patricia-Tree" class="bare" target="_blank">https://github.com/ethereum/wiki/wiki/Patricia-Tree</a></p>
+</li>
+<li>
+<p>Ethash PoW algorithm:
+<a href="https://github.com/ethereum/wiki/wiki/Ethash" class="bare" target="_blank">https://github.com/ethereum/wiki/wiki/Ethash</a></p>
+</li>
+<li>
+<p>Casper PoS v1 Implementation Guide:
+<a href="http://bit.ly/2DyPr3l" class="bare" target="_blank">http://bit.ly/2DyPr3l</a></p>
+</li>
+<li>
+<p>Go-Ethereum (Geth) client:
+<a href="https://geth.ethereum.org/" class="bare" target="_blank">https://geth.ethereum.org/</a></p>
+</li>
+<li>
+<p>Parity Ethereum client:
+<a href="https://parity.io/" class="bare" target="_blank">https://parity.io/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="turing_completeness">Ethereum and Turing Completeness</h3>
+<div class="paragraph">
+<p>As soon as you start reading about Ethereum, you will immediately encounter the term &quot;Turing complete.&quot; Ethereum, they say, unlike Bitcoin, is Turing complete. What exactly does that mean?</p>
+</div>
+<div class="paragraph">
+<p>The term refers to English mathematician Alan Turing, who is considered the father of computer science. In 1936 he created a mathematical model of a computer consisting of a state machine that manipulates symbols by reading and writing them on sequential memory (resembling an infinite-length paper tape). With this construct, Turing went on to provide a mathematical foundation to answer (in the negative) questions about <em>universal computability</em>, meaning whether all problems are solvable. He proved that there are classes of problems that are uncomputable. Specifically, he proved that the <em>halting problem</em> (whether it is possible, given an arbitrary program and its input, to determine whether the program will eventually stop running) is not solvable.</p>
+</div>
+<div class="paragraph">
+<p>Alan Turing further defined a system to be <em>Turing complete</em> if it can be used to simulate any Turing machine. Such a system is called a <em>Universal Turing machine</em> (UTM).</p>
+</div>
+<div class="paragraph">
+<p>Ethereum&#x2019;s ability to execute a stored program, in a state machine called the Ethereum Virtual Machine, while reading and writing data to memory makes it a Turing-complete system and therefore a UTM. Ethereum can compute any algorithm that can be computed by any Turing machine, given the limitations of finite memory.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum&#x2019;s groundbreaking innovation is to combine the general-purpose computing architecture of a stored-program computer with a decentralized blockchain, thereby creating a distributed single-state (singleton) world computer. Ethereum programs run &quot;everywhere,&quot; yet produce a common state that is secured by the rules of <span class="keep-together">consensus</span>.</p>
+</div>
+<div class="sect3">
+<h4 id="turing_completeness_feature">Turing Completeness as a &quot;Feature&quot;</h4>
+<div class="paragraph">
+<p>Hearing that Ethereum is Turing complete, you might arrive at the conclusion that this is a <em>feature</em> that is somehow lacking in a system that is Turing incomplete. Rather, it is the opposite. Turing completeness is very easy to achieve; in fact, <a href="http://bit.ly/2ABft33" target="_blank">the simplest Turing-complete state machine known</a>  has 4 states and uses 6 symbols, with a state definition that is only 22 instructions long. Indeed, sometimes systems are found to be &quot;accidentally Turing complete.&quot; A fun reference of such systems can be found at <a href="http://bit.ly/2Og1VgX" class="bare" target="_blank">http://bit.ly/2Og1VgX</a>.</p>
+</div>
+<div class="paragraph">
+<p>However, Turing completeness is very dangerous, particularly in open access systems like public blockchains, because of the halting problem we touched on earlier. For example, modern printers are Turing complete and can be given files to print that send them into a frozen state. The fact that Ethereum is Turing complete means that any program of any complexity can be computed by Ethereum. But that flexibility brings some thorny security and resource management problems. An unresponsive printer can be turned off and turned back on again. That is not possible with a public blockchain.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="turing_completeness_implications">Implications of Turing Completeness</h4>
+<div class="paragraph">
+<p>Turing proved that you cannot predict whether a program will terminate by simulating it on a computer. In simple terms, we cannot predict the path of a program without running it. Turing-complete systems can run in &quot;infinite loops,&quot; a term used (in oversimplification) to describe a program that does not terminate. It is trivial to create a program that runs a loop that never ends. But unintended never-ending loops can arise without warning, due to complex interactions between the starting conditions and the code. In Ethereum, this poses a challenge: every participating node (client) must validate every transaction, running any smart contracts it calls. But as Turing proved, Ethereum can&#x2019;t predict if a smart contract will terminate, or how long it will run, without actually running it (possibly running forever). Whether by accident or on purpose, a smart contract can be created such that it runs forever when a node attempts to validate it. This is effectively a DoS attack. And of course, between a program that takes a millisecond to validate and one that runs forever are an infinite range of nasty, resource-hogging, memory-bloating, CPU-overheating programs that simply waste resources. In a world computer, a program that abuses resources gets to abuse the world&#x2019;s resources. How does Ethereum constrain the resources used by a smart contract if it cannot predict resource use in advance?</p>
+</div>
+<div class="paragraph">
+<p>To answer this challenge, Ethereum introduces a metering mechanism called <em>gas</em>. As the EVM executes a smart contract, it carefully accounts for every instruction (computation, data access, etc.). Each instruction has a predetermined cost in units of gas. When a transaction triggers the execution of a smart contract, it must include an amount of gas that sets the upper limit of what can be consumed running the smart contract. The EVM will terminate execution if the amount of gas consumed by computation exceeds the gas available in the transaction. Gas is the mechanism Ethereum uses to allow Turing-complete computation while limiting the resources that any program can consume.</p>
+</div>
+<div class="paragraph">
+<p>The next question is, &apos;how does one get gas to pay for computation on the Ethereum world computer?&apos; You won&#x2019;t find gas on any exchanges. It can only be purchased as part of a transaction, and can only be bought with ether. Ether needs to be sent along with a transaction and it needs to be explicitly earmarked for the purchase of gas, along with an acceptable gas price. Just like at the pump, the price of gas is not fixed. Gas is purchased for the transaction, the computation is executed, and any unused gas is refunded back to the sender of the transaction.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="DApp">From General-Purpose Blockchains to Decentralized Applications (DApps)</h3>
+<div class="paragraph">
+<p>Ethereum started as a way to make a general-purpose blockchain that could be programmed for a variety of uses. But very quickly, Ethereum&#x2019;s vision expanded to become a platform for programming DApps. DApps represent a broader perspective than smart contracts. A DApp is, at the very least, a smart contract and a web user interface. More broadly, a DApp is a web application that is built on top of open, decentralized, peer-to-peer infrastructure services.</p>
+</div>
+<div class="paragraph">
+<p>A DApp is composed of at least:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Smart contracts on a blockchain</p>
+</li>
+<li>
+<p>A web frontend user interface</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition, many DApps include other decentralized components, such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A decentralized (P2P) storage protocol and platform</p>
+</li>
+<li>
+<p>A decentralized (P2P) messaging protocol and platform</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You may see DApps spelled as <em>&#xD0;Apps</em>. The &#xD0; character is the Latin character called &quot;ETH,&quot; alluding to Ethereum. To display this character, use the Unicode codepoint 0xD0, or if necessary the HTML character entity eth (or decimal entity #208).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="evolving_WWW">The Third Age of the Internet</h3>
+<div class="paragraph">
+<p>In 2004 the term &quot;Web 2.0&quot; came to prominence, describing an evolution of the web toward user-generated content, responsive interfaces, and interactivity. Web 2.0 is not a technical specification, but rather a term describing the new focus of web <span class="keep-together">applications</span>.</p>
+</div>
+<div class="paragraph">
+<p>The concept of DApps is meant to take the World Wide Web to its next natural evolutionary stage, introducing decentralization with peer-to-peer protocols into every aspect of a web application. The term used to describe this evolution is <em>web3</em>, meaning the third &quot;version&quot; of the web. First proposed by Dr. Gavin Wood, web3 represents a new vision and focus for web applications: from centrally owned and managed applications, to applications built on decentralized protocols.</p>
+</div>
+<div class="paragraph">
+<p>In later chapters we&#x2019;ll explore the Ethereum web3.js JavaScript library, which bridges JavaScript applications that run in your browser with the Ethereum blockchain. The web3.js library also includes an interface to a P2P storage network called <em>Swarm</em> and a P2P messaging service called <em>Whisper</em>. With these three components included in a JavaScript library running in your web browser, developers have a full application development suite that allows them to build web3 DApps.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="development_culture">Ethereum&#x2019;s Development Culture</h3>
+<div class="paragraph">
+<p>So far we&#x2019;ve talked about how Ethereum&#x2019;s goals and technology differ from those of other blockchains that preceded it, like Bitcoin. Ethereum also has a very different development culture.</p>
+</div>
+<div class="paragraph">
+<p>In Bitcoin, development is guided by conservative principles: all changes are carefully studied to ensure that none of the existing systems are disrupted. For the most part, changes are only implemented if they are backward compatible. Existing clients are allowed to opt-in, but will continue to operate if they decide not to upgrade.</p>
+</div>
+<div class="paragraph">
+<p>In Ethereum, by comparison, the community&#x2019;s development culture is focused on the future rather than the past. The (not entirely serious) mantra is &quot;move fast and break things.&quot; If a change is needed, it is implemented, even if that means invalidating prior assumptions, breaking compatibility, or forcing clients to update. Ethereum&#x2019;s development culture is characterized by rapid innovation, rapid evolution, and a willingness to deploy forward-looking improvements, even if this is at the expense of some backward compatibility.</p>
+</div>
+<div class="paragraph">
+<p>What this means to you as a developer is that you must remain flexible and be prepared to rebuild your infrastructure as some of the underlying assumptions change. One of the big challenges facing developers in Ethereum is the inherent contradiction between deploying code to an immutable system and a development platform that is still evolving. You can&#x2019;t simply &quot;upgrade&quot; your smart contracts. You must be prepared to deploy new ones, migrate users, apps, and funds, and start over.</p>
+</div>
+<div class="paragraph">
+<p>Ironically, this also means that the goal of building systems with more autonomy and less centralized control is still not fully realized. Autonomy and decentralization require a bit more stability in the platform than you&#x2019;re likely to get in Ethereum in the next few years. In order to &quot;evolve&quot; the platform, you have to be ready to scrap and restart your smart contracts, which means you have to retain a certain degree of control over them.</p>
+</div>
+<div class="paragraph">
+<p>But, on the positive side, Ethereum is moving forward very fast. There&#x2019;s little opportunity for &quot;bike-shedding,&quot; an expression that means holding up development by arguing over minor details such as how to build the bicycle shed at the back of a nuclear power station. If you start bike-shedding, you might suddenly discover that while you were distracted the rest of the development team changed the plan and ditched bicycles in favor of autonomous hovercraft.</p>
+</div>
+<div class="paragraph">
+<p>Eventually, the development of the Ethereum platform will slow down and its interfaces will become fixed. But in the meantime, innovation is the driving principle. You&#x2019;d better keep up, because no one will slow down for you.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="why_learn">Why Learn Ethereum?</h3>
+<div class="paragraph">
+<p>Blockchains have a very steep learning curve, as they combine multiple disciplines into one domain: programming, information security, cryptography, economics, distributed systems, peer-to-peer networks, etc. Ethereum makes this learning curve a lot less steep, so you can get started quickly. But just below the surface of a deceptively simple environment lies a lot more. As you learn and start looking deeper, there&#x2019;s always another layer of complexity and wonder.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum is a great platform for learning about blockchains and it&#x2019;s building a massive community of developers, faster than any other blockchain platform. More than any other, Ethereum is a <em>developer&#x2019;s blockchain</em>, built by developers for developers. A developer familiar with JavaScript applications can drop into Ethereum and start producing working code very quickly. For the first few years of Ethereum&#x2019;s life, it was common to see T-shirts announcing that you can create a token in just five lines of code. Of course, this is a double-edged sword. It&#x2019;s easy to write code, but it&#x2019;s very hard to write <em>good</em> and <em>secure</em> code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="teaching_objectives">What This Book Will Teach You</h3>
+<div class="paragraph">
+<p>This book dives into Ethereum and examines every component. You will start with a simple transaction, dissect how it works, build a simple contract, make it better, and follow its journey through the Ethereum system.</p>
+</div>
+<div class="paragraph">
+<p>You will learn not only how to use Ethereum&#x2014;how it works&#x2014;but also why it is designed the way it is. You will be able to understand how each of the pieces works, and how they fit together and why.</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="glossary.html" class="navigation navigation-prev " aria-label="Previous page: Quick Glossary">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02intro.html" class="navigation navigation-next " aria-label="Next page: Chapter 2: Ethereum Basics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 1: What Is Ethereum?","level":"1.4","depth":1,"next":{"title":"Chapter 2: Ethereum Basics","level":"1.5","depth":1,"path":"02intro.asciidoc","ref":"02intro.asciidoc","articles":[]},"previous":{"title":"Quick Glossary","level":"1.3","depth":1,"path":"glossary.asciidoc","ref":"glossary.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01what-is.asciidoc","mtime":"2019-08-27T09:18:17.269Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

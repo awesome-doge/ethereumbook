@@ -1,0 +1,1531 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 12: Decentralized Applications (DApps) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13evm.html" />
+    
+    
+    <link rel="prev" href="11oracles.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 12: Decentralized Applications (DApps)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="decentralized_applications_chap">Decentralized Applications (DApps)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this chapter we will explore the world of <em>decentralized applications</em>, or <em>DApps</em>. From the early days of Ethereum, the founders&apos; vision was much broader than &quot;smart contracts&quot;: no less than reinventing the web and creating a new world of DApps, aptly called <em>web3</em>. Smart contracts are a way to decentralize the controlling logic and payment functions of applications. Web3 DApps are about decentralizing all other aspects of an application: storage, messaging, naming, etc. (see <a href="#image_web3_suite">Web3: A decentralized web using smart contracts and P2P technologies</a>).</p>
+</div>
+<div id="image_web3_suite" class="imageblock">
+<div class="content">
+<img src="images/web3suite.png" alt="Web3: A decentralized web using smart contracts and P2P Technologies">
+</div>
+<div class="title">Figure 1. Web3: A decentralized web using smart contracts and P2P technologies</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>While &quot;decentralized apps&quot; are an audacious vision of the future, the term &quot;DApp&quot; is often applied to any smart contract with a web frontend. Some of these so-called DApps are highly centralized applications (CApps?). Beware of false DApps!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In this chapter we will develop and deploy a sample DApp: an auction platform. You can find the source code in the book&#x2019;s repository under <a href="http://bit.ly/2DcmjyA" target="_blank"><em>code/auction_dapp</em></a>. We will look at each aspect of an auction application and see how we can decentralize the application as much as possible. First, though, let&#x2019;s take a closer look at the defining characteristics and advantages of DApps.</p>
+</div>
+<div class="sect2">
+<h3 id="what_is_a_dapp_sec">What Is a DApp?</h3>
+<div class="paragraph">
+<p>A DApp is an application that is mostly or entirely decentralized.</p>
+</div>
+<div class="paragraph">
+<p>Consider all the possible aspects of an application that may be decentralized:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Backend software (application logic)</p>
+</li>
+<li>
+<p>Frontend software</p>
+</li>
+<li>
+<p>Data storage</p>
+</li>
+<li>
+<p>Message communications</p>
+</li>
+<li>
+<p>Name resolution</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each of these can be somewhat centralized or somewhat decentralized. For example, a frontend can be developed as a web app that runs on a centralized server, or as a mobile app that runs on your device. The backend and storage can be on private servers and proprietary databases, or you can use a smart contract and P2P storage.</p>
+</div>
+<div class="paragraph">
+<p>There are many advantages to creating a DApp that a typical centralized architecture cannot provide:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Resiliency</dt>
+<dd>
+<p>Because the business logic is controlled by a smart contract, a DApp backend will be fully distributed and managed on a blockchain platform. Unlike an application deployed on a centralized server, a DApp will have no downtime and will continue to be available as long as the platform is still operating.</p>
+</dd>
+<dt class="hdlist1">Transparency</dt>
+<dd>
+<p>The on-chain nature of a DApp allows everyone to inspect the code and be more sure about its function. Any interaction with the DApp will be stored forever in the blockchain.</p>
+</dd>
+<dt class="hdlist1">Censorship resistance</dt>
+<dd>
+<p>As long as a user has access to an Ethereum node (running one if necessary), the user will always be able to interact with a DApp without interference from any centralized control. No service provider, or even the owner of the smart contract, can alter the code once it is deployed on the network.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>In the Ethereum ecosystem as it stands today, there are very few truly decentralized apps&#x2014;most still rely on centralized services and servers for some part of their operation. In the future, we expect that it will be possible for every part of any DApp to be operated in a fully decentralized way.</p>
+</div>
+<div class="sect3">
+<h4 id="blockchain_smart_contracts_sec">Backend (Smart Contract)</h4>
+<div class="paragraph">
+<p>In a DApp, smart contracts are used to store the business logic (program code) and the related state of your application. You can think of a smart contract replacing a server-side (aka &quot;backend&quot;) component in a regular application. This is an oversimplification, of course. One of the main differences is that any computation executed in a smart contract is very expensive and so should be kept as minimal as possible. It is therefore important to identify which aspects of the application need a trusted and decentralized execution platform.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum smart contracts allow you to build architectures in which a network of smart contracts call and pass data between each other, reading and writing their own state variables as they go, with their complexity restricted only by the block gas limit. After you deploy your smart contract, your business logic could well be used by many other developers in the future.</p>
+</div>
+<div class="paragraph">
+<p>One major consideration of smart contract architecture design is the inability to change the code of a smart contract once it is deployed. It can be deleted if it is programmed with an accessible SELFDESTRUCT opcode, but other than complete removal, the code cannot be changed in any way.</p>
+</div>
+<div class="paragraph">
+<p>The second major consideration of smart contract architecture design is DApp size. A really large monolithic smart contract may cost a lot of gas to deploy and use. Therefore, some applications may choose to have off-chain computation and an external data source. Keep in mind, however, that having the core business logic of the DApp be dependent on external data (e.g., from a centralized server) means your users will have to trust these external resources.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="front_end_web_ui_cec">Frontend (Web User Interface)</h4>
+<div class="paragraph">
+<p>Unlike the business logic of the DApp, which requires a developer to understand the EVM and new languages such as Solidity, the client-side interface of a DApp can use standard web technologies (HTML, CSS, JavaScript, etc.). This allows a traditional web developer to use familiar tools, libraries, and frameworks. Interactions with Ethereum, such as signing messages, sending transactions, and managing keys, are often conducted through the web browser, via an extension such as MetaMask (see <a href="#intro_chapter">[intro_chapter]</a>).</p>
+</div>
+<div class="paragraph">
+<p>Although it is possible to create a mobile DApp as well, currently there are few resources to help create mobile DApp frontends, mainly due to the lack of mobile clients that can serve as a light client with key-management functionality.</p>
+</div>
+<div class="paragraph">
+<p>The frontend is usually linked to Ethereum via the <em>web3.js</em> JavaScript library, which is bundled with the frontend resources and served to a browser by a web server.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="data_storage_sec">Data Storage</h4>
+<div class="paragraph">
+<p>Due to high gas costs and the currently low block gas limit, smart contracts are not well suited to storing or processing large amounts of data. Hence, most DApps utilize off-chain data storage services, meaning they store the bulky data off the Ethereum chain, on a data storage platform. That data storage platform can be centralized (for example, a typical cloud database), or the data can be decentralized, stored on a P2P platform such as the IPFS, or Ethereum&#x2019;s own Swarm platform.</p>
+</div>
+<div class="paragraph">
+<p>Decentralized P2P storage is ideal for storing and distributing large static assets such as images, videos, and the resources of the application&#x2019;s frontend web interface (HTML, CSS, JavaScript, etc.). We&#x2019;ll look at a few of the options next.</p>
+</div>
+<div class="sect4">
+<h5 id="ipfs_sec">IPFS</h5>
+<div class="paragraph">
+<p>The <em>Inter-Planetary File System</em> (IPFS) is a decentralized content-addressable storage system that distributes stored objects among peers in a P2P network. &quot;Content addressable&quot; means that each piece of content (file) is hashed and the hash is used to identify that file. You can then retrieve any file from any IPFS node by requesting it by its hash.</p>
+</div>
+<div class="paragraph">
+<p>IPFS aims to replace HTTP as the protocol of choice for delivery of web applications. Instead of storing a web application on a single server, the files are stored on IPFS and can be retrieved from any IPFS node.</p>
+</div>
+<div class="paragraph">
+<p>More information about IPFS can be found at <a href="https://ipfs.io" class="bare" target="_blank">https://ipfs.io</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="swarm_sec">Swarm</h5>
+<div class="paragraph">
+<p>Swarm is another content-addressable P2P storage system, similar to IPFS. Swarm was created by the Ethereum Foundation, as part of the Go-Ethereum suite of tools. Like IPFS, it allows you to store files that get disseminated and replicated by Swarm nodes. You can access any Swarm file by referring to it by a hash. Swarm allows you to access a website from a decentralized P2P system, instead of a central web server.</p>
+</div>
+<div class="paragraph">
+<p>The home page for Swarm is itself stored on Swarm and accessible on your Swarm node or a gateway:
+<a href="https://swarm-gateways.net/bzz:/theswarm.eth/" class="bare" target="_blank">https://swarm-gateways.net/bzz:/theswarm.eth/</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="interdapp_coammunications_protocol_sec">Decentralized Message Communications Protocols</h4>
+<div class="paragraph">
+<p>Another major component of any application is inter-process communication. That means being able to exchange messages between applications, between different instances of the application, or between users of the application. Traditionally, this is achieved by reliance on a centralized server. However, there are a variety of decentralized alternatives to server-based protocols, offering messaging over a P2P network. The most notable P2P messaging protocol for DApps is <a href="http://bit.ly/2CSls5h" target="_blank"><em>Whisper</em></a>, which is part of the Ethereum Foundation&#x2019;s Go-Ethereum suite of tools.</p>
+</div>
+<div class="paragraph">
+<p>The final aspect of an application that can be decentralized is name resolution. We&#x2019;ll take a close look at Ethereum&#x2019;s name service later in this chapter; now, though, let&#x2019;s dig into an example.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="auction_dapp_intro">A Basic DApp Example: Auction DApp</h3>
+<div class="paragraph">
+<p>In this section we will start building an example DApp, to explore the various decentralization tools. Our DApp will implement a decentralized auction.</p>
+</div>
+<div class="paragraph">
+<p>The Auction DApp allows a user to register a &quot;deed&quot; token, which represents some unique asset, such as a house, a car, a trademark, etc. Once a token has been registered, the ownership of the token is transferred to the Auction DApp, allowing it to be listed for sale. The Auction DApp lists each of the registered tokens, allowing other users to place bids. During each auction, users can join a chat room created specifically for that auction. Once an auction is finalized, the deed token ownership is transferred to the winner of the auction.</p>
+</div>
+<div class="paragraph">
+<p>The overall auction process can be seen in <a href="#auction_dapp_overview">Auction DApp: A simple example auction DApp</a>.</p>
+</div>
+<div class="paragraph">
+<p>The main components of our Auction DApp are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A smart contract implementing ERC721 non-fungible &quot;deed&quot; tokens (<code>DeedRepository</code>)</p>
+</li>
+<li>
+<p>A smart contract implementing an auction (AuctionRepository) to sell the deeds</p>
+</li>
+<li>
+<p>A web frontend using the Vue/Vuetify JavaScript framework</p>
+</li>
+<li>
+<p>The <em>web3.js</em> library to connect to Ethereum chains (via MetaMask or other clients)</p>
+</li>
+<li>
+<p>A Swarm client, to store resources such as images</p>
+</li>
+<li>
+<p>A Whisper client, to create per-auction chat rooms for all participants</p>
+</li>
+</ul>
+</div>
+<div id="auction_dapp_overview" class="imageblock">
+<div class="content">
+<img src="images/auction_diagram.png" alt="Auction DApp: A simple example auction DApp">
+</div>
+<div class="title">Figure 2. Auction DApp: A simple example auction DApp</div>
+</div>
+<div class="paragraph">
+<p>You can find the source code for the auction DApp <a href="http://bit.ly/2DcmjyA" target="_blank">in the book&#x2019;s repository</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_auction_dapp_backend_smart_contracts">Auction DApp: Backend Smart Contracts</h4>
+<div class="paragraph">
+<p>Our Auction DApp example is supported by two smart contracts that we need to deploy on an Ethereum blockchain in order to support the application: <code>AuctionRepository</code> and DeedRepository.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s start by looking at DeedRepository, shown in <a href="#deed_repository_code">DeedRepository.sol: An ERC721 deed token for use in an auction</a>. This contract is an ERC721-compatible non-fungible token (see <a href="#erc721">[erc721]</a>).</p>
+</div>
+<div id="deed_repository_code" class="exampleblock">
+<div class="title">Example 1. DeedRepository.sol: An ERC721 deed token for use in an auction</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">link:code/auction_dapp/backend/contracts/DeedRepository.sol[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see, the DeedRepository contract is a straightforward implementation of an ERC721-compatible token.</p>
+</div>
+<div class="paragraph">
+<p>Our Auction DApp uses the DeedRepository contract to issue and track tokens for each auction. The auction itself is orchestrated by the AuctionRepository contract. This contract is too long to include here in full, but <a href="#auction_repository_code">AuctionRepository.sol: The main Auction DApp smart contract</a> shows the main definition of the contract and data structures. The entire contract is available in the book&#x2019;s <a href="https://bit.ly/2IaOo9i" target="_blank">GitHub repository</a>.</p>
+</div>
+<div id="auction_repository_code" class="exampleblock">
+<div class="title">Example 2. AuctionRepository.sol: The main Auction DApp smart contract</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">contract AuctionRepository {
+
+    // Array with all auctions
+    Auction[] public auctions;
+
+    // Mapping from auction index to user bids
+    mapping(uint256 =&gt; Bid[]) public auctionBids;
+
+    // Mapping from owner to a list of owned auctions
+    mapping(address =&gt; uint[]) public auctionOwner;
+
+    // Bid struct to hold bidder and amount
+    struct Bid {
+        address from;
+        uint256 amount;
+    }
+
+    // Auction struct which holds all the required info
+    struct Auction {
+        string name;
+        uint256 blockDeadline;
+        uint256 startPrice;
+        string metadata;
+        uint256 deedId;
+        address deedRepositoryAddress;
+        address owner;
+        bool active;
+        bool finalized;
+    }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The AuctionRepository contract manages all auctions with the following functions:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">getCount()
+getBidsCount(uint _auctionId)
+getAuctionsOf(address _owner)
+getCurrentBid(uint _auctionId)
+getAuctionsCountOfOwner(address _owner)
+getAuctionById(uint _auctionId)
+createAuction(address _deedRepositoryAddress, uint256 _deedId,
+              string _auctionTitle, string _metadata, uint256 _startPrice,
+              uint _blockDeadline)
+approveAndTransfer(address _from, address _to, address _deedRepositoryAddress,
+                   uint256 _deedId)
+cancelAuction(uint _auctionId)
+finalizeAuction(uint _auctionId)
+bidOnAuction(uint _auctionId)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can deploy these contracts to the Ethereum blockchain of your choice (e.g., Ropsten) using truffle in the book&#x2019;s repository:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>cd code/auction_dapp/backend</strong>
+$ <strong>truffle init</strong>
+$ <strong>truffle compile</strong>
+$ <strong>truffle migrate --network ropsten</strong>
+</pre>
+<div class="sect4">
+<h5 id="_dapp_governance">DApp governance</h5>
+<div class="paragraph">
+<p>If you read through the two smart contracts of the Auction DApp you will notice something important: there is no special account or role that has special privileges over the DApp. Each auction has an owner with some special capabilities, but the Auction DApp itself has no privileged user.</p>
+</div>
+<div class="paragraph">
+<p>This is a deliberate choice to decentralize the governance of the DApp and relinquish any control once it has been deployed. Some DApps, by comparison, have one or more privileged accounts with special capabilities, such as the ability to terminate the DApp contract, to override or change its configuration, or to &quot;veto&quot; certain operations. Usually, these governance functions are introduced in the DApp in order to avoid unknown problems that might arise due to a bug.</p>
+</div>
+<div class="paragraph">
+<p>The issue of governance is a particularly difficult one to solve, as it represents a double-edged sword. On the one side, privileged accounts are dangerous; if compromised, they can subvert the security of the DApp. On the other side, without any privileged account, there are no recovery options if a bug is found. We have seen both of these risks manifest in Ethereum DApps. In the case of The DAO (<a href="#real_world_example_the_dao">[real_world_example_the_dao]</a> and <a href="#ethereum_fork_history">[ethereum_fork_history]</a>), there were some privileged accounts called the &quot;curators,&quot; but they were very limited in their capabilities. Those accounts were not able to override the DAO attacker&#x2019;s withdrawal of the funds. In a more recent case, the decentralized exchange Bancor experienced a massive theft because a privileged management account was compromised. Turns out, Bancor was not as decentralized as initially assumed.</p>
+</div>
+<div class="paragraph">
+<p>When building a DApp, you have to decide if you want to make the smart contracts truly independent, launching them and then having no control, or create privileged accounts and run the risk of those being compromised. Either choice carries risk, but in the long run, true DApps cannot have specialized access for privileged accounts&#x2014;that&#x2019;s not decentralized.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_auction_dapp_frontend_user_interface">Auction DApp: Frontend User Interface</h4>
+<div class="paragraph">
+<p>Once the Auction DApp&#x2019;s contracts are deployed, you can interact with them using your favorite JavaScript console and web3.js, or another web3 library. However, most users will need an easy-to-use interface. Our Auction DApp user interface is built using the Vue2/Vuetify JavaScript framework from Google.</p>
+</div>
+<div class="paragraph">
+<p>You can find the user interface code in the <em>code/auction_dapp/frontend</em> folder in <a href="https://github.com/ethereumbook/ethereumbook" target="_blank">the book&#x2019;s repository</a>. The directory has the following structure and contents:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>frontend/
+|-- build
+|   |-- build.js
+|   |-- check-versions.js
+|   |-- logo.png
+|   |-- utils.js
+|   |-- vue-loader.conf.js
+|   |-- webpack.base.conf.js
+|   |-- webpack.dev.conf.js
+|   `-- webpack.prod.conf.js
+|-- config
+|   |-- dev.env.js
+|   |-- index.js
+|   `-- prod.env.js
+|-- index.html
+|-- package.json
+|-- package-lock.json
+|-- README.md
+|-- src
+|   |-- App.vue
+|   |-- components
+|   |   |-- Auction.vue
+|   |   `-- Home.vue
+|   |-- config.js
+|   |-- contracts
+|   |   |-- AuctionRepository.json
+|   |   `-- DeedRepository.json
+|   |-- main.js
+|   |-- models
+|   |   |-- AuctionRepository.js
+|   |   |-- ChatRoom.js
+|   |   `-- DeedRepository.js
+|   `-- router
+|       `-- index.js</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once you have deployed the contracts, edit the frontend configuration in <em>frontend/src/config.js</em> and enter the addresses of the DeedRepository and AuctionRepository contracts, as deployed. The frontend application also needs access to an Ethereum node offering a JSON-RPC and WebSockets interface. Once you&#x2019;ve configured the frontend, launch it with a web server on your local machine:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>npm install</strong>
+$ <strong>npm run dev</strong>
+</pre>
+<div class="paragraph">
+<p>The Auction DApp frontend will launch and will be accessible via any web browser at <a href="http://localhost:8080" class="bare" target="_blank">http://localhost:8080</a>.</p>
+</div>
+<div class="paragraph">
+<p>If all goes well you should see the screen shown in <a href="#auction_dapp_screen">Auction DApp user interface</a>, which illustrates the Auction DApp running in a web browser.</p>
+</div>
+<div id="auction_dapp_screen" class="imageblock">
+<div class="content">
+<img src="images/auction_dapp_home_screen.png" alt="Auction DApp User interface">
+</div>
+<div class="title">Figure 3. Auction DApp user interface</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_further_decentralizing_the_auction_dapp">Further Decentralizing the Auction DApp</h3>
+<div class="paragraph">
+<p>Our DApp is already quite decentralized, but we can improve things.</p>
+</div>
+<div class="paragraph">
+<p>The AuctionRepository contract operates independently of any oversight, open to anyone. Once deployed it cannot be stopped, nor can any auction be controlled. Each auction has a separate chat room that allows anyone to communicate about the auction without censorship or identification. The various auction assets, such as the description and associated image, are stored on Swarm, making them hard to censor or block.</p>
+</div>
+<div class="paragraph">
+<p>Anyone can interact with the DApp by constructing transactions manually or by running the Vue frontend on their local machine. The DApp code itself is open source and developed collaboratively on a public repository.</p>
+</div>
+<div class="paragraph">
+<p>There are two things we can do to make this DApp decentralized and resilient:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Store all the application code on Swarm or IPFS.</p>
+</li>
+<li>
+<p>Access the DApp by reference to a name, using the Ethereum Name Service.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We&#x2019;ll explore the first option in the next section, and we&#x2019;ll dig into the second in <a href="#ethereum_naming_system_ens">The Ethereum Name Service (ENS)</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_storing_the_auction_dapp_on_swarm">Storing the Auction DApp on Swarm</h3>
+<div class="paragraph">
+<p>We introduced Swarm in <a href="#swarm_sec">Swarm</a>, earlier in this chapter. Our Auction DApp already uses Swarm to store the icon image for each auction. This is a much more efficient solution than attempting to store data on Ethereum, which is expensive. It is also a lot more resilient than if these images were stored in a centralized service like a web server or file server.</p>
+</div>
+<div class="paragraph">
+<p>But we can take things one step further. We can store the entire frontend of the DApp itself in Swarm and run it from a Swarm node directly, instead of running a web server.</p>
+</div>
+<div class="sect3">
+<h4 id="_preparing_swarm">Preparing Swarm</h4>
+<div class="paragraph">
+<p>To get started, you need to install Swarm and initialize your Swarm node. Swarm is part of the Ethereum Foundation&#x2019;s Go-Ethereum suite of tools. Refer to the instructions for installing Go-Ethereum in <a href="#go_ethereum_geth">[go_ethereum_geth]</a>, or to install a Swarm binary release, follow the instructions in the <a href="http://bit.ly/2Q75KXw" target="_blank">Swarm documentation</a>.</p>
+</div>
+<div class="paragraph">
+<p>Once you have installed Swarm, you can check that it is working correctly by running it with the version command:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>swarm version</strong>
+Version: 0.3
+Git Commit: 37685930d953bcbe023f9bc65b135a8d8b8f1488
+Go Version: go1.10.1
+OS: linux
+</pre>
+<div class="paragraph">
+<p>To start running Swarm, you must tell it how to connect to an instance of Geth, to access the JSON-RPC API. Get it started by following the instructions in the <a href="https://swarm-guide.readthedocs.io/en/latest/gettingstarted.html" target="_blank">Getting Started guide</a>.</p>
+</div>
+<div class="paragraph">
+<p>When you start Swarm, you should see something like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Maximum peer count                       ETH=25 LES=0 total=25
+Starting peer-to-peer node               instance=swarm/v0.3.1-225171a4/linux...
+connecting to ENS API                    url=http://127.0.0.1:8545
+swarm[5955]: [189B blob data]
+Starting P2P networking
+UDP listener up                          self=enode://f50c8e19ff841bcd5ce7d2d...
+Updated bzz local addr                   oaddr=9c40be8b83e648d50f40ad3... uaddr=e
+Starting Swarm service
+9c40be8b hive starting
+detected an existing store. trying to load peers
+hive 9c40be8b: peers loaded
+Swarm network started on bzz address: 9c40be8b83e648d50f40ad3d35f...
+Pss started
+Streamer started
+IPC endpoint opened                      url=/home/ubuntu/.ethereum/bzzd.ipc
+RLPx listener up                         self=enode://f50c8e19ff841bcd5ce7d2d...</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can confirm that your Swarm node is running correctly by connecting to the local Swarm gateway web interface:
+<a href="http://localhost:8500" class="bare" target="_blank">http://localhost:8500</a>.</p>
+</div>
+<div class="paragraph">
+<p>You should see a screen like the one in <a href="#image_swarm_gateway">Swarm gateway on localhost</a> and be able to query any Swarm hash or ENS name.</p>
+</div>
+<div id="image_swarm_gateway" class="imageblock">
+<div class="content">
+<img src="images/swarm-gateway.png" alt="Swarm gateway on localhost">
+</div>
+<div class="title">Figure 4. Swarm gateway on localhost</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_uploading_files_to_swarm">Uploading Files to Swarm</h4>
+<div class="paragraph">
+<p>Once you have your local Swarm node and gateway running, you can upload to Swarm and the files will be accessible on any Swarm node, simply by reference to the file hash.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s test this by uploading a file:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>swarm up code/auction_dapp/README.md</strong>
+ec13042c83ffc2fb5cb0aa8c53f770d36c9b3b35d0468a0c0a77c97016bb8d7c
+</pre>
+<div class="paragraph">
+<p>Swarm has uploaded the <em>README.md</em> file and returned a hash that you can use to access the file from any Swarm node. For example, you could use the <a href="https://bit.ly/2znWUP9" target="_blank">public Swarm gateway</a>.</p>
+</div>
+<div class="paragraph">
+<p>While uploading one file is relatively straightforward, it is a bit more complex to upload an entire DApp frontend. That&#x2019;s because the various DApp resources (HTML, CSS, JavaScript, libraries, etc.) have embedded references to each other. Normally, a web server translates URLs to local files and serves the correct resources. We can achieve the same for Swarm by packaging our DApp.</p>
+</div>
+<div class="paragraph">
+<p>In the Auction DApp, there&#x2019;s a script for packaging all the resources:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>cd code/auction_dapp/frontend</strong>
+$ <strong>npm run build</strong>
+
+&gt; <strong>frontend@1.0.0 build /home/aantonop/Dev/ethereumbook/code/auction_dapp/frontend</strong>
+&gt; <strong>node build/build.js</strong>
+
+Hash: 9ee134d8db3c44dd574d
+Version: webpack 3.10.0
+Time: 25665ms
+Asset     Size
+static/js/vendor.77913f316aaf102cec11.js  1.25 MB
+static/js/app.5396ead17892922422d4.js   502 kB
+static/js/manifest.87447dd4f5e60a5f9652.js  1.54 kB
+static/css/app.0e50d6a1d2b1ed4daa03d306ced779cc.css  1.13 kB
+static/css/app.0e50d6a1d2b1ed4daa03d306ced779cc.css.map  2.54 kB
+static/js/vendor.77913f316aaf102cec11.js.map  4.74 MB
+static/js/app.5396ead17892922422d4.js.map   893 kB
+static/js/manifest.87447dd4f5e60a5f9652.js.map  7.86 kB
+index.html  1.15 kB
+
+Build complete.
+</pre>
+<div class="paragraph">
+<p>The result of this command will be a new directory, <em>code/auction_dapp/frontend/dist</em>, that contains the entire Auction DApp frontend, packed together:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>dist/
+|-- index.html
+`-- static
+    |-- css
+    |   |-- app.0e50d6a1d2b1ed4daa03d306ced779cc.css
+    |   `-- app.0e50d6a1d2b1ed4daa03d306ced779cc.css.map
+    `-- js
+        |-- app.5396ead17892922422d4.js
+        |-- app.5396ead17892922422d4.js.map
+        |-- manifest.87447dd4f5e60a5f9652.js
+        |-- manifest.87447dd4f5e60a5f9652.js.map
+        |-- vendor.77913f316aaf102cec11.js
+        `-- vendor.77913f316aaf102cec11.js.map</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now you can upload the entire DApp to Swarm, by using the up command and the --recursive option. Here, we also tell Swarm that index.html is the defaultpath for loading this DApp:</p>
+</div>
+<pre data-type="programlisting">
+$ <strong>swarm --bzzapi http://localhost:8500 --recursive \
+  --defaultpath dist/index.html up dist/</strong>
+
+ab164cf37dc10647e43a233486cdeffa8334b026e32a480dd9cbd020c12d4581
+</pre>
+<div class="paragraph">
+<p>Now, our entire Auction DApp is hosted on Swarm and accessible by the Swarm URL:</p>
+</div>
+<ul class="simplelist">
+<li><em>bzz://ab164cf37dc10647e43a233486cdeffa8334b026e32a480dd9cbd020c12d4581</em></li>
+</ul>
+<div class="paragraph">
+<p>We&#x2019;ve made some progress in decentralizing our DApp, but we&#x2019;ve made it harder to use. A URL like that is much less user-friendly than a nice name like <em>auction_dapp.com</em>. Are we forced to sacrifice usability in order to gain decentralization? Not necessarily. In the next section we will examine Ethereum&#x2019;s name service, which allows us to use easy-to-read names but still preserves the decentralized nature of our application.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ethereum_naming_system_ens">The Ethereum Name Service (ENS)</h3>
+<div class="paragraph">
+<p>You can design the best smart contract in the world, but if you don&#x2019;t provide a good interface for users, they won&#x2019;t be able to access it.</p>
+</div>
+<div class="paragraph">
+<p>On the traditional internet, the Domain Name System (DNS) allows us to use human-readable names in the browser while resolving those names to IP addresses or other identifiers behind the scenes. On the Ethereum blockchain, the <em>Ethereum Naming System</em> (ENS) solves the same problem, but in a decentralized manner.</p>
+</div>
+<div class="paragraph">
+<p>For example, the Ethereum Foundation donation address is 0xfB6916095ca1df60&amp;thinsp;bB79Ce92cE3Ea74c37c5d359; in a wallet that supports ENS, it&#x2019;s simply ethereum.eth.</p>
+</div>
+<div class="paragraph">
+<p>ENS is more than a smart contract; it&#x2019;s a fundamental DApp itself, offering a decentralized name service. Furthermore, ENS is supported by a number of DApps for registration, management, and auctions of registered names. ENS demonstrates how DApps can work together: it&#x2019;s DApp built to serve other DApps, supported by an ecosystem of DApps, embedded in other DApps, and so on.</p>
+</div>
+<div class="paragraph">
+<p>In this section we will look at how ENS works. We&#x2019;ll demonstrate how you can set up your own name and link it to a wallet or Ethereum address, how you can embed ENS in another DApp, and how you can use ENS to name your DApp resources to make them easier to use.</p>
+</div>
+<div class="sect3">
+<h4 id="_history_of_ethereum_name_services">History of Ethereum Name Services</h4>
+<div class="paragraph">
+<p>Name registration was the first noncurrency application of blockchains, pioneered by Namecoin. The Ethereum <a href="http://bit.ly/2Of1gfZ" target="_blank">White Paper</a> gave a two-line Namecoin-like registration system as one of its example applications.</p>
+</div>
+<div class="paragraph">
+<p>Early releases of Geth and the C++ Ethereum client had a built-in namereg contract (not used any more), and many proposals and ERCs for name services were made, but it was only when Nick Johnson started working for the Ethereum Foundation in 2016 and took the project under his wing that serious work on a registrar started.</p>
+</div>
+<div class="paragraph">
+<p>ENS was launched on Star Wars Day, May 4, 2017 (after a failed attempt to launch it on Pi Day, March 15).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_ens_specification">The ENS Specification</h4>
+<div class="paragraph">
+<p>ENS is specified mainly in three Ethereum Improvement Proposals: EIP-137, which specifies the basic functions of ENS; EIP-162, which describes the auction system for the .eth root; and EIP-181, which specifies reverse registration of addresses.</p>
+</div>
+<div class="paragraph">
+<p>ENS follows a &quot;sandwich&quot; design philosophy: a very simple layer on the bottom, followed by layers of more complex but replaceable code, with a very simple top layer that keeps all the funds in separate accounts.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_bottom_layer_name_owners_and_resolvers">Bottom Layer: Name Owners and Resolvers</h4>
+<div class="paragraph">
+<p>The ENS operates on &quot;nodes&quot; instead of human-readable names: a human-readable name is converted to a node using the &quot;Namehash&quot; algorithm.</p>
+</div>
+<div class="paragraph">
+<p>The base layer of ENS is a cleverly simple contract (less than 50 lines of code) defined by ERC137 that allows only nodes&apos; owners to set information about their names and to create subnodes (the ENS equivalent of DNS subdomains).</p>
+</div>
+<div class="paragraph">
+<p>The only functions on the base layer are those that enable a node owner to set information about their own node (specifically the resolver, time to live, or transferring the ownership) and to create owners of new subnodes.</p>
+</div>
+<div class="sect4">
+<h5 id="_the_namehash_algorithm">The Namehash algorithm</h5>
+<div class="paragraph">
+<p>Namehash is a recursive algorithm that can convert any name into a hash that identifies the name.</p>
+</div>
+<div class="paragraph">
+<p>&quot;Recursive&quot; means that we solve the problem by solving a subproblem that is a smaller problem of the same type, and then use the solution to the subproblem to solve the original problem.</p>
+</div>
+<div class="paragraph">
+<p>Namehash recursively hashes components of the name, producing a unique, fixed-length string (or &#x201C;node&#x201D;) for any valid input domain. For example, the Namehash node of subdomain.example.eth is <code>keccak(&apos;&lt;example.eth&gt;&apos; node) + keccak(&apos;&lt;subdomain&gt;&apos;)</code>. The subproblem we must solve is to compute the node for example.eth, which is <code>keccak(&apos;&lt;.eth&gt;&apos; node) + keccak(&apos;&lt;example&gt;&apos;)</code>.  To begin, we must compute the node for eth, which is <code>keccak(&lt;root node&gt;) + keccak(&apos;&lt;eth&gt;&apos;)</code>.</p>
+</div>
+<div class="paragraph">
+<p>The root node is what we call the &quot;base case&quot; of our recursion, and we obviously can&#x2019;t define it recursively, or the algorithm will never terminate! The root node is defined as <code>0x0000000000000000000000000000000000000000000000000000000000000000</code> (32 zero bytes).</p>
+</div>
+<div class="paragraph">
+<p>Putting this all together, the node of subdomain.example.eth is therefore <code>keccak(keccak(keccak(0x0...0 + keccak(&apos;eth&apos;)) + keccak(&apos;example&apos;)) + keccak(&apos;subdomain&apos;))</code>.</p>
+</div>
+<div class="paragraph">
+<p>Generalizing, we can define the Namehash function as follows (the base case for the root node, or empty name, followed by the recursive step):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>namehash([]) = 0x0000000000000000000000000000000000000000000000000000000000000000
+namehash([label, ...]) = keccak256(namehash(...) + keccak256(label))</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In Python this becomes:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>def namehash(name):
+  if name == &apos;&apos;:
+    return &apos;\0&apos; * 32
+  else:
+    label, _, remainder = name.partition(&apos;.&apos;)
+    return sha3(namehash(remainder) + sha3(label))</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Thus, mastering-ethereum.eth will be processed as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>namehash(&apos;mastering-ethereum.eth&apos;)
+&#x21D2; sha3(namehash(&apos;eth&apos;) + sha3(&apos;mastering-ethereum&apos;))
+&#x21D2; sha3(sha3(namehash(&apos;&apos;) + sha3(&apos;eth&apos;)) + sha3(&apos;mastering-ethereum&apos;))
+&#x21D2; sha3(sha3((&apos;\0&apos; * 32) + sha3(&apos;eth&apos;)) + sha3(&apos;mastering-ethereum&apos;))</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Of course, subdomains can themselves have subdomains: there could be a sub.subdomain.example.eth after subdomain.example.eth, then a sub.sub.subdomain.example.eth, and so on. To avoid expensive recomputation, since Namehash depends only on the name itself, the node for a given name can be precomputed and inserted into a contract, removing the need for string manipulation and permitting immediate lookup of ENS records regardless of the number of components in the raw name.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_how_to_choose_a_valid_name">How to choose a valid name</h5>
+<div class="paragraph">
+<p>Names consist of a series of dot-separated labels. Although upper- and lowercase letters are allowed, all labels should follow a UTS #46 normalization process that case-folds labels before hashing them, so names with different case but identical spelling will end up with the same Namehash.</p>
+</div>
+<div class="paragraph">
+<p>You could use labels and domains of any length, but for the sake of compatibility with legacy DNS, the following rules are recommended:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Labels should be no more than 64 characters each.</p>
+</li>
+<li>
+<p>Complete ENS names should be no more than 255 characters.</p>
+</li>
+<li>
+<p>Labels should not start or end with hyphens, or start with digits.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_root_node_ownership">Root node ownership</h5>
+<div class="paragraph">
+<p>One of the results of this hierarchical system is that it relies on the owners of the root node, who are able to create top-level domains (TLDs).</p>
+</div>
+<div class="paragraph">
+<p>While the eventual goal is to adopt a decentralized decision-making process for new TLDs, at the time of writing the root node is controlled by a 4-of-7 multisig, held by people in different countries (built as a reflection of the 7 keyholders of the DNS system).
+As a result, a majority of at least 4 of the 7 keyholders is required to effect any change.</p>
+</div>
+<div class="paragraph">
+<p>Currently the purpose and goal of these keyholders is to work in consensus with the community to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Migrate and upgrade the temporary ownership of the .eth TLD to a more permanent contract once the system is evaluated.</p>
+</li>
+<li>
+<p>Allow adding new TLDs, if the community agrees they are needed.</p>
+</li>
+<li>
+<p>Migrate the ownership of the root multisig to a more decentralized contract, when such a system is agreed upon, tested, and implemented.</p>
+</li>
+<li>
+<p>Serve as a last-resort way to deal with any bugs or vulnerabilities in the top-level registries.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_resolvers">Resolvers</h5>
+<div class="paragraph">
+<p>The basic ENS contract can&#x2019;t add metadata to names; that is the job of so-called &quot;resolver contracts.&quot; These are user-created contracts that can answer questions about the name, such as what Swarm address is associated with the app, what address receives payments to the app (in ether or tokens), or what the hash of the app is (to verify its integrity).</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_middle_layer_the_eth_nodes">Middle Layer: The .eth Nodes</h4>
+<div class="paragraph">
+<p>At the time of writing, the only top-level domain that is uniquely registrable in a smart contract is .eth.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There&#x2019;s work underway on enabling traditional DNS domain owners to claim ENS ownership.
+While in theory this could work for .com, the only domain that this has been implemented for so far is <a href="http://bit.ly/2SwUuFC" target="_blank">.xyz, and only on the Ropsten testnet</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>.eth domains are distributed via an auction system. There is no reserved list or priority, and the only way to acquire a name is to use the system. The auction system is a complex piece of code (over 500 lines); most of the early development efforts (and bugs!) in ENS were in this part of the system. However, it&#x2019;s also replaceable and upgradeable, without risk to the funds&#x2014;more on that later.</p>
+</div>
+<div class="sect4">
+<h5 id="vickrey_auction">Vickrey auctions</h5>
+<div class="paragraph">
+<p>Names are distributed via a modified Vickrey auction. In a traditional Vickrey auction, every bidder submits a sealed bid, and all of them are revealed simultaneously, at which point the highest bidder wins the auction but only pays the second-highest bid. Therefore bidders are incentivized not to bid less than the true value of the name to them, since bidding their true value increases the chance they will win but does not affect the price they will eventually pay.</p>
+</div>
+<div class="paragraph">
+<p>On a blockchain, some changes are required:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To ensure bidders don&#x2019;t submit bids they have no intention of paying, they must lock up a value equal to or higher than their bid beforehand, to guarantee the bid is valid.</p>
+</li>
+<li>
+<p>Because you can&#x2019;t hide secrets on a blockchain, bidders must execute at least two transactions (a commit&#x2013;reveal process), in order to hide the original value and name they bid on.</p>
+</li>
+<li>
+<p>Since you can&#x2019;t reveal all bids simultaneously in a decentralized system, bidders must reveal their own bids themselves; if they don&#x2019;t, they forfeit their locked-up funds. Without this forfeit, one could make many bids and choose to reveal only one or two, turning a sealed-bid auction into a traditional increasing price <span class="keep-together">auction</span>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Therefore, the auction is a four-step process:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start the auction. This is required to broadcast the intent to register a name.
+This creates all auction deadlines. The names are hashed, so that only those who have the name in their dictionary will know which auction was opened. This allows some privacy, which is useful if you are creating a new project and don&#x2019;t want to share details about it.
+You can open multiple dummy auctions at the same time, so if someone is following you they cannot simply bid on all auctions you open.</p>
+</li>
+<li>
+<p>Make a sealed bid. You must do this before the bidding deadline, by tying a given amount of ether to the hash of a secret message (containing, among other things, the hash of the name, the actual amount of the bid, and a salt).
+You can lock up more ether than you are actually bidding in order to mask your true valuation.</p>
+</li>
+<li>
+<p>Reveal the bid. During the reveal period, you must make a transaction that reveals the bid, which will then calculate the highest bid and the second-highest bid and send ether back to unsuccessful bidders.
+Every time the bid is revealed the current winner is recalculated; therefore, the last one to be set before the revealing deadline expires becomes the overall winner.</p>
+</li>
+<li>
+<p>Clean up after. If you are the winner, you can finalize the auction in order to get back the difference between your bid and the second-highest bid.
+If you forgot to reveal you can make a late reveal and recover a little of your bid.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_top_layer_the_deeds">Top Layer: The Deeds</h4>
+<div class="paragraph">
+<p>The top layer of ENS is yet another super-simple contract with a single purpose: to hold the funds.</p>
+</div>
+<div class="paragraph">
+<p>When you win a name, the funds are not actually sent anywhere, but are just locked up for the period you want to hold the name (at least a year).
+This works like a guaranteed buyback: if the owner does not want the name any more they can sell it back to the system and recover their ether (so the cost of holding the name is the opportunity cost of doing something with a return greater than zero).</p>
+</div>
+<div class="paragraph">
+<p>Of course, having a single contract hold millions of dollars in ether has proven to be very risky, so instead ENS creates a deed contract for each new name.
+The deed contract is very simple (about 50 lines of code), and it only allows the funds to be transferred back to a single account (the deed owner) and to be called by a single entity (the registrar contract).
+This approach drastically reduces the attack surface where bugs can put the funds at risk.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_registering_a_name">Registering a Name</h4>
+<div class="paragraph">
+<p>Registering a name in ENS is a four-step process, as we saw in  <a href="#vickrey_auction">Vickrey auctions</a>. First we place a bid for any available name, then we reveal our bid after 48 hours to secure the name. <a href="#ens_registration_timeline">ENS timeline for registration</a> is a diagram showing the timeline of registration.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s register our first name!</p>
+</div>
+<div class="paragraph">
+<p>We will use one of several available user-friendly interfaces to search for available names, place a bid on the name ethereumbook.eth, reveal the bid, and secure the name.</p>
+</div>
+<div class="paragraph">
+<p>There are a number of web-based interfaces to ENS that allow us to interact with the ENS DApp. For this example, we will use the <a href="https://mycrypto.com/" target="_blank">MyCrypto interface</a>, in conjunction with MetaMask as our wallet.</p>
+</div>
+<div id="ens_registration_timeline" class="imageblock">
+<div class="content">
+<img src="images/ens-flow.png" alt="ens flow.png">
+</div>
+<div class="title">Figure 5. ENS timeline for registration</div>
+</div>
+<div class="paragraph">
+<p>First, we need to make sure the name we want is available. While writing this book, we really wanted to register the name mastering.eth, but alas, <a href="#ens-name-search">Searching for ENS names on MyCrypto.com</a> revealed it was already taken! Because ENS registrations only last one year, it might become possible to secure that name in the future. In the meantime, let&#x2019;s search for ethereumbook.eth (<a href="#ens-name-search">Searching for ENS names on MyCrypto.com</a>).</p>
+</div>
+<div id="ens-name-search" class="imageblock">
+<div class="content">
+<img src="images/ens-checkname.png" alt="Searching for ENS names on MyCrypto.com">
+</div>
+<div class="title">Figure 6. Searching for ENS names on MyCrypto.com</div>
+</div>
+<div class="paragraph">
+<p>Great! The name is available. In order to register it, we need to move forward with <a href="#ens-auction">Starting an auction for an ENS name</a>. Let&#x2019;s unlock MetaMask and start an auction for ethereumbook.eth.</p>
+</div>
+<div id="ens-auction" class="imageblock">
+<div class="content">
+<img src="images/ens-auction.png" alt="Starting an auction for an ENS name">
+</div>
+<div class="title">Figure 7. Starting an auction for an ENS name</div>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s make our bid. In order to do that we need to follow the steps in <a href="#ens-bid">Placing a bid for an ENS name</a>.</p>
+</div>
+<div id="ens-bid" class="imageblock">
+<div class="content">
+<img src="images/ens-bid.png" alt="Placing a bid for an ENS name">
+</div>
+<div class="title">Figure 8. Placing a bid for an ENS name</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>As mentioned in <a href="#vickrey_auction">Vickrey auctions</a>, you must reveal your bid within 48 hours after the auction is complete, or you <em>lose the funds in your bid</em>. Did we forget to do this and lose 0.01 ETH ourselves? You bet we did.</p>
+</div>
+<div class="paragraph">
+<p>Take a screenshot, save your secret phrase (as a backup for your bid), and add a reminder in your calendar for the reveal date and time, so you don&#x2019;t forget and lose your funds.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Finally, we confirm the transaction by clicking the big green submit button shown in <a href="#ens-metamask-bid">MetaMask transaction containing your bid</a>.</p>
+</div>
+<div id="ens-metamask-bid" class="imageblock">
+<div class="content">
+<img src="images/ens-metamask-bid.png" alt="MetaMask transaction containing your bid">
+</div>
+<div class="title">Figure 9. MetaMask transaction containing your bid</div>
+</div>
+<div class="paragraph">
+<p>If all goes well, after submitting a transaction in this way you can return and reveal the bid in 48 hours, and the name you requested will be registered to your Ethereum address.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_managing_your_ens_name">Managing Your ENS Name</h4>
+<div class="paragraph">
+<p>Once you have registered an ENS name, you can manage it using another user-friendly interface: <a href="https://manager.ens.domains/" target="_blank">ENS Manager</a>.</p>
+</div>
+<div class="paragraph">
+<p>Once there, enter the name you want to manage in the search box (see <a href="#ens-manager">The ENS Manager web interface</a>). You need to have your Ethereum wallet  (e.g., MetaMask) unlocked, so that the ENS Manager DApp can manage the name on your behalf.</p>
+</div>
+<div id="ens-manager" class="imageblock">
+<div class="content">
+<img src="images/ens-manager.png" alt="The ENS Manager web interface">
+</div>
+<div class="title">Figure 10. The ENS Manager web interface</div>
+</div>
+<div class="paragraph">
+<p>From this interface, we can create subdomains, set a resolver contract (more on that later), and connect each name to the appropriate resource, such as the Swarm address of a DApp frontend.</p>
+</div>
+<div class="sect4">
+<h5 id="_creating_an_ens_subdomain">Creating an ENS subdomain</h5>
+<div class="paragraph">
+<p>First, let&#x2019;s create a subdomain for our example Auction DApp (see <a href="#ens-manager-add-subdomain">Adding the subdomain auction.ethereumbook.eth</a>). We will name the subdomain auction, so the fully qualified name will be auction.ethereumbook.eth.</p>
+</div>
+<div id="ens-manager-add-subdomain" class="imageblock">
+<div class="content">
+<img src="images/ens_manager_add_subdomain.png" alt="Adding the subdomain auction.ethereumbook.eth">
+</div>
+<div class="title">Figure 11. Adding the subdomain auction.ethereumbook.eth</div>
+</div>
+<div class="paragraph">
+<p>Once we&#x2019;ve created the subdomain, we can enter auction.ethereumbook.eth in the search box and manage it, just as we managed the domain ethereumbook.eth <span class="keep-together">previously</span>.</p>
+</div>
+</div>
+</div>
+<div class="sect3 pagebreak-before">
+<h4 id="_ens_resolvers">ENS Resolvers</h4>
+<div class="paragraph">
+<p>In ENS, resolving a name is a two-step process:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The ENS registry is called with the name to resolve after hashing it.
+If the record exists, the registry returns the address of its resolver.</p>
+</li>
+<li>
+<p>The resolver is called, using the method appropriate to the resource being requested. The resolver returns the desired result.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This two-step process has several benefits. Separating the functionality of resolvers from the naming system itself gives us a lot more flexibility. The owners of names can use custom resolvers to resolve any type or resource, extending the functionality of ENS. For example, if in the future you wanted to link a geolocation resource (longitude/lattitude) to an ENS name, you could create a new resolver that answers a <span class="keep-together"><code>geolocation</code></span> query. Who knows what applications might be useful in the future? With custom resolvers, the only limitation is your imagination.</p>
+</div>
+<div class="paragraph">
+<p>For convenience, there is a default public resolver that can resolve a variety of resources, including the address (for wallets or contracts) and content (a Swarm hash for DApps or contract source code).</p>
+</div>
+<div class="paragraph">
+<p>Since we want to link our Auction DApp to a Swarm hash, we can use the public resolver, which supports content resolution, as shown in <a href="#ens-manager-set-default-resolver">Setting the default public resolver for auction.ethereumbook.eth</a>; we don&#x2019;t need to code or deploy a custom resolver.</p>
+</div>
+<div id="ens-manager-set-default-resolver" class="imageblock">
+<div class="content">
+<img src="images/ens-manager-set-default-resolver.png" alt="Set the default public resolver for auction.ethereumbook.eth">
+</div>
+<div class="title">Figure 12. Setting the default public resolver for auction.ethereumbook.eth</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resolving_a_name_to_a_swarm_hash_content">Resolving a Name to a Swarm Hash (Content)</h4>
+<div class="paragraph">
+<p>Once the resolver for auction.ethereumbook.eth is set to be the public resolver, we can set it to return the Swarm hash as the content of our name (see <a href="#ens-set-content">Setting the &apos;content&apos; to return for auction.ethereumbook.eth</a>).</p>
+</div>
+<div id="ens-set-content" class="imageblock">
+<div class="content">
+<img src="images/ens-manager-set-content.png" alt="Set the &apos;content&apos; return for auction.ethereumbook.eth">
+</div>
+<div class="title">Figure 13. Setting the &apos;content&apos; to return for auction.ethereumbook.eth</div>
+</div>
+<div class="paragraph">
+<p>After waiting a short time for our transaction to be confirmed, we should be able to resolve the name correctly. Before setting a name, our Auction DApp could be found on a Swarm gateway by its hash:</p>
+</div>
+<ul class="simplelist">
+<li><em>https://swarm-gateways.net/bzz:/ab164cf37dc10647e43a233486cdeffa8334b026e32a480dd9cbd020c12d4581</em></li>
+</ul>
+<div class="paragraph">
+<p>or by searching in a DApp browser or Swarm gateway for the Swarm URL:</p>
+</div>
+<ul class="simplelist">
+<li><em>bzz://ab164cf37dc10647e43a233486cdeffa8334b026e32a480dd9cbd020c12d4581</em></li>
+</ul>
+<div class="paragraph pagebreak-before">
+<p>Now that we have attached it to a name, it is much easier:</p>
+</div>
+<ul class="simplelist">
+<li><em>http://swarm-gateways.net/bzz:/auction.ethereumbook.eth/</em></li>
+</ul>
+<div class="paragraph">
+<p>We can also find it by searching for &quot;auction.ethereumbook.eth&quot; in any ENS-compatible wallet or DApp browser (e.g., Mist).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_from_app_to_dapp">From App to DApp</h3>
+<div class="paragraph">
+<p>Over the past several sections, we have gradually built a decentralized application. We started with a pair of smart contracts to run an auction for ERC721 deeds. These contracts were designed to have no governing or privileged accounts, so that their operation is truly decentralized. We  added a frontend, implemented in JavaScript, that offers a convenient and user-friendly interface to our DApp. The auction DApp uses the decentralized storage system Swarm to store application resources such as images. The DApp also uses the decentralized communications protocol Whisper to offer an encrypted chat room for each auction, without any central servers.</p>
+</div>
+<div class="paragraph">
+<p>We uploaded the entire frontend to Swarm, so that our DApp doesn&#x2019;t rely on any web servers to serve the files. Finally, we allocated a name for our DApp using ENS, connecting it to the Swarm hash of the frontend, so that users can access it with a simple and easy-to-remember human-readable name.</p>
+</div>
+<div class="paragraph">
+<p>With each of these steps, we increased the decentralization of our application. The final result is a DApp that has no central point of authority, no central point of failure, and expresses the &quot;web3&quot; vision.</p>
+</div>
+<div class="paragraph">
+<p><a href="#auction_dapp_final_architecture">Auction DApp architecture</a> shows the complete architecture of the Auction DApp.</p>
+</div>
+<div id="auction_dapp_final_architecture" class="imageblock">
+<div class="content">
+<img src="images/auction_dapp_final_architecture.png" alt="Auction DApp architecture">
+</div>
+<div class="title">Figure 14. Auction DApp architecture</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conclusions">Conclusions</h3>
+<div class="paragraph">
+<p>Decentralized applications are the culmination of the Ethereum vision, as expressed by the founders from the very earliest designs. While a lot of applications call themselves &quot;DApps&quot; today, most are not fully decentralized. However, it is already possible to construct applications that are almost completely decentralized. Over time, as the technology matures further, more and more of our applications can be decentralized, resulting in a more resilient, censorship-resistant, and free web.</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11oracles.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 11: Oracles">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13evm.html" class="navigation navigation-next " aria-label="Next page: Chapter 13: The Ethereum Virtual Machine">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 12: Decentralized Applications (DApps)","level":"1.15","depth":1,"next":{"title":"Chapter 13: The Ethereum Virtual Machine","level":"1.16","depth":1,"path":"13evm.asciidoc","ref":"13evm.asciidoc","articles":[]},"previous":{"title":"Chapter 11: Oracles","level":"1.14","depth":1,"path":"11oracles.asciidoc","ref":"11oracles.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"12dapps.asciidoc","mtime":"2019-08-27T09:18:17.277Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

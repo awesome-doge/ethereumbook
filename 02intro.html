@@ -1,0 +1,1418 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 2: Ethereum Basics · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03clients.html" />
+    
+    
+    <link rel="prev" href="01what-is.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 2: Ethereum Basics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="intro_chapter">Ethereum Basics</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this chapter we will start exploring Ethereum, learning how to use wallets, how to create transactions, and also how to run a basic smart contract.</p>
+</div>
+<div class="sect2">
+<h3 id="ether_units">Ether Currency Units</h3>
+<div class="paragraph">
+<p>Ethereum&#x2019;s currency unit is called <em>ether</em>, identified also as &quot;ETH&quot; or with the symbols &#x39E; (from the Greek letter &quot;Xi&quot; that looks like a stylized capital E) or, less often, &#x2666;: for example, 1 ether, or 1 ETH, or &#x39E;1, or &#x2666;1.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Use Unicode character U+039E for &#x39E; and U+2666 for &#x2666;.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Ether is subdivided into smaller units, down to the smallest unit possible, which is named <em>wei</em>. One ether is 1 quintillion wei (1 * 10<sup>18</sup> or 1,000,000,000,000,000,000). You may hear people refer to the currency &quot;Ethereum&quot; too, but this is a common beginner&#x2019;s mistake. Ethereum is the system, ether is the currency.</p>
+</div>
+<div class="paragraph">
+<p>The value of ether is always represented internally in Ethereum as an unsigned integer value denominated in wei. When you transact 1 ether, the transaction encodes 1000000000000000000 wei as the value.</p>
+</div>
+<div class="paragraph">
+<p>Ether&#x2019;s various denominations have both a <em>scientific name</em> using the International System of Units (<em>SI</em>) and a colloquial name that pays homage to many of the great minds of computing and cryptography.</p>
+</div>
+<div class="paragraph">
+<p><a href="#ether_denominations">Ether denominations and unit names</a> shows the various units, their colloquial (common) names, and their SI names. In keeping with the internal representation of value, the table shows all denominations in wei (first row), with ether shown as 10<sup>18</sup> wei in the 7th row.</p>
+</div>
+<table id="ether_denominations" class="tableblock frame-all grid-all spread">
+<caption class="title">Table 1. Ether denominations and unit names</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value (in wei)</th>
+<th class="tableblock halign-left valign-top">Exponent</th>
+<th class="tableblock halign-left valign-top">Common name</th>
+<th class="tableblock halign-left valign-top">SI name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wei</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wei</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>3</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Babbage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kilowei or femtoether</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>6</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lovelace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Megawei or picoether</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000,000,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>9</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shannon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gigawei or nanoether</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000,000,000,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>12</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Szabo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microether or micro</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000,000,000,000,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>15</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finney</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Milliether or milli</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1,000,000,000,000,000,000</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>10<sup>18</sup></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Ether</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Ether</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000,000,000,000,000,000,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>21</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grand</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kiloether</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,000,000,000,000,000,000,000,000</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10<sup>24</sup></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Megaether</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="choosing_eth_wallet">Choosing an Ethereum Wallet</h3>
+<div class="paragraph">
+<p>The term &quot;wallet&quot; has come to mean many things, although they are all related and on a day-to-day basis boil down to pretty much the same thing. We will use the term &quot;wallet&quot; to mean a software application that helps you manage your Ethereum account. In short, an Ethereum wallet is your gateway to the Ethereum system. It holds your keys and can create and broadcast transactions on your behalf. Choosing an Ethereum wallet can be difficult because there are many different options with different features and designs. Some are more suitable for beginners and some are more suitable for experts. The Ethereum platform itself is still being improved, and the &quot;best&quot; wallets are often the ones that adapt to the changes that come with the platform upgrades.</p>
+</div>
+<div class="paragraph">
+<p>But don&#x2019;t worry! If you choose a wallet and don&#x2019;t like how it works&#x2014;or if you like it at first but later want to try something else&#x2014;you can change wallets quite easily. All you have to do is make a transaction that sends your funds from the old wallet to the new wallet, or export your private keys and import them into the new one.</p>
+</div>
+<div class="paragraph">
+<p>We&#x2019;ve selected three different types of wallets to use as examples throughout the book: a mobile wallet, a desktop wallet, and a web-based wallet. We&#x2019;ve chosen these three wallets because they represent a broad range of complexity and features. However, the selection of these wallets is not an endorsement of their quality or security. They are simply a good starting place for demonstrations and testing.</p>
+</div>
+<div class="paragraph">
+<p>Remember that for a wallet application to work, it must have access to your private keys, so it is vital that you only download and use wallet applications from sources you trust. Fortunately, in general, the more popular a wallet application is, the more trustworthy it is likely to be. Nevertheless, it is good practice to avoid &quot;putting all your eggs in one basket&quot; and have your Ethereum accounts spread across a couple of wallets.</p>
+</div>
+<div class="paragraph">
+<p>The following are some good starter wallets:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">MetaMask</dt>
+<dd>
+<p>MetaMask is a browser extension wallet that runs in your browser (Chrome, Firefox, Opera, or Brave Browser). It is easy to use and convenient for testing, as it is able to connect to a variety of Ethereum nodes and test blockchains. MetaMask is a web-based wallet.</p>
+</dd>
+<dt class="hdlist1">Jaxx</dt>
+<dd>
+<p>Jaxx is a multiplatform and multicurrency wallet that runs on a variety of operating systems, including Android, iOS, Windows, macOS, and Linux. It is often a good choice for new users as it is designed for simplicity and ease of use. Jaxx is either a mobile or a desktop wallet, depending on where you install it.</p>
+</dd>
+<dt class="hdlist1">MyEtherWallet (MEW)</dt>
+<dd>
+<p>MyEtherWallet is a web-based wallet that runs in any browser. It has multiple sophisticated features we will explore in many of our examples. MyEtherWallet is a web-based wallet.</p>
+</dd>
+<dt class="hdlist1">Emerald Wallet</dt>
+<dd>
+<p>Emerald Wallet is designed to work with the Ethereum Classic blockchain, but is compatible with other Ethereum-based blockchains. It&#x2019;s an open source desktop application and works under Windows, macOS, and Linux. Emerald Wallet can run a full node or connect to a public remote node, working in a &quot;light&quot; mode. It also has a companion tool to do all operations from the command line.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>We&#x2019;ll start by installing MetaMask on a desktop&#x2014;but first, we&#x2019;ll briefly discuss controlling and managing keys.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="control_responsibility">Control and Responsibility</h3>
+<div class="paragraph">
+<p>Open blockchains like Ethereum are important because they operate as a <em>decentralized</em> system. That means lots of things, but one crucial aspect is that each user of Ethereum can&#x2014;and should&#x2014;control their own private keys, which are the things that control access to funds and smart contracts. We sometimes call the combination of access to funds and smart contracts an &quot;account&quot; or &quot;wallet.&quot; These terms can get quite complex in their functionality, so we will go into this in more detail later. As a fundamental principle, however, it is as easy as one private key equals one &quot;account.&quot; Some users choose to give up control over their private keys by using a third-party custodian, such as an online exchange. In this book, we will teach you how to take control and manage your own private keys.</p>
+</div>
+<div class="paragraph">
+<p>With control comes a big responsibility. If you lose your private keys, you lose access to your funds and contracts. No one can help you regain access&#x2014;your funds will be locked forever. Here are a few tips to help you manage this responsibility:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not improvise security. Use tried-and-tested standard approaches.</p>
+</li>
+<li>
+<p>The more important the account (e.g., the higher the value of the funds controlled, or the more significant the smart contracts accessible), the higher security measures should be taken.</p>
+</li>
+<li>
+<p>The highest security is gained from an air-gapped device, but this level is not required for every account.</p>
+</li>
+<li>
+<p>Never store your private key in plain form, especially digitally. Fortunately, most user interfaces today won&#x2019;t even let you see the raw private key.</p>
+</li>
+<li>
+<p>Private keys can be stored in an encrypted form, as a digital &quot;keystore&quot; file. Being encrypted, they need a password to unlock. When you are prompted to choose a password, make it strong (i.e., long and random), back it up, and don&#x2019;t share it. If you don&#x2019;t have a password manager, write it down and store it in a safe and secret place. To access your account, you need both the keystore file and the password.</p>
+</li>
+<li>
+<p>Do not store any passwords in digital documents, digital photos, screenshots, online drives, encrypted PDFs, etc. Again, do not improvise security. Use a password manager or pen and paper.</p>
+</li>
+<li>
+<p>When you are prompted to back up a key as a mnemonic word sequence, use pen and paper to make a physical backup. Do not leave that task &quot;for later&quot;; you will forget. These backups can be used to rebuild your private key in case you lose all the data saved on your system, or if you forget or lose your password. However, they can also be used by attackers to get your private keys, so never store them digitally, and keep the physical copy stored securely in a locked drawer or safe.</p>
+</li>
+<li>
+<p>Before transferring any large amounts (especially to new addresses), first do a small test transaction (e.g., less than $1 value) and wait for confirmation of receipt.</p>
+</li>
+<li>
+<p>When you create a new account, start by sending only a small test transaction to the new address. Once you receive the test transaction, try sending back again from that account. There are lots of reasons account creation can go wrong, and if it has gone wrong, it is better to find out with a small loss. If the tests work, all is well.</p>
+</li>
+<li>
+<p>Public block explorers are an easy way to independently see whether a transaction has been accepted by the network. However, this convenience has a negative impact on your privacy, because you reveal your addresses to block explorers, which can track you.</p>
+</li>
+<li>
+<p>Do not send money to any of the addresses shown in this book. The private keys are listed in the book and someone will immediately take that money.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Now that we&#x2019;ve covered some basic best practices for key management and security, let&#x2019;s get to work using MetaMask!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="installing_MetaMask">Getting Started with MetaMask</h3>
+<div class="paragraph">
+<p>Open the Google Chrome browser and navigate to <a href="https://chrome.google.com/webstore/category/extensions" class="bare" target="_blank">https://chrome.google.com/webstore/category/extensions</a>.</p>
+</div>
+<div class="paragraph">
+<p>Search for &quot;MetaMask&quot; and click on the logo of a fox. You should see something like the result shown in <a href="#metamask_download">The detail page of the MetaMask Chrome extension</a>.</p>
+</div>
+<div id="metamask_download" class="imageblock">
+<div class="content">
+<img src="images/metamask_download.png" alt="MetaMask Detail Page">
+</div>
+<div class="title">Figure 1. The detail page of the MetaMask Chrome extension</div>
+</div>
+<div class="paragraph">
+<p>It&#x2019;s important to verify that you are downloading the real MetaMask extension, as sometimes people are able to sneak malicious extensions past Google&#x2019;s filters. The real one:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Shows the ID nkbihfbeogaeaoehlefnkodbefgpgknn in the address bar</p>
+</li>
+<li>
+<p>Is offered by <a href="https://metamask.io" class="bare" target="_blank">https://metamask.io</a></p>
+</li>
+<li>
+<p>Has more than 1,400 reviews</p>
+</li>
+<li>
+<p>Has more than 1,000,000 users</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Once you confirm you are looking at the correct extension, click &quot;Add to Chrome&quot; to install it.</p>
+</div>
+<div class="sect3">
+<h4 id="using_MetaMask">Creating a Wallet</h4>
+<div class="paragraph">
+<p>Once MetaMask is installed you should see a new icon (the head of a fox) in your browser&#x2019;s toolbar. Click on it to get started. You will be asked to accept the terms and conditions and then to create your new Ethereum wallet by entering a password (see <a href="#metamask_password">The password page of the MetaMask Chrome extension</a>).</p>
+</div>
+<div id="metamask_password" class="imageblock">
+<div class="content">
+<img src="images/metamask_password.png" alt="MetaMask Password Page">
+</div>
+<div class="title">Figure 2. The password page of the MetaMask Chrome extension</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The password controls access to MetaMask, so that it can&#x2019;t be used by anyone with access to your browser.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Once you&#x2019;ve set a password, MetaMask will generate a wallet for you and show you a <em>mnemonic backup</em> consisting of 12 English words (see <a href="#metamask_mnemonic">The mnemonic backup of your wallet, created by MetaMask</a>). These words can be used in any compatible wallet to recover access to your funds should something happen to MetaMask or your computer. You do not need the password for this recovery; the 12 words are sufficient.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Back up your mnemonic (12 words) on paper, twice. Store the two paper backups in two separate secure locations, such as a fire-resistant safe, a locked drawer, or a safe deposit box. Treat the paper backups like cash of equivalent value to what you store in your Ethereum wallet. Anyone with access to these words can gain access and steal your money.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="metamask_mnemonic" class="imageblock">
+<div class="content">
+<img src="images/metamask_mnemonic.png" alt="MetaMask Mnemonic Page">
+</div>
+<div class="title">Figure 3. The mnemonic backup of your wallet, created by MetaMask</div>
+</div>
+<div class="paragraph">
+<p>Once you have confirmed that you have stored the mnemonic securely, you&#x2019;ll be able to see the details of your Ethereum account, as shown in <a href="#metamask_account">Your Ethereum account in MetaMask</a>.</p>
+</div>
+<div id="metamask_account" class="imageblock">
+<div class="content">
+<img src="images/metamask_account.png" alt="MetaMask Account Page">
+</div>
+<div class="title">Figure 4. Your Ethereum account in MetaMask</div>
+</div>
+<div class="paragraph">
+<p>Your account page shows the name of your account (&quot;Account 1&quot; by default), an Ethereum address (0x9E713... in the example), and a colorful icon to help you visually distinguish this account from other accounts. At the top of the account page, you can see which Ethereum network you are currently working on (&quot;Main Network&quot; in the example).</p>
+</div>
+<div class="paragraph">
+<p>Congratulations! You have set up your first Ethereum wallet.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="switching_networks">Switching Networks</h4>
+<div class="paragraph">
+<p>As you can see on the MetaMask account page, you can choose between multiple Ethereum networks. By default, MetaMask will try to connect to the main network. The other choices are public testnets, any Ethereum node of your choice, or nodes running private blockchains on your own computer (localhost):</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Main Ethereum Network</dt>
+<dd>
+<p>The main public Ethereum blockchain. Real ETH, real value, and real consequences.</p>
+</dd>
+<dt class="hdlist1">Ropsten Test Network</dt>
+<dd>
+<p>Ethereum public test blockchain and network. ETH on this network has no value.</p>
+</dd>
+<dt class="hdlist1">Kovan Test Network</dt>
+<dd>
+<p>Ethereum public test blockchain and network using the Aura consensus protocol with proof of authority (federated signing). ETH on this network has no value. The Kovan test network is supported by Parity only. Other Ethereum clients use the Clique consensus protocol, which was proposed later, for proof of authority&#x2013;based verification.</p>
+</dd>
+<dt class="hdlist1">Rinkeby Test Network</dt>
+<dd>
+<p>Ethereum public test blockchain and network, using the Clique consensus protocol with proof of authority (federated signing). ETH on this network has no value.</p>
+</dd>
+<dt class="hdlist1">Localhost 8545</dt>
+<dd>
+<p>Connects to a node running on the same computer as the browser. The node can be part of any public blockchain (main or testnet), or a private testnet.</p>
+</dd>
+<dt class="hdlist1">Custom RPC</dt>
+<dd>
+<p>Allows you to connect MetaMask to any node with a Geth-compatible Remote Procedure Call (RPC) interface. The node can be part of any public or private blockchain.</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Your MetaMask wallet uses the same private key and Ethereum address on all the networks it connects to. However, your Ethereum address balance on each Ethereum network will be different. Your keys may control ether and contracts on Ropsten, for example, but not on the main network.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="getting_test_eth">Getting Some Test Ether</h4>
+<div class="paragraph">
+<p>Your first task is to get your wallet funded. You won&#x2019;t be doing that on the main network because real ether costs money and handling it requires a bit more experience. For now, you&#x2019;ll load your wallet with some testnet ether.</p>
+</div>
+<div class="paragraph">
+<p>Switch MetaMask to the <em>Ropsten Test Network</em>. Click Buy, then click Ropsten Test Faucet. MetaMask will open a new web page, as shown in <a href="#metamask_ropsten_faucet">MetaMask Ropsten Test Faucet</a>.</p>
+</div>
+<div id="metamask_ropsten_faucet" class="imageblock">
+<div class="content">
+<img src="images/metamask_ropsten_faucet.png" alt="MetaMask Ropsten Test Faucet">
+</div>
+<div class="title">Figure 5. MetaMask Ropsten Test Faucet</div>
+</div>
+<div class="paragraph">
+<p>You may notice that the web page already contains your MetaMask wallet&#x2019;s Ethereum address. MetaMask integrates Ethereum-enabled web pages with your MetaMask wallet and can &quot;see&quot; Ethereum addresses on the web page, allowing you, for example, to send a payment to an online shop displaying an Ethereum address. MetaMask can also populate the web page with your own wallet&#x2019;s address as a recipient address if the web page requests it. In this page, the faucet application is asking MetaMask for a wallet address to send test ether to.</p>
+</div>
+<div class="paragraph">
+<p>Click the green &quot;request 1 ether from faucet&quot; button. You will see a transaction ID appear in the lower part of the page. The faucet app has created a transaction&#x2014;a payment to you. The transaction ID looks like this:</p>
+</div>
+<div id="faucet_tx_id" class="listingblock">
+<div class="content">
+<pre>0x7c7ad5aaea6474adccf6f5c5d6abed11b70a350fbc6f9590109e099568090c57</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In a few seconds, the new transaction will be mined by the Ropsten miners and your MetaMask wallet will show a balance of 1 ETH. Click on the transaction ID and your browser will take you to a <em>block explorer</em>, which is a website that allows you to visualize and explore blocks, addresses, and transactions. MetaMask uses the <a href="https://etherscan.io/" target="_blank">Etherscan block explorer</a>, one of the more popular Ethereum block explorers. The transaction containing the payment from the Ropsten Test Faucet is shown in <a href="#ropsten_block_explorer">Etherscan Ropsten block explorer</a>.</p>
+</div>
+<div id="ropsten_block_explorer" class="imageblock">
+<div class="content">
+<img src="images/ropsten_block_explorer.png" alt="Etherscan Ropsten Block Explorer">
+</div>
+<div class="title">Figure 6. Etherscan Ropsten block explorer</div>
+</div>
+<div class="paragraph">
+<p>The transaction has been recorded on the Ropsten blockchain and can be viewed at any time by anyone, simply by searching for the transaction ID, or <a href="http://bit.ly/2Q860Wk" target="_blank">visiting the link</a>.</p>
+</div>
+<div class="paragraph">
+<p>Try visiting that link, or entering the transaction hash into the <em>ropsten.etherscan.io</em> website, to see it for yourself.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sending_eth_MetaMask">Sending Ether from MetaMask</h4>
+<div class="paragraph">
+<p>Once you&#x2019;ve received your first test ether from the Ropsten Test Faucet, you can experiment with sending ether by trying to send some back to the faucet. As you can see on the Ropsten Test Faucet page, there is an option to &quot;donate&quot; 1 ETH to the faucet. This option is available so that once you&#x2019;re done testing, you can return the remainder of your test ether, so that someone else can use it next. Even though test ether has no value, some people hoard it, making it difficult for everyone else to use the test networks. Hoarding test ether is frowned upon!</p>
+</div>
+<div class="paragraph">
+<p>Fortunately, we are not test ether hoarders. Click the orange &quot;1 ether&quot; button to tell MetaMask to create a transaction paying the faucet 1 ether. MetaMask will prepare a transaction and pop up a window with the confirmation, as shown in <a href="#send_to_faucet">Sending 1 ether to the faucet</a>.</p>
+</div>
+<div id="send_to_faucet" class="imageblock">
+<div class="content">
+<img src="images/send_to_faucet.png" alt="Sending 1 ether to the faucet">
+</div>
+<div class="title">Figure 7. Sending 1 ether to the faucet</div>
+</div>
+<div class="paragraph">
+<p>Oops! You probably noticed you can&#x2019;t complete the transaction&#x2014;MetaMask says you have an insufficient balance. At first glance this may seem confusing: you have 1 ETH, you want to send 1 ETH, so why is MetaMask saying you have insufficient funds?</p>
+</div>
+<div class="paragraph">
+<p>The answer is because of the cost of <em>gas</em>. Every Ethereum transaction requires payment of a fee, which is collected by the miners to validate the transaction. The fees in Ethereum are charged in a virtual currency called gas. You pay for the gas with ether, as part of the transaction.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Fees are required on the test networks too. Without fees, a test network would behave differently from the main network, making it an inadequate testing platform. Fees also protect the test networks from DoS attacks and poorly constructed contracts (e.g., infinite loops), much like they protect the main network.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When you sent the transaction, MetaMask calculated the average gas price of recent successful transactions at 3 gwei, which stands for gigawei. Wei is the smallest <span class="keep-together">subdivision</span> of the ether currency, as we discussed in <a href="#ether_units">Ether Currency Units</a>. The gas limit is set at the cost of sending a basic transaction, which is 21,000 gas units. Therefore, the maximum amount of ETH you will spend is 3 * 21,000 gwei = 63,000 gwei = 0.000063 ETH. (Be advised that average gas prices can fluctuate, as they are predominantly determined by miners. We will see in a later chapter how you can increase/decrease your gas limit to ensure your transaction takes precedence if need be.)</p>
+</div>
+<div class="paragraph">
+<p>All this to say: making a 1 ETH transaction costs 1.000063 ETH. MetaMask confusingly rounds that <em>down</em> to 1 ETH when showing the total, but the actual amount you need is 1.000063 ETH and you only have 1 ETH. Click Reject to cancel this transaction.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s get some more test ether! Click the green &quot;request 1 ether from the faucet&quot; button again and wait a few seconds. Don&#x2019;t worry, the faucet should have plenty of ether and will give you more if you ask.</p>
+</div>
+<div class="paragraph">
+<p>Once you have a balance of 2 ETH, you can try again. This time, when you click the orange &quot;1 ether&quot; donation button, you have sufficient balance to complete the transaction. Click Submit when MetaMask pops up the payment window. After all of this, you should see a balance of 0.999937 ETH because you sent 1 ETH to the faucet with 0.000063 ETH in gas.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="explore_tx_history">Exploring the Transaction History of an Address</h4>
+<div class="paragraph">
+<p>By now you have become an expert in using MetaMask to send and receive test ether. Your wallet has received at least two payments and sent at least one. You can view all these transactions using the <em>ropsten.etherscan.io</em> block explorer. You can either copy your wallet address and paste it into the block explorer&#x2019;s search box, or have MetaMask open the page for you. Next to your account icon in MetaMask, you will see a button showing three dots. Click on it to show a menu of account-related options (see <a href="#metamask_account_context_menu">MetaMask account context menu</a>).</p>
+</div>
+<div id="metamask_account_context_menu" class="imageblock">
+<div class="content">
+<img src="images/metamask_account_context_menu.png" alt="MetaMask Account Context Menu">
+</div>
+<div class="title">Figure 8. MetaMask account context menu</div>
+</div>
+<div class="paragraph">
+<p>Select &quot;View account on Etherscan&quot; to open a web page in the block explorer showing your account&#x2019;s transaction history, as shown in <a href="#block_explorer_account_history">Address transaction history on Etherscan</a>.</p>
+</div>
+<div id="block_explorer_account_history" class="imageblock">
+<div class="content">
+<img src="images/block_explorer_account_history.png" alt="Address Transaction History on Etherscan">
+</div>
+<div class="title">Figure 9. Address transaction history on Etherscan</div>
+</div>
+<div class="paragraph">
+<p>Here you can see the entire transaction history of your Ethereum address. It shows all the transactions recorded on the Ropsten blockchain where your address is the sender or recipient. Click on a few of these transactions to see more details.</p>
+</div>
+<div class="paragraph">
+<p>You can explore the transaction history of any address. Take a look at the transaction history of the Ropsten Test Faucet address (hint: it is the &quot;sender&quot; address listed in the oldest payment to your address). You can see all the test ether sent from the faucet to you and to other addresses. Every transaction you see can lead you to more addresses and more transactions. Before long you will be lost in the maze of interconnected data. Public blockchains contain an enormous wealth of information, all of which can be explored programmatically, as we will see in future examples.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="intro_world_computer">Introducing the World Computer</h3>
+<div class="paragraph">
+<p>You&#x2019;ve now created a wallet and sent and received ether. So far, we&#x2019;ve treated Ethereum as a cryptocurrency. But Ethereum is much, much more. In fact, the cryptocurrency function is subservient to Ethereum&#x2019;s function as a decentralized world computer. Ether is meant to be used to pay for running <em>smart contracts</em>, which are computer programs that run on an emulated computer called the <em>Ethereum Virtual Machine</em> (EVM).</p>
+</div>
+<div class="paragraph">
+<p>The EVM is a global singleton, meaning that it operates as if it were a global, single-instance computer, running everywhere. Each node on the Ethereum network runs a local copy of the EVM to validate contract execution, while the Ethereum blockchain records the changing <em>state</em> of this world computer as it processes transactions and smart contracts. We&#x2019;ll discuss this in much greater detail in <a href="#evm_chapter">[evm_chapter]</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="EOA_contracts">Externally Owned Accounts (EOAs) and Contracts</h3>
+<div class="paragraph">
+<p>The type of account you created in the MetaMask wallet is called an <em>externally owned account</em> (EOA). Externally owned accounts are those that have a private key; having the private key means control over access to funds or contracts. Now, you&#x2019;re probably guessing there is another type of account. That other type of account is a <em>contract account</em>. A contract account has smart contract code, which a simple EOA can&#x2019;t have. Furthermore, a contract account does not have a private key. Instead, it is owned (and controlled) by the logic of its smart contract code: the software program recorded on the Ethereum blockchain at the contract account&#x2019;s creation and executed by the EVM.</p>
+</div>
+<div class="paragraph">
+<p>Contracts have addresses, just like EOAs. Contracts can also send and receive ether, just like EOAs. However, when a transaction destination is a contract address, it causes that contract to <em>run</em> in the EVM, using the transaction, and the transaction&#x2019;s data, as its input. In addition to ether, transactions can contain <em>data</em> indicating which specific function in the contract to run and what parameters to pass to that function. In this way, transactions can <em>call</em> functions within contracts.</p>
+</div>
+<div class="paragraph">
+<p>Note that because a contract account does not have a private key, it cannot <em>initiate</em> a transaction. Only EOAs can initiate transactions, but contracts can <em>react</em> to transactions by calling other contracts, building complex execution paths. One typical use of this is an EOA sending a request transaction to a multisignature smart contract wallet to send some ETH on to another address. A typical DApp programming pattern is to have Contract A calling Contract B in order to maintain a shared state across users of Contract A.</p>
+</div>
+<div class="paragraph">
+<p>In the next few sections, we will write our first contract. You will then learn how to create, fund, and use that contract with your MetaMask wallet and test ether on the Ropsten test network.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="simple_contract_example">A Simple Contract: A Test Ether Faucet</h3>
+<div class="paragraph">
+<p>Ethereum has many different high-level languages, all of which can be used to write a contract and produce EVM bytecode. You can read about many of the most prominent and interesting ones in <a href="#high_level_languages">[high_level_languages]</a>. One high-level language is by far the dominant choice for smart contract programming: Solidity. Solidity was created by Dr. Gavin Wood, the coauthor of this book, and has become the most widely used language in Ethereum (and beyond). We&#x2019;ll use Solidity to write our first contract.</p>
+</div>
+<div class="paragraph">
+<p>For our first example (<a href="#solidity_faucet_example">Faucet.sol: A Solidity contract implementing a faucet</a>), we will write a contract that controls a <em>faucet</em>. You&#x2019;ve already used a faucet to get test ether on the Ropsten test network. A faucet is a relatively simple thing: it gives out ether to any address that asks, and can be refilled periodically. You can implement a faucet as a wallet controlled by a human or a web server.</p>
+</div>
+<div id="solidity_faucet_example" class="exampleblock">
+<div class="title">Example 1. Faucet.sol: A Solidity contract implementing a faucet</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">link:code/Solidity/Faucet.sol[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You will find all the code samples for this book in the <em>code</em> subdirectory of <a href="https://github.com/ethereumbook/ethereumbook/" target="_blank">the book&#x2019;s GitHub repository</a>. Specifically, our <em>Faucet.sol</em> contract is in:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>code/Solidity/Faucet.sol</pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This is a very simple contract, about as simple as we can make it. It is also a <em>flawed</em> contract, demonstrating a number of bad practices and security vulnerabilities. We will learn by examining all of its flaws in later sections. But for now, let&#x2019;s look at what this contract does and how it works, line by line. You will quickly notice that many elements of Solidity are similar to existing programming languages, such as JavaScript, Java, or C++.</p>
+</div>
+<div class="paragraph">
+<p>The first line is a comment:</p>
+</div>
+<div id="comment" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">// Our first contract is a faucet!</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Comments are for humans to read and are not included in the executable EVM bytecode. We usually put them on the line before the code we are trying to explain, or sometimes on the same line. Comments start with two forward slashes: //. Everything from the first slash until the end of that line is treated the same as a blank line and ignored.</p>
+</div>
+<div class="paragraph">
+<p>The next line is where our actual contract starts:</p>
+</div>
+<div id="contract_definition" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">contract Faucet {</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This line declares a contract object, similar to a class declaration in other object-oriented languages. The contract definition includes all the lines between the curly braces (<code>{}</code>), which define a <em>scope</em>, much like how curly braces are used in many other programming languages.</p>
+</div>
+<div class="paragraph">
+<p>Next, we declare the first function of the Faucet contract:</p>
+</div>
+<div id="withdraw_function" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">function withdraw(uint withdraw_amount) public {</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The function is named withdraw, and it takes one unsigned integer (uint) argument named withdraw_amount. It is declared as a public function, meaning it can be called by other contracts. The function definition follows, between curly braces. The first part of the withdraw function sets a limit on withdrawals:</p>
+</div>
+<div id="withdraw_limit" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">require(withdraw_amount &lt;= 100000000000000000);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It uses the built-in Solidity function require to test a precondition, that the withdraw_amount is less than or equal to 100,000,000,000,000,000 wei, which is the base unit of ether (see <a href="#ether_denominations">Ether denominations and unit names</a>) and equivalent to 0.1 ether. If the withdraw function is called with a withdraw_amount greater than that amount, the require function here will cause contract execution to stop and fail with an <em>exception</em>. Note that statements need to be terminated with a semicolon in Solidity.</p>
+</div>
+<div class="paragraph">
+<p>This part of the contract is the main logic of our faucet. It controls the flow of funds out of the contract by placing a limit on withdrawals. It&#x2019;s a very simple control but can give you a glimpse of the power of a programmable blockchain: decentralized software controlling money.</p>
+</div>
+<div class="paragraph">
+<p>Next comes the actual withdrawal:</p>
+</div>
+<div id="withdraw_command" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">msg.sender.transfer(withdraw_amount);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A couple of interesting things are happening here. The msg object is one of the inputs that all contracts can access. It represents the transaction that triggered the execution of this contract. The attribute sender is the sender address of the transaction. The function transfer is a built-in function that transfers ether from the current contract to the address of the sender. Reading it backward, this means transfer to the sender of the msg that triggered this contract execution. The transfer function takes an amount as its only argument. We pass the withdraw_amount value that was the parameter to the withdraw function declared a few lines earlier.</p>
+</div>
+<div class="paragraph">
+<p>The very next line is the closing curly brace, indicating the end of the definition of our withdraw function.</p>
+</div>
+<div class="paragraph">
+<p>Next, we we declare one more function:</p>
+</div>
+<div id="fallback_function" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">function () public payable {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This function is a so-called <em>fallback</em> or <em>default</em> function, which is called if the transaction that triggered the contract didn&#x2019;t name any of the declared functions in the contract, or any function at all, or didn&#x2019;t contain data. Contracts can have one such default function (without a name) and it is usually the one that receives ether. That&#x2019;s why it is defined as a public and payable function, which means it can accept ether into the contract. It doesn&#x2019;t do anything, other than accept the ether, as indicated by the empty definition in the curly braces (<code>{}</code>). If we make a transaction that sends ether to the contract address, as if it were a wallet, this function will handle it.</p>
+</div>
+<div class="paragraph">
+<p>Right below our default function is the final closing curly brace, which closes the definition of the contract Faucet. That&#x2019;s it!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="compile_faucet_contract">Compiling the Faucet Contract</h3>
+<div class="paragraph">
+<p>Now that we have our first example contract, we need to use a Solidity compiler to convert the Solidity code into EVM bytecode so it can be executed by the EVM on the blockchain itself.</p>
+</div>
+<div class="paragraph">
+<p>The Solidity compiler comes as a standalone executable, as part of various frameworks, and bundled in Integrated Development Environments (IDEs). To keep things simple, we will use one of the more popular IDEs, called <em>Remix</em>.</p>
+</div>
+<div class="paragraph">
+<p>Use your Chrome browser (with the MetaMask wallet you installed earlier) to navigate to the Remix IDE at <a href="https://remix.ethereum.org" class="bare" target="_blank">https://remix.ethereum.org</a>.</p>
+</div>
+<div class="paragraph">
+<p>When you first load Remix, it will start with a sample contract called <em>ballot.sol</em>. We don&#x2019;t need that, so close it by clicking the x on the corner of the tab, as seen in <a href="#remix_close_tab">Close the default example tab</a>.</p>
+</div>
+<div id="remix_close_tab" class="imageblock">
+<div class="content">
+<img src="images/remix_close_tab.png" alt="Close the default example tab">
+</div>
+<div class="title">Figure 10. Close the default example tab</div>
+</div>
+<div class="paragraph">
+<p>Now, add a new tab by clicking on the circular plus sign in the top-left toolbar, as seen in <a href="#remix_toolbar">Click the plus sign to open a new tab</a>. Name the new file <em>Faucet.sol</em>.</p>
+</div>
+<div id="remix_toolbar" class="imageblock">
+<div class="content">
+<img src="images/remix_toolbar.png" alt="Click the plus sign to open a new tab">
+</div>
+<div class="title">Figure 11. Click the plus sign to open a new tab</div>
+</div>
+<div class="paragraph">
+<p>Once you have the new tab open, copy and paste the code from our example <em>Faucet.sol</em>, as seen in <a href="#remix_faucet_load">Copy the Faucet example code into the new tab</a>.</p>
+</div>
+<div id="remix_faucet_load" class="imageblock">
+<div class="content">
+<img src="images/remix_faucet_load.png" alt="Copy the Faucet example code into the new tab">
+</div>
+<div class="title">Figure 12. Copy the Faucet example code into the new tab</div>
+</div>
+<div class="paragraph">
+<p>Once you have loaded the <em>Faucet.sol</em> contract into the Remix IDE, the IDE will automatically compile the code. If all goes well, you will see a green box with &quot;Faucet&quot; in it appear on the right, under the Compile tab, confirming the successful compilation (see <a href="#remix_compile">Remix successfully compiles the Faucet.sol contract</a>).</p>
+</div>
+<div id="remix_compile" class="imageblock">
+<div class="content">
+<img src="images/remix_compile.png" alt="">
+</div>
+<div class="title">Figure 13. Remix successfully compiles the Faucet.sol contract</div>
+</div>
+<div class="paragraph">
+<p>If something goes wrong, the most likely problem is that the Remix IDE is using a version of the Solidity compiler that is different from 0.4.19. In that case, our pragma directive will prevent <em>Faucet.sol</em> from compiling. To change the compiler version, go to the Settings tab, set the version to 0.4.19, and try again.</p>
+</div>
+<div class="paragraph">
+<p>The Solidity compiler has now compiled our <em>Faucet.sol</em> into EVM bytecode. If you are curious, the bytecode looks like this:</p>
+</div>
+<div id="faucet_bytecode" class="listingblock">
+<div class="content">
+<pre>PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH2 0xF JUMPI PUSH1 0x0 DUP1
+REVERT JUMPDEST PUSH1 0xE5 DUP1 PUSH2 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN
+STOP PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x3F JUMPI
+PUSH1 0x0 CALLDATALOAD PUSH29
+0x100000000000000000000000000000000000000000000000000000000
+SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0x2E1A7D4D EQ PUSH1 0x41 JUMPI
+JUMPDEST STOP JUMPDEST CALLVALUE ISZERO PUSH1 0x4B JUMPI PUSH1 0x0 DUP1 REVERT
+JUMPDEST PUSH1 0x5F PUSH1 0x4 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1
+SWAP2 SWAP1 POP POP PUSH1 0x61 JUMP JUMPDEST STOP JUMPDEST PUSH8
+0x16345785D8A0000 DUP2 GT ISZERO ISZERO ISZERO PUSH1 0x77 JUMPI PUSH1 0x0 DUP1
+REVERT JUMPDEST CALLER PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND
+PUSH2 0x8FC DUP3 SWAP1 DUP2 ISZERO MUL SWAP1 PUSH1 0x40 MLOAD PUSH1 0x0 PUSH1
+0x40 MLOAD DUP1 DUP4 SUB DUP2 DUP6 DUP9 DUP9 CALL SWAP4 POP POP POP POP ISZERO
+ISZERO PUSH1 0xB6 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP JUMP STOP LOG1 PUSH6
+0x627A7A723058 KECCAK256 PUSH9 0x13D1EA839A4438EF75 GASLIMIT CALLVALUE LOG4 0x5f
+PUSH24 0x7541F409787592C988A079407FB28B4AD000290000000000</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Aren&#x2019;t you glad you are using a high-level language like Solidity instead of programming directly in EVM bytecode? Me too!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="create_contract">Creating the Contract on the Blockchain</h3>
+<div class="paragraph">
+<p>So, we have a contract. We&#x2019;ve compiled it into bytecode. Now, we need to &quot;register&quot; the contract on the Ethereum blockchain. We will be using the Ropsten testnet to test our contract, so that&#x2019;s the blockchain we want to submit it to.</p>
+</div>
+<div class="paragraph">
+<p>Registering a contract on the blockchain involves creating a special transaction whose destination is the address 0x0000000000000000000000000000000000000000, also known as the <em>zero address</em>. The zero address is a special address that tells the Ethereum blockchain that you want to register a contract. Fortunately, the Remix IDE will handle all of that for you and send the transaction to MetaMask.</p>
+</div>
+<div class="paragraph">
+<p>First, switch to the Run tab and select Injected Web3 in the Environment drop-down selection box. This connects the Remix IDE to the MetaMask wallet, and through MetaMask to the Ropsten test network. Once you do that, you can see Ropsten under Environment. Also, in the Account selection box it shows the address of your wallet (see <a href="#remix_run">Remix IDE Run tab, with Injected Web3 environment selected</a>).</p>
+</div>
+<div id="remix_run" class="imageblock">
+<div class="content">
+<img src="images/remix_run.png" alt="Remix IDE Run tab, with Injected Web3 environment selected">
+</div>
+<div class="title">Figure 14. Remix IDE Run tab, with Injected Web3 environment selected</div>
+</div>
+<div class="paragraph">
+<p>Right below the Run settings you just confirmed is the Faucet contract, ready to be created. Click on the Deploy button shown in <a href="#remix_run">Remix IDE Run tab, with Injected Web3 environment selected</a>.</p>
+</div>
+<div class="paragraph">
+<p>Remix will construct the special &quot;creation&quot; transaction and MetaMask will ask you to approve it, as shown in <a href="#remix_metamask_create">MetaMask showing the contract creation transaction</a>. You&#x2019;ll notice the contract creation transaction has no ether in it, but it has 258 bytes of data (the compiled contract) and will consume 10 gwei in gas. Click Submit to approve it.</p>
+</div>
+<div id="remix_metamask_create" class="imageblock">
+<div class="content">
+<img src="images/remix_metamask_create.png" alt="MetaMask showing the contract creation transaction">
+</div>
+<div class="title">Figure 15. MetaMask showing the contract creation transaction</div>
+</div>
+<div class="paragraph">
+<p>Now you have to wait. It will take about 15 to 30 seconds for the contract to be mined on Ropsten. Remix won&#x2019;t appear to be doing much, but be patient.</p>
+</div>
+<div class="paragraph">
+<p>Once the contract is created, it appears at the bottom of the Run tab (see <a href="#remix_contract_interact">The Faucet contract is ALIVE!</a>).</p>
+</div>
+<div id="remix_contract_interact" class="imageblock">
+<div class="content">
+<img src="images/remix_contract_interact.png" alt="The Faucet contract is ALIVE!">
+</div>
+<div class="title">Figure 16. The Faucet contract is ALIVE!</div>
+</div>
+<div class="paragraph">
+<p>Notice that the Faucet contract now has an address of its own: Remix shows it as &#x201C;Faucet at 0x72e&#x2026;&#x200B;c7829&#x201D; (although your address, the random letters and numbers, will be different). The small clipboard symbol to the right allows you to copy the contract address to your clipboard. We will use that in the next section.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="interact_contract">Interacting with the Contract</h3>
+<div class="paragraph">
+<p>Let&#x2019;s recap what we&#x2019;ve learned so far: Ethereum contracts are programs that control money, which run inside a virtual machine called the EVM. They are created by a special transaction that submits their bytecode to be recorded on the blockchain. Once they are created on the blockchain, they have an Ethereum address, just like wallets. Anytime someone sends a transaction to a contract address it causes the contract to run in the EVM, with the transaction as its input. Transactions sent to <span class="keep-together">contract</span> addresses may have ether or data or both. If they contain ether, it is &quot;deposited&quot; to the contract balance. If they contain data, the data can specify a named function in the contract and call it, passing arguments to the function.</p>
+</div>
+<div class="sect3">
+<h4 id="view_contract_address">Viewing the Contract Address in a Block Explorer</h4>
+<div class="paragraph">
+<p>We now have a contract recorded on the blockchain, and we can see it has an Ethereum address. Let&#x2019;s check it out in the <em>ropsten.etherscan.io</em> block explorer and see what a contract looks like. In the Remix IDE, copy the address of the contract by clicking the clipboard icon next to its name (see <a href="#remix_contract_address">Copy the contract address from Remix</a>).</p>
+</div>
+<div id="remix_contract_address" class="imageblock">
+<div class="content">
+<img src="images/remix_contract_address.png" alt="Copy the contract address from Remix">
+</div>
+<div class="title">Figure 17. Copy the contract address from Remix</div>
+</div>
+<div class="paragraph">
+<p>Keep Remix open; we&#x2019;ll come back to it again later. Now, navigate your browser to <em>ropsten.etherscan.io</em> and paste the address into the search box. You should see the contract&#x2019;s Ethereum address history, as shown in <a href="#etherscan_contract_address">View the Faucet contract address in the Etherscan block explorer</a>.</p>
+</div>
+<div id="etherscan_contract_address" class="imageblock">
+<div class="content">
+<img src="images/etherscan_contract_address.png" alt="View the Faucet contract address in the etherscan block explorer">
+</div>
+<div class="title">Figure 18. View the Faucet contract address in the Etherscan block explorer</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fund_contract">Funding the Contract</h4>
+<div class="paragraph">
+<p>For now, the contract only has one transaction in its history: the contract creation transaction. As you can see, the contract also has no ether (zero balance). That&#x2019;s because we didn&#x2019;t send any ether to the contract in the creation transaction, even though we could have.</p>
+</div>
+<div class="paragraph">
+<p>Our faucet needs funds! Our first project will be to use MetaMask to send ether to the contract. You should still have the address of the contract in your clipboard (if not, copy it again from Remix). Open MetaMask, and send 1 ether to it, exactly as you would to any other Ethereum address (see <a href="#metamask_send_to_contract">Send 1 ether to the contract address</a>).</p>
+</div>
+<div id="metamask_send_to_contract" class="imageblock">
+<div class="content">
+<img src="images/metamask_send_to_contract.png" alt="">
+</div>
+<div class="title">Figure 19. Send 1 ether to the contract address</div>
+</div>
+<div class="paragraph">
+<p>In a minute, if you reload the Etherscan block explorer, it will show another transaction to the contract address and an updated balance of 1 ether.</p>
+</div>
+<div class="paragraph">
+<p>Remember the unnamed default public payable function in our <em>Faucet.sol</em> code? It looked like this:</p>
+</div>
+<div id="fallback_function_review" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">function () public payable {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you sent a transaction to the contract address, with no data specifying which function to call, it called this default function. Because we declared it as payable, it accepted and deposited the 1 ether into the contract&#x2019;s account balance. Your transaction caused the contract to run in the EVM, updating its balance. You have funded your faucet!</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="withdraw_from_contract">Withdrawing from Our Contract</h4>
+<div class="paragraph">
+<p>Next, let&#x2019;s withdraw some funds from the faucet. To withdraw, we have to construct a transaction that calls the withdraw function and passes a withdraw_amount argument to it. To keep things simple for now, Remix will construct that transaction for us and MetaMask will present it for our approval.</p>
+</div>
+<div class="paragraph">
+<p>Return to the Remix tab and look at the contract on the Run tab. You should see a red box labeled withdraw with a field entry labeled uint256 withdraw_amount (see <a href="#remix_contract_withdraw">The withdraw function of Faucet.sol, in Remix</a>).</p>
+</div>
+<div id="remix_contract_withdraw" class="imageblock">
+<div class="content">
+<img src="images/remix_contract_interact.png" alt="The withdraw function of Faucet.sol, in Remix">
+</div>
+<div class="title">Figure 20. The withdraw function of Faucet.sol, in Remix</div>
+</div>
+<div class="paragraph">
+<p>This is the Remix interface to the contract. It allows us to construct transactions that call the functions defined in the contract. We will enter a withdraw_amount and click the withdraw button to generate the transaction.</p>
+</div>
+<div class="paragraph">
+<p>First, let&#x2019;s figure out the withdraw_amount. We want to try and withdraw 0.1 ether, which is the maximum amount allowed by our contract. Remember that all currency values in Ethereum are denominated in wei internally, and our withdraw function expects the withdraw_amount to be denominated in wei too. The amount we want is 0.1 ether, which is 100,000,000,000,000,000 wei (a 1 followed by 17 zeros).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Due to a limitation in JavaScript, a number as large as 10^17 cannot be processed by Remix. Instead, we enclose it in double quotes, to allow Remix to receive it as a string and manipulate it as a BigNumber. If we don&#x2019;t enclose it in quotes, the Remix IDE will fail to process it and display &quot;Error encoding arguments: Error: Assertion failed.&quot;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Type &quot;100000000000000000&quot; (with the quotes) into the withdraw_amount box and click on the withdraw button (see <a href="#remix_withdraw">Click &quot;withdraw&quot; in Remix to create a withdrawal transaction</a>).</p>
+</div>
+<div id="remix_withdraw" class="imageblock">
+<div class="content">
+<img src="images/remix_withdraw.png" alt="">
+</div>
+<div class="title">Figure 21. Click &quot;withdraw&quot; in Remix to create a withdrawal transaction</div>
+</div>
+<div class="paragraph">
+<p>MetaMask will pop up a transaction window for you to approve. Click Submit to send your withdrawal call to the contract (see <a href="#metamask_withdraw">MetaMask transaction to call the withdraw function</a>).</p>
+</div>
+<div id="metamask_withdraw" class="imageblock">
+<div class="content">
+<img src="images/metamask_withdraw.png" alt="MetaMask transaction to call the withdraw function">
+</div>
+<div class="title">Figure 22. MetaMask transaction to call the withdraw function</div>
+</div>
+<div class="paragraph">
+<p>Wait a minute and then reload the Etherscan block explorer to see the transaction reflected in the Faucet contract address history (see <a href="#etherscan_withdrawal_tx">Etherscan shows the transaction calling the withdraw function</a>).</p>
+</div>
+<div id="etherscan_withdrawal_tx" class="imageblock">
+<div class="content">
+<img src="images/etherscan_withdrawal_tx.png" alt="Etherscan shows the transaction calling the withdraw function">
+</div>
+<div class="title">Figure 23. Etherscan shows the transaction calling the withdraw function</div>
+</div>
+<div class="paragraph">
+<p>We now see a new transaction with the contract address as the destination and a value of 0 ether. The contract balance has changed and is now 0.9 ether because it sent us 0.1 ether as requested. But we don&#x2019;t see an &quot;OUT&quot; transaction in the <em>contract address history</em>.</p>
+</div>
+<div class="paragraph">
+<p>Where&#x2019;s the outgoing withdrawal? A new tab has appeared on the contract&#x2019;s address history page, named Internal Transactions. Because the 0.1 ether transfer originated from the contract code, it is an internal transaction (also called a <em>message</em>). Click on that tab to see it (see <a href="#etherscan_withdrawal_internal">Etherscan shows the internal transaction transferring ether out from the contract</a>).</p>
+</div>
+<div class="paragraph">
+<p>This &quot;internal transaction&quot; was sent by the contract in this line of code (from the <code>withdraw</code> function in <em>Faucet.sol</em>):</p>
+</div>
+<div id="withdraw_command_review" class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-solidity" data-lang="solidity">msg.sender.transfer(withdraw_amount);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To recap: you sent a transaction from your MetaMask wallet that contained data instructions to call the withdraw function with a withdraw_amount argument of 0.1 ether. That transaction caused the contract to run inside the EVM. As the EVM ran the Faucet contract&#x2019;s withdraw function, first it called the require function and validated that the requested amount was less than or equal to the maximum allowed withdrawal of 0.1 ether. Then it called the transfer function to send you the ether. Running the transfer function generated an internal transaction that deposited 0.1 ether into your wallet address, from the contract&#x2019;s balance. That&#x2019;s the one shown on the Internal Transactions tab in Etherscan.</p>
+</div>
+<div id="etherscan_withdrawal_internal" class="imageblock">
+<div class="content">
+<img src="images/etherscan_withdrawal_internal.png" alt="Etherscan shows the internal transaction transferring ether out from the contract">
+</div>
+<div class="title">Figure 24. Etherscan shows the internal transaction transferring ether out from the contract</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="intro_conclusion">Conclusions</h3>
+<div class="paragraph">
+<p>In this chapter, you set up a wallet using MetaMask and funded it using a faucet on the Ropsten test network. You received ether into your wallet&#x2019;s Ethereum address, then you sent ether to the faucet&#x2019;s Ethereum address.</p>
+</div>
+<div class="paragraph">
+<p>Next, you wrote a faucet contract in Solidity. You used the Remix IDE to compile the contract into EVM bytecode, then used Remix to form a transaction and created the Faucet contract on the Ropsten blockchain. Once created, the Faucet contract had an Ethereum address, and you sent it some ether. Finally, you constructed a transaction to call the withdraw function and successfully asked for 0.1 ether. The contract checked the request and sent you 0.1 ether with an internal transaction.</p>
+</div>
+<div class="paragraph">
+<p>It may not seem like much, but you&#x2019;ve just successfully interacted with software that controls money on a decentralized world computer.</p>
+</div>
+<div class="paragraph">
+<p>We will do a lot more smart contract programming in <a href="#smart_contracts_chapter">[smart_contracts_chapter]</a> and learn about best practices and security considerations in <a href="#smart_contract_security">[smart_contract_security]</a>.</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01what-is.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 1: What Is Ethereum?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03clients.html" class="navigation navigation-next " aria-label="Next page: Chapter 3: Ethereum Clients">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 2: Ethereum Basics","level":"1.5","depth":1,"next":{"title":"Chapter 3: Ethereum Clients","level":"1.6","depth":1,"path":"03clients.asciidoc","ref":"03clients.asciidoc","articles":[]},"previous":{"title":"Chapter 1: What Is Ethereum?","level":"1.4","depth":1,"path":"01what-is.asciidoc","ref":"01what-is.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"02intro.asciidoc","mtime":"2019-08-27T09:18:17.270Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

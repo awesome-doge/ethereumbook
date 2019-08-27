@@ -1,0 +1,700 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 14: Consensus · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="appdx-forks-history.html" />
+    
+    
+    <link rel="prev" href="13evm.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 14: Consensus</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="consensus">Consensus</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Throughout this book we have talked about &quot;consensus rules&#x201D;&#x2014;the rules that everyone must agree to for the system to operate in a decentralized, yet deterministic, manner. In computer science, the term <em>consensus</em> predates blockchains and is related to the broader problem of synchronizing state in distributed systems, such that different participants in a distributed system all (eventually) agree on a single system-wide state. This is called &quot;reaching consensus.&quot;</p>
+</div>
+<div class="paragraph">
+<p>When it comes to the core function of decentralized record keeping and verification, it can become problematic to rely on trust alone to ensure that information derived from state updates is correct. This rather general challenge is particularly pronounced in decentralized networks because there is no central entity to decide what is true. The lack of a central decision-making entity is one of the main attractions of blockchain platforms, because of the resulting capacity to resist censorship and the lack of dependence on authority for permission to access information. However, these benefits come at a cost: without a trusted arbitrator, any disagreements, deceptions, or differences need to be reconciled using other means. Consensus algorithms are the  mechanism used to reconcile security and decentralization.</p>
+</div>
+<div class="paragraph">
+<p>In blockchains, consensus is a critical property of the system. Simply put, there is money at stake! So, in the context of blockchains, <em>consensus</em> is about being able to arrive at a common state, while maintaining decentralization. In other words, consensus is intended to produce a system of <em>strict rules without rulers</em>. There is no one person, organization, or group &quot;in charge&#x201D;; rather, power and control are diffused across a broad network of participants, whose self-interest is served by following the rules and behaving honestly.</p>
+</div>
+<div class="paragraph">
+<p>The ability to come to consensus across a distributed network, under adversarial conditions, without centralizing control is the core principle of all open public blockchains. To address this challenge and maintain the valued property of decentralization, the community continues to experiment with different models of consensus. This chapter explores these consensus models and their expected impact on smart contract blockchains such as Ethereum.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>While consensus algorithms are an important part of how blockchains work, they operate at a foundational layer, far below the abstraction of smart contracts. In other words, most of the details of consensus are hidden from the writers of smart contracts. You don&#x2019;t need to know how they work to use Ethereum, any more than you need to know how routing works to use the internet.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_consensus_via_proof_of_work">Consensus via Proof of Work</h3>
+<div class="paragraph">
+<p>The creator of the original blockchain, Bitcoin, invented a <em>consensus algorithm</em> called <em>proof of work</em> (PoW). Arguably, PoW is the most important invention underpinning Bitcoin. The colloquial term for PoW is &quot;mining,&quot; which creates a misunderstanding about the primary purpose of consensus. Often people assume that the purpose of mining is the creation of new currency, since the purpose of real-world mining is the extraction of precious metals or other resources. Rather, the real purpose of mining (and all other consensus models) is to <em>secure the blockchain</em>, while keeping control over the system decentralized and diffused across as many participants as possible. The reward of newly minted currency is an incentive to those who contribute to the security of the system: a means to an end. In that sense, the reward is the means and decentralized security is the end. In PoW consensus there is also a corresponding &quot;punishment,&quot; which is the cost of energy required to participate in mining. If participants do not follow the rules and earn the reward, they risk the funds they have already spent on electricity to mine. Thus, PoW consensus is a careful balance of risk and reward that drives participants to behave honestly out of self-interest.</p>
+</div>
+<div class="paragraph">
+<p>Ethereum is currently a PoW blockchain, in that it uses a PoW algorithm with the same basic incentive system for the same basic goal: securing the blockchain while decentralizing control. Ethereum&#x2019;s PoW algorithm is slightly different than Bitcoin&#x2019;s and is called <em>Ethash</em>. We will examine the function and design characteristics of the algorithm in <a href="#ethash">Ethash: Ethereum&#x2019;s Proof-of-Work Algorithm</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_consensus_via_proof_of_stake_pos">Consensus via Proof of Stake (PoS)</h3>
+<div class="paragraph">
+<p>Historically, proof of work was not the first consensus algorithm proposed. Preceding the introduction of proof of work, many researchers had proposed variations of consensus algorithms based on financial stake, now called <em>proof of stake</em> (PoS). In some respects, proof of work was invented as an alternative to proof of stake. Following the success of Bitcoin, many blockchains have emulated proof of work. Yet the explosion of research into consensus algorithms has also resurrected proof of stake, significantly advancing the state of the technology. From the beginning, Ethereum&#x2019;s founders were hoping to eventually migrate its consensus algorithm to proof of stake. In fact, there is a deliberate handicap on Ethereum&#x2019;s proof of work called the <em>difficulty bomb</em>, intended to gradually make proof-of-work mining of Ethereum more and more difficult, thereby forcing the transition to proof of stake.</p>
+</div>
+<div class="paragraph">
+<p>At the time of publication of this book, Ethereum is still using proof of work, but the ongoing research toward a proof-of-stake alternative is nearing completion. Ethereum&#x2019;s planned PoS algorithm is called <em>Casper</em>. The introduction of Casper as a replacement for Ethash has been postponed several times over the past two years, necessitating interventions to defuse the difficulty bomb and postpone its forced obsolescence of proof of work.</p>
+</div>
+<div class="paragraph">
+<p>In general, a PoS algorithm works as follows. The blockchain keeps track of a set of validators, and anyone who holds the blockchain&#x2019;s base cryptocurrency (in Ethereum&#x2019;s case, ether) can become a validator by sending a special type of transaction that locks up their ether into a deposit. The validators take turns proposing and voting on the next valid block, and the weight of each validator&#x2019;s vote depends on the size of its deposit (i.e., stake). Importantly, a validator risks losing their deposit if the block they staked it on is rejected by the majority of validators. Conversely, validators earn a small reward, proportional to their deposited stake, for every block that is accepted by the majority. Thus, PoS forces validators to act honestly and follow the consensus rules, by a system of reward and punishment. The major difference between PoS and PoW is that the punishment in PoS is intrinsic to the blockchain (e.g., loss of staked ether), whereas in PoW the punishment is extrinsic (e.g., loss of funds spent on <span class="keep-together">electricity</span>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ethash">Ethash: Ethereum&#x2019;s Proof-of-Work Algorithm</h3>
+<div class="paragraph">
+<p>Ethash is the Ethereum PoW algorithm. It uses an evolution of the Dagger&#x2013;Hashimoto algorithm, which is a combination of Vitalik Buterin&#x2019;s Dagger algorithm and Thaddeus Dryja&#x2019;s Hashimoto algorithm. Ethash is dependent on the generation and analysis of a large dataset, known as a <em>directed acyclic graph</em> (or, more simply, &#x201C;the DAG&#x201D;). The DAG had an initial size of about 1 GB and will continue to slowly and linearly grow in size, being updated once every epoch (30,000 blocks, or roughly 125 hours).</p>
+</div>
+<div class="paragraph">
+<p>The purpose of the DAG is to make the Ethash PoW algorithm dependent on maintaining a large, frequently accessed data structure. This in turn is intended to make Ethash &quot;ASIC resistant,&quot; which means that it is more difficult to make <em>application-specific integrated circuits</em> (ASIC) mining equipment that is orders of magnitude faster than a fast <em>graphics processing unit</em> (GPU). Ethereum&#x2019;s founders wanted to avoid centralization in PoW mining, where those with access to specialized silicon fabrication factories and big budgets could dominate the mining infrastructure and undermine the security of the consensus algorithm.</p>
+</div>
+<div class="paragraph">
+<p>Use of consumer-level GPUs for carrying out the PoW on the Ethereum network means that more people around the world can participate in the mining process. The more independent miners there are the more decentralized the mining power is, which means we can avoid a situation like in Bitcoin, where much of the mining power is concentrated in the hands of a few large industrial mining operations. The downside of the use of GPUs for mining is that it precipitated a worldwide shortage GPUs in 2017, causing their price to skyrocket and an outcry from gamers. This led to purchase restrictions at retailers, limiting buyers to one or two GPUs per customer.</p>
+</div>
+<div class="paragraph">
+<p>Until recently, the threat of ASIC miners on the Ethereum network was largely nonexistent. Using ASICs for Ethereum requires the design, manufacture, and distribution of highly customized hardware. Producing them requires considerable investment of time and money. The Ethereum developers&apos; long-expressed plans to move to a PoS consensus algorithm likely kept ASIC suppliers away from targeting the Ethereum network for a long time. As soon as Ethereum moves to PoS, ASICs designed for the PoW algorithm will be rendered useless&#x2014;that is, unless miners can use them to mine other cryptocurrencies instead. The latter possibility is now a reality with a range of other Ethash-based consensus coins available, such as PIRL and Ubiq, and Ethereum Classic has pledged to remain a PoW blockchain for the foreseeable future. This means that we will likely see ASIC mining begin to become a force on the Ethereum network while is it still operating on PoW consensus.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_casper_ethereum_s_proof_of_stake_algorithm">Casper: Ethereum&#x2019;s Proof-of-Stake Algorithm</h3>
+<div class="paragraph">
+<p>Casper is the proposed name for Ethereum&#x2019;s PoS consensus algorithm. It is still under active research and development and is not implemented on the Ethereum blockchain at the time of publication of this book. Casper is being developed in two competing &quot;flavors&quot;:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Casper FFG: &quot;The Friendly Finality Gadget&quot;</p>
+</li>
+<li>
+<p>Casper CBC: &quot;The Friendly GHOST/Correct-by-Construction&quot;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Initially, Casper FFG was proposed as a hybrid PoW/PoS algorithm to be implemented as a transition to a more permanent &quot;pure PoS&quot; algorithm. But in June 2018, Vitalik Buterin, who was leading the research work on Casper FFG, decided to &quot;scrap&quot; the hybrid model in favor of a pure PoS algorithm. Now, Casper FFG and Casper CBC are both being developed in parallel. As Vitalik explains:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>The main tradeoff between FFG and CBC is that CBC seems to have nicer theoretical properties, but FFG seems to be easier to implement.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>More information about Casper&#x2019;s history, ongoing research and future plans can be found at the following links:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://bit.ly/2RO5HAl" target="_blank">Ethereum Casper (Proof of Stake)</a></p>
+</li>
+<li>
+<p><a href="http://bit.ly/2FlBojb" target="_blank">History of Casper, Part 1</a></p>
+</li>
+<li>
+<p><a href="http://bit.ly/2QyHiic" target="_blank">History of Casper, Part 2</a></p>
+</li>
+<li>
+<p><a href="http://bit.ly/2JWWFyt" target="_blank">History of Casper, Part 3</a></p>
+</li>
+<li>
+<p><a href="http://bit.ly/2FsaExI" target="_blank">History of Casper, Part 4</a></p>
+</li>
+<li>
+<p><a href="http://bit.ly/2PPhhOv" target="_blank">History of Casper, Part 5</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_principles_of_consensus">Principles of Consensus</h3>
+<div class="paragraph">
+<p>The principles and assumptions of consensus algorithms can be more clearly understood by asking a few key questions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Who can change the past, and how? (This is also known as <em>immutability</em>.)</p>
+</li>
+<li>
+<p>Who can change the future, and how? (This is also known as <em>finality</em>.)</p>
+</li>
+<li>
+<p>What is the cost to make such changes?</p>
+</li>
+<li>
+<p>How decentralized is the power to make such changes?</p>
+</li>
+<li>
+<p>Who will know if something has changed, and how will they know?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Consensus algorithms are evolving rapidly, attempting to answer these questions in increasingly innovative ways.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_controversy_and_competition">Controversy and Competition</h3>
+<div class="paragraph">
+<p>At this point you might be wondering: Why do we need so many different consensus algorithms? Which one works better? The answer to the latter question is at the center of the most exciting area of research in distributed systems of the past decade. It all boils down to what you consider &quot;better&#x201D;&#x2014;which in the context of computer science is about assumptions, goals, and the unavoidable trade-offs.</p>
+</div>
+<div class="paragraph">
+<p>It is likely that no  algorithm can optimize across all dimensions of the problem of decentralized consensus. When someone suggests that one consensus algorithm is &quot;better&quot; than the others, you should start asking questions that clarify: Better at what? Immutability, finality, decentralization, cost? There is no clear answer to these questions, at least not yet. Furthermore, the design of consensus algorithms is at the center of a multi-billion-dollar industry and generates enormous controversy and heated arguments. In the end, there might not be a &quot;correct&quot; answer, just as there might be different answers for different applications.</p>
+</div>
+<div class="paragraph">
+<p>The entire blockchain industry is one giant experiment where these questions will be tested under adversarial conditions, with enormous monetary value at stake. In the end, history will answer the controversy.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conclusions">Conclusions</h3>
+<div class="paragraph">
+<p>Ethereum&#x2019;s consensus algorithm is still in flux at the time of completion of this book. In a future edition, we will likely add more detail about Casper and other related technologies as these mature and are deployed on Ethereum. This chapter represents the end of our journey, completing <em>Mastering Ethereum</em>. Additional reference material follows in the appendixes. Thank you for reading this book, and congratulations on reaching the end!</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="13evm.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 13: The Ethereum Virtual Machine">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="appdx-forks-history.html" class="navigation navigation-next " aria-label="Next page: Appendix A: Ethereum Fork History">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 14: Consensus","level":"1.17","depth":1,"next":{"title":"Appendix A: Ethereum Fork History","level":"2.1","depth":1,"path":"appdx-forks-history.asciidoc","ref":"appdx-forks-history.asciidoc","articles":[]},"previous":{"title":"Chapter 13: The Ethereum Virtual Machine","level":"1.16","depth":1,"path":"13evm.asciidoc","ref":"13evm.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"14consensus.asciidoc","mtime":"2019-08-27T09:18:17.277Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

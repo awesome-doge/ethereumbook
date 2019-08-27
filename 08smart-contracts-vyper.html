@@ -1,0 +1,958 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 8: Smart Contracts and Vyper · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="09smart-contracts-security.html" />
+    
+    
+    <link rel="prev" href="07smart-contracts-solidity.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Quick Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01what-is.html">
+            
+                <a href="01what-is.html">
+            
+                    
+                    Chapter 1: What Is Ethereum?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02intro.html">
+            
+                <a href="02intro.html">
+            
+                    
+                    Chapter 2: Ethereum Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03clients.html">
+            
+                <a href="03clients.html">
+            
+                    
+                    Chapter 3: Ethereum Clients
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="04keys-addresses.html">
+            
+                <a href="04keys-addresses.html">
+            
+                    
+                    Chapter 4: Cryptography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="05wallets.html">
+            
+                <a href="05wallets.html">
+            
+                    
+                    Chapter 5: Wallets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="06transactions.html">
+            
+                <a href="06transactions.html">
+            
+                    
+                    Chapter 6: Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="07smart-contracts-solidity.html">
+            
+                <a href="07smart-contracts-solidity.html">
+            
+                    
+                    Chapter 7: Smart Contracts and Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="08smart-contracts-vyper.html">
+            
+                <a href="08smart-contracts-vyper.html">
+            
+                    
+                    Chapter 8: Smart Contracts and Vyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="09smart-contracts-security.html">
+            
+                <a href="09smart-contracts-security.html">
+            
+                    
+                    Chapter 9: Smart Contract Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="10tokens.html">
+            
+                <a href="10tokens.html">
+            
+                    
+                    Chapter 10: Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="11oracles.html">
+            
+                <a href="11oracles.html">
+            
+                    
+                    Chapter 11: Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="12dapps.html">
+            
+                <a href="12dapps.html">
+            
+                    
+                    Chapter 12: Decentralized Applications (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="13evm.html">
+            
+                <a href="13evm.html">
+            
+                    
+                    Chapter 13: The Ethereum Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="14consensus.html">
+            
+                <a href="14consensus.html">
+            
+                    
+                    Chapter 14: Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appdx-forks-history.html">
+            
+                <a href="appdx-forks-history.html">
+            
+                    
+                    Appendix A: Ethereum Fork History
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="appdx-standards-eip-erc.html">
+            
+                <a href="appdx-standards-eip-erc.html">
+            
+                    
+                    Appendix A: Ethereum Standards
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="appdx-evm-opcodes-gas.html">
+            
+                <a href="appdx-evm-opcodes-gas.html">
+            
+                    
+                    Appendix A: Ethereum EVM Opcodes and Gas Consumption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="appdx-dev-tools.html">
+            
+                <a href="appdx-dev-tools.html">
+            
+                    
+                    Appendix A: Development Tools, Frameworks, and Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="appdx-web3js-tutorial.html">
+            
+                <a href="appdx-web3js-tutorial.html">
+            
+                    
+                    Appendix A: web3.js Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 8: Smart Contracts and Vyper</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="vyper_chap">Smart Contracts and Vyper</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vyper is an experimental, contract-oriented programming language for the Ethereum Virtual Machine that strives to provide superior auditability, by making it easier for developers to produce intelligible code. In fact, one of the principles of Vyper is to make it virtually impossible for developers to write misleading code.</p>
+</div>
+<div class="paragraph">
+<p>In this chapter we will look at common problems with smart contracts, introduce the Vyper contract programming language, and compare it to Solidity, demonstrating the differences.</p>
+</div>
+<div class="sect2">
+<h3 id="_vulnerabilities_and_vyper">Vulnerabilities and Vyper</h3>
+<div class="paragraph">
+<p><a href="https://arxiv.org/pdf/1802.06038.pdf" target="_blank">A recent study</a> analyzed nearly one million deployed Ethereum smart contracts and found that many of these contracts contained serious vulnerabilities. During their analysis, the researchers outlined three basic categories of trace vulnerabilities:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Suicidal contracts</dt>
+<dd>
+<p>Smart contracts that can be killed by arbitrary addresses</p>
+</dd>
+<dt class="hdlist1">Greedy contracts</dt>
+<dd>
+<p>Smart contracts that can reach a state in which they cannot release ether</p>
+</dd>
+<dt class="hdlist1">Prodigal contracts</dt>
+<dd>
+<p>Smart contracts that can be made to release ether to arbitrary addresses</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Vulnerabilities are introduced into smart contracts via code. It may be strongly argued that these and other vulnerabilities are not intentionally introduced, but regardless, undesirable smart contract code evidently results in the unexpected loss of funds for Ethereum users, and this is not ideal. Vyper is designed to make it easier to write secure code, or equally to make it more difficult to accidentally write misleading or vulnerable code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="comparison_to_solidity_sec">Comparison to Solidity</h3>
+<div class="paragraph">
+<p>One of the ways in which Vyper tries to make unsafe code harder to write is by deliberately <em>omitting</em> some of Solidity&#x2019;s features. It is important for those considering developing smart contracts in Vyper to understand what features Vyper does <em>not</em> have, and why. Therefore, in this section, we will explore those features and provide justification for why they have been omitted.</p>
+</div>
+<div class="sect3">
+<h4 id="_modifiers">Modifiers</h4>
+<div class="paragraph">
+<p>As we saw in the previous chapter, in Solidity you can write a function using modifiers. For example, the following function, <code>changeOwner</code>, will run the code in a modifier called <code>onlyBy</code> as part of its execution:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeOwner</span>(<span class="hljs-params">address _newOwner</span>)
+    <span class="hljs-title">public</span>
+    <span class="hljs-title">onlyBy</span>(<span class="hljs-params">owner</span>)
+</span>{
+    owner = _newOwner;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This modifier enforces a rule in relation to ownership. As you can see, this particular modifier acts as a mechanism to perform a pre-check on behalf of the <code>changeOwner</code> function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">modifier onlyBy(address _account)
+{
+    <span class="hljs-built_in">require</span>(msg.sender == _account);
+    _;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>But modifiers are not just there to perform checks, as shown here. In fact, as modifiers, they can significantly change a smart contract&#x2019;s environment, in the context of the calling function. Put simply, modifiers are <em>pervasive</em>.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s look at another Solidity-style example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">enum Stages {
+    SafeStage
+    DangerStage,
+    FinalStage
+}
+
+uint public creationTime = now;
+Stages public stage = Stages.SafeStage;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nextStage</span>(<span class="hljs-params"></span>) <span class="hljs-title">internal</span> </span>{
+    stage = Stages(uint(stage) + <span class="hljs-number">1</span>);
+}
+
+modifier stageTimeConfirmation() {
+    <span class="hljs-keyword">if</span> (stage == Stages.SafeStage &amp;&amp;
+                now &gt;= creationTime + <span class="hljs-number">10</span> days)
+        nextStage();
+    _;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)
+    <span class="hljs-title">public</span>
+    <span class="hljs-title">stageTimeConfirmation</span>
+    // <span class="hljs-title">More</span> <span class="hljs-title">code</span> <span class="hljs-title">goes</span> <span class="hljs-title">here</span>
+</span>{
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On the one hand, developers should always check any other code that their own code is calling. However, it is possible that in certain situations (like when time constraints or exhaustion result in lack of concentration) a developer may overlook a single line of code. This is even more likely if the developer has to jump around inside a large file while mentally keeping track of the function call hierarchy and committing the state of smart contract variables to memory.</p>
+</div>
+<div class="paragraph">
+<p>Let&#x2019;s look at the preceding example in a bit more depth. Imagine that a developer is writing a public function called <code>a</code>. The developer is new to this contract and is utilizing a modifier written by someone else. At a glance, it appears that the <code>stageTimeConfirmation</code> modifier is simply performing some checks regarding the age of the contract in relation to the calling function. What the developer may <em>not</em> realize is that the modifier is also calling another function, <code>nextStage</code>. In this simplistic demonstration scenario, simply calling the public function <code>a</code> results in the smart contract&#x2019;s <code>stage</code> variable moving from <code>SafeStage</code> to <code>DangerStage</code>.</p>
+</div>
+<div class="paragraph">
+<p>Vyper has done away with modifiers altogether. The recommendations from Vyper are as follows: if only performing assertions with modifiers, then simply use inline checks and asserts as part of the function; if modifying smart contract state and so forth, again make these changes explicitly part of the function. Doing this improves auditability and readability, as the reader doesn&#x2019;t have to mentally (or manually) &quot;wrap&quot; the modifier code around the function to see what it does.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_class_inheritance">Class Inheritance</h4>
+<div class="paragraph">
+<p>Inheritance allows programmers to harness the power of prewritten code by acquiring preexisting functionality, properties, and behaviors from existing software libraries. Inheritance is powerful and promotes the reuse of code. Solidity supports multiple inheritance as well as polymorphism, but while these are key features of object-oriented programming, Vyper does not support them. Vyper maintains that the implementation of inheritance requires coders and auditors to jump between multiple files in order to understand what the program is doing. Vyper also takes the view that multiple inheritance can make code too complicated to understand&#x2014;a view tacitly admitted by the Solidity <a href="http://bit.ly/2Q6Azvo" target="_blank">documentation</a>, which gives an example of how multiple inheritance can be problematic.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_inline_assembly">Inline Assembly</h4>
+<div class="paragraph">
+<p>Inline assembly gives developers low-level access to the Ethereum Virtual Machine, allowing Solidity programs to perform operations by directly accessing EVM instructions. For example, the following inline assembly code adds 3 to memory location 0x80:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>3 0x80 mload add 0x80 mstore</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vyper considers the loss of readability to be too high a price to pay for the extra power, and thus does not support inline assembly.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_function_overloading">Function Overloading</h4>
+<div class="paragraph">
+<p>Function overloading allows developers to write multiple functions of the same name. Which function is used on a given occasion depends on the types of the arguments supplied. Take the following two functions, for example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">uint _in</span>) <span class="hljs-title">public</span> <span class="hljs-title">pure</span> <span class="hljs-title">returns</span> (<span class="hljs-params">uint out</span>) </span>{
+    out = <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params">uint _in, bytes32 _key</span>) <span class="hljs-title">public</span> <span class="hljs-title">pure</span> <span class="hljs-title">returns</span> (<span class="hljs-params">uint out</span>) </span>{
+    out = <span class="hljs-number">2</span>;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The first function (named f) accepts an input argument of type uint; the second function (also named f) accepts two arguments, one of type uint and one of type bytes32. Having multiple function definitions with the same name taking different arguments can be confusing, so Vyper does not support function overloading.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_variable_typecasting">Variable Typecasting</h4>
+<div class="paragraph">
+<p>There are two sorts of typecasting: <em>implicit</em> and <em>explicit</em></p>
+</div>
+<div class="paragraph">
+<p>Implicit typecasting is often performed at compile time. For example, if a type conversion is semantically sound and no information is likely to be lost, the compiler can perform an implicit conversion, such as converting a variable of type uint8 to uint16. The earliest versions of Vyper allowed implicit typecasting of variables, but recent versions do not.</p>
+</div>
+<div class="paragraph">
+<p>Explicit typecasts can be inserted in Solidity. Unfortunately, they can lead to unexpected behavior. For example, casting a uint32 to the smaller type uint16 simply removes the higher-order bits, as demonstrated here:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">uint32 a = <span class="hljs-number">0x12345678</span>;
+uint16 b = uint16(a);
+<span class="hljs-comment">// Variable b is 0x5678 now</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vyper instead has a convert function to perform explicit casts. The convert function (found on line 82 of <a href="http://bit.ly/2P36ZKT" target="_blank"><em>convert.py</em></a>):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">convert</span><span class="hljs-params">(expr, context)</span>:</span>
+    output_type = expr.args[<span class="hljs-number">1</span>].s
+    <span class="hljs-keyword">if</span> output_type <span class="hljs-keyword">in</span> conversion_table:
+        <span class="hljs-keyword">return</span> conversion_table[output_type](expr, context)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">&quot;Conversion to {} is invalid.&quot;</span>.format(output_type))</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note the use of conversion_table (found on line 90 of the same file), which looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">conversion_table = {
+    <span class="hljs-string">&apos;int128&apos;</span>: to_int128,
+    <span class="hljs-string">&apos;uint256&apos;</span>: to_unint256,
+    <span class="hljs-string">&apos;decimal&apos;</span>: to_decimal,
+    <span class="hljs-string">&apos;bytes32&apos;</span>: to_bytes32,
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When a developer calls convert, it references conversion_table, which ensures that the appropriate conversion is performed. For example, if a developer passes an int128 to the convert function, the to_int128 function on line 26 of the same (<em>convert.py</em>) file will be executed. The to_int128 function is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"><span class="hljs-meta">@signature((&apos;int128&apos;, &apos;uint256&apos;, &apos;bytes32&apos;, &apos;bytes&apos;), &apos;str_literal&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">to_int128</span><span class="hljs-params">(expr, args, kwargs, context)</span>:</span>
+    in_node = args[<span class="hljs-number">0</span>]
+    typ, len = get_type(in_node)
+    <span class="hljs-keyword">if</span> typ <span class="hljs-keyword">in</span> (<span class="hljs-string">&apos;int128&apos;</span>, <span class="hljs-string">&apos;uint256&apos;</span>, <span class="hljs-string">&apos;bytes32&apos;</span>):
+        <span class="hljs-keyword">if</span> in_node.typ.is_literal
+            <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> SizeLimits.MINNUM &lt;= in_node.value &lt;= SizeLimits.MAXNUM:
+            <span class="hljs-keyword">raise</span> InvalidLiteralException(
+                <span class="hljs-string">&quot;Number out of range: {}&quot;</span>.format(in_node.value), expr
+            )
+        <span class="hljs-keyword">return</span> LLLnode.from_list(
+            [<span class="hljs-string">&apos;clamp&apos;</span>, [<span class="hljs-string">&apos;mload&apos;</span>, MemoryPositions.MINNUM], in_node,
+            [<span class="hljs-string">&apos;mload&apos;</span>, MemoryPositions.MAXNUM]], typ=BaseType(<span class="hljs-string">&apos;int128&apos;</span>),
+            pos=getpos(expr)
+        )
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> byte_array_to_num(in_node, expr, <span class="hljs-string">&apos;int128&apos;</span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see, the conversion process ensures that no information can be lost; if it could be, an exception is raised. The conversion code prevents truncation as well as other anomalies that would ordinarily be allowed by implicit typecasting.</p>
+</div>
+<div class="paragraph">
+<p>Choosing explicit over implicit typecasting means that the developer is responsible for performing all casts. While this approach does produce more verbose code, it also improves the safety and auditability of smart contracts.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_preconditions_and_postconditions">Preconditions and Postconditions</h4>
+<div class="paragraph">
+<p>Vyper handles preconditions, postconditions, and state changes explicitly. While this produces redundant code, it also allows for maximal readability and safety. When writing a smart contract in Vyper, a developer should observe the following three points:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Condition</dt>
+<dd>
+<p>What is the current state/condition of the Ethereum state variables?</p>
+</dd>
+<dt class="hdlist1">Effects</dt>
+<dd>
+<p>What effects will this smart contract code have on the condition of the state variables upon execution? That is, what <em>will</em> be affected, and what <em>will not</em> be affected? Are these effects congruent with the smart contract&#x2019;s intentions?</p>
+</dd>
+<dt class="hdlist1">Interaction</dt>
+<dd>
+<p>After the first two considerations have been exhaustively dealt with, it is time to run the code. Before deployment, logically step through the code and consider all of the possible permanent outcomes, consequences, and scenarios of executing the code, including interactions with other contracts.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Ideally, each of these points should be carefully considered and then thoroughly documented in the code. Doing so will improve the design of the code, ultimately making it more readable and auditable.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="decorators_sec">Decorators</h3>
+<div class="paragraph">
+<p>The following decorators may be used at the start of each function:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">@private</dt>
+<dd>
+<p>The <code>@private</code> decorator makes the function inaccessible from outside the contract.</p>
+</dd>
+<dt class="hdlist1">@public</dt>
+<dd>
+<p>The <code>@public</code> decorator makes the function both visible and executable publicly. For example, even the Ethereum wallet will display such functions when viewing the contract.</p>
+</dd>
+<dt class="hdlist1">@constant</dt>
+<dd>
+<p>Functions with the <code>@constant</code> decorator are not allowed to change state variables. In fact, the compiler will reject the entire program (with an appropriate error) if the function tries to change a state variable.</p>
+</dd>
+<dt class="hdlist1">@payable</dt>
+<dd>
+<p>Only functions with the <code>@payable</code> decorator are allowed to transfer value.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Vyper implements <a href="http://bit.ly/2P14RDq" target="_blank">the logic of decorators</a> explicitly. For example, the Vyper compilation process will fail if a function has both a <code>@payable</code> decorator and a <code>@constant</code> decorator. This makes sense because a function that transfers value has by definition updated the state, so cannot be <code>@constant</code>. Each Vyper function must be decorated with either <code>@public</code> or <code>@private</code> (but not both!).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="order_of_functions_sec">Function and Variable Ordering</h3>
+<div class="paragraph">
+<p>Each individual Vyper smart contract consists of a single Vyper file only. In other words, all of a given Vyper smart contract&#x2019;s code, including all functions, variables, and so forth, exists in one place. Vyper requires that each smart contract&#x2019;s function and variable declarations are physically written in a particular order. Solidity does not have this requirement at all. Let&#x2019;s take a quick look at a Solidity example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">pragma solidity ^<span class="hljs-number">0.4</span><span class="hljs-number">.0</span>;
+
+contract ordering {
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">topFunction</span>(<span class="hljs-params"></span>)
+    <span class="hljs-title">external</span>
+    <span class="hljs-title">returns</span> (<span class="hljs-params">bool</span>) </span>{
+        initiatizedBelowTopFunction = <span class="hljs-keyword">this</span>.lowerFunction();
+        <span class="hljs-keyword">return</span> initiatizedBelowTopFunction;
+    }
+
+    bool initiatizedBelowTopFunction;
+    bool lowerFunctionVar;
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">lowerFunction</span>(<span class="hljs-params"></span>)
+    <span class="hljs-title">external</span>
+    <span class="hljs-title">returns</span> (<span class="hljs-params">bool</span>) </span>{
+        lowerFunctionVar = <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">return</span> lowerFunctionVar;
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this example, the function called topFunction is calling another function, lowerFunction. topFunction is also assigning a value to a variable called initiatizedBelowTopFunction. As you can see, Solidity does not require these functions and variables to be physically declared before being called upon by the excecuting code. This is valid Solidity code that will compile successfully.</p>
+</div>
+<div class="paragraph">
+<p>Vyper&#x2019;s ordering requirements are not a new thing; in fact, these ordering requirements have always been present in Python programming. The ordering required by Vyper is straightforward and logical, as illustrated in this next example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"><span class="hljs-comment"># Declare a variable called theBool</span>
+theBool: public(bool)
+
+<span class="hljs-comment"># Declare a function called topFunction</span>
+<span class="hljs-meta">@public</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">topFunction</span><span class="hljs-params">()</span> -&gt; bool:</span>
+    <span class="hljs-comment"># Assign a value to the already declared function called theBool</span>
+    self.theBool = <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">return</span> self.theBool
+
+<span class="hljs-comment"># Declare a function called lowerFunction</span>
+<span class="hljs-meta">@public</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">lowerFunction</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># Call the already declared function called topFunction</span>
+    <span class="hljs-keyword">assert</span> self.topFunction()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This shows the correct ordering of functions and variables in a Vyper smart contract. Note how the variable theBool and the function topFunction are declared before they are assigned a value and called, respectively. If theBool was declared below topFunction or if topFunction was declared below lowerFunction this contract would not compile.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="online_code_editor_and_compiler_sec">Compilation</h3>
+<div class="paragraph">
+<p>Vyper has its own <a href="https://vyper.online" target="_blank">online code editor and compiler</a>, which allows you to write and then compile your smart contracts into bytecode, ABI, and LLL using only your web browser. The Vyper online compiler has a variety of prewritten smart contracts for your convenience, including contracts for a simple open auction, safe remote purchases, ERC20 tokens, and more.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Vyper implements ERC20 as a precompiled contract, allowing these smart contracts to be easily used out of the box. Contracts in Vyper must be declared as global variables. An example for declaring the ERC20 variable is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">token: address(ERC20)</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can also compile a contract using the command line. Each Vyper contract is saved in a single file with the <em>.vy</em> extension.
+Once installed, you can compile a contract with Vyper by running the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>vyper ~/hello_world.vy</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The human-readable ABI description (in JSON format) can then be obtained by running the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>vyper -f json ~/hello_world.v.py</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="protecting_against_overflows_sec">Protecting Against Overflow Errors at the Compiler Level</h3>
+<div class="paragraph">
+<p>Overflow errors in software can be catastrophic when dealing with real value. For example, one <a href="http://bit.ly/2yHfvoF" target="_blank">transaction from mid-April 2018</a> shows the  <span class="keep-together">malicious transfer of over 57,896,044,618,658,100,000,000,000,000,000,000,000,000,&#x2009;</span>000,000,000,000,000,000 BEC tokens. This transaction was the result of an integer overflow issue in BeautyChain&#x2019;s ERC20 token contract (<em>BecToken.sol</em>). Solidity developers do have access to libraries like <a href="http://bit.ly/2ABhb4l" target="_blank">SafeMath</a> as well as Ethereum smart contract security analysis tools like <a href="http://bit.ly/2CQRoGU" target="_blank">Mythril OSS</a>. However, developers are not forced to use the safety tools. Put simply, if safety is not enforced by the language, developers can write unsafe code that will successfully compile and later on &quot;successfully&quot; execute.</p>
+</div>
+<div class="paragraph">
+<p>Vyper has built-in overflow protection, implemented in a two-pronged approach. Firstly, Vyper provides <a href="http://bit.ly/2PuDfpB" target="_blank">a SafeMath equivalent</a> that includes the necessary exception cases for integer arithmetic. Secondly, Vyper uses clamps whenever a literal constant is loaded, a value is passed to a function, or a variable is assigned. Clamps are implemented via custom functions in the Low-level Lisp-like Language (LLL) compiler, and cannot be disabled. (The Vyper compiler outputs LLL rather than EVM bytecode; this simplifies the development of Vyper itself.)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="reading_and_writing_data_sec">Reading and Writing Data</h3>
+<div class="paragraph">
+<p>While it is costly to store, read, and modify data, these storage operations are a necessary component of most smart contracts. Smart contracts can write data to two places:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Global state</dt>
+<dd>
+<p>The state variables in a given smart contract are stored in Ethereum&#x2019;s global state trie; a smart contract can only store, read, and modify data in relation to that particular contract&#x2019;s address (i.e., smart contracts cannot read or write to other smart contracts).</p>
+</dd>
+<dt class="hdlist1">Logs</dt>
+<dd>
+<p>A smart contract can also write to Ethereum&#x2019;s chain data through log events. While Vyper initially employed the <code>__log__</code> syntax for declaring these events, an update has been made that brings its event declaration more in line with Solidity&#x2019;s original syntax. For example, Vyper&#x2019;s declaration of an event called <code>MyLog</code> was originally <code>MyLog: __log__({arg1: indexed(bytes[3])})</code>. The syntax has now become <code>MyLog: event({arg1: indexed(bytes[3])})</code>. It is important to note that the execution of the log event in Vyper was, and still is, as follows: <code>log.MyLog(&quot;123&quot;)</code>.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>While smart contracts can write to Ethereum&#x2019;s chain data (through log events), they are unable to read the on-chain log events they&#x2019;ve created. Notwithstanding, one of the advantages of writing to Ethereum&#x2019;s chain data via log events is that logs can be discovered and read, on the public chain, by light clients. For example, the logsBloom value in a mined block can indicate whether or not a log event is present. Once the existence of log events has been established, the log data can be obtained from a given transaction receipt.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conclusions">Conclusions</h3>
+<div class="paragraph">
+<p>Vyper is a powerful and interesting new contract-oriented programming language. Its design is biased toward &quot;correctness,&quot; at the expense of some flexibility. This may allow programmers to write better smart contracts and avoid certain pitfalls that cause serious vulnerabilities to arise. Next, we will look at smart contract security in more detail. Some of the nuances of Vyper design may become more apparent once you read about all the possible security problems that can arise in smart contracts.</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="07smart-contracts-solidity.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 7: Smart Contracts and Solidity">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="09smart-contracts-security.html" class="navigation navigation-next " aria-label="Next page: Chapter 9: Smart Contract Security">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 8: Smart Contracts and Vyper","level":"1.11","depth":1,"next":{"title":"Chapter 9: Smart Contract Security","level":"1.12","depth":1,"path":"09smart-contracts-security.asciidoc","ref":"09smart-contracts-security.asciidoc","articles":[]},"previous":{"title":"Chapter 7: Smart Contracts and Solidity","level":"1.10","depth":1,"path":"07smart-contracts-solidity.asciidoc","ref":"07smart-contracts-solidity.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08smart-contracts-vyper.asciidoc","mtime":"2019-08-27T09:18:17.274Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-27T09:30:30.552Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
